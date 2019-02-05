@@ -10,7 +10,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { NgxMdModule } from 'ngx-md';
-import { KgContentFooterService } from '@kion/kg-ang-layout';
+import { KgContentFooterService } from '@anviltech/wuf-ang-layout';
 
 import { GettingStartedComponent } from './getting-started.component';
 

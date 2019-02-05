@@ -15,15 +15,15 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RoutesModule } from './routes';
 
 /***** Import WUF *****/
-import { KgToastsModule } from '@kion/kg-ang-toasts';
-import { KgUtilsModule } from '@kion/kg-ang-utils';
-import { KgLayoutModule } from '@kion/kg-ang-layout';
-import { KgDrawerModule } from '@kion/kg-ang-drawer';
-import { KgDashboardModule } from '@kion/kg-ang-dashboard';
-import { KgLoginModule } from '@kion/kg-ang-login-animated';
-import { KgNavigationModule } from '@kion/kg-ang-navigation';
-import { KgGridsterModule } from '@kion/kg-ang-gridster';
-import { KgSmartTableModule } from '@kion/kg-ang-smart-table';
+import { WufToastsModule } from '@anviltech/wuf-ang-toasts';
+import { KgUtilsModule } from '@anviltech/wuf-ang-utils';
+import { KgLayoutModule } from '@anviltech/wuf-ang-layout';
+import { KgDrawerModule } from '@anviltech/wuf-ang-drawer';
+import { KgDashboardModule } from '@anviltech/wuf-ang-dashboard';
+import { KgLoginModule } from '@anviltech/wuf-ang-login-animated';
+import { KgNavigationModule } from '@anviltech/wuf-ang-navigation';
+import { KgGridsterModule } from '@anviltech/wuf-ang-gridster';
+import { KgSmartTableModule } from '@anviltech/wuf-ang-smart-table';
 
 /***** 3rd party imports *****/
 import { NgxMdModule } from 'ngx-md';
@@ -82,7 +82,7 @@ import { ToastsComponent } from './toasts/toasts.component';
         CdkTableModule,
 
         // WUF
-        KgToastsModule,
+        WufToastsModule,
         KgUtilsModule,
         KgLayoutModule,
         KgDrawerModule,

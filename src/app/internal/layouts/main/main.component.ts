@@ -4,10 +4,10 @@
  */
 
 import { Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
-import { KgNavigationService } from '@kion/kg-ang-navigation';
+import { KgNavigationService } from '@anviltech/wuf-ang-navigation';
 import { ThemeListService } from '../../theme-list.service';
-import { KgConfigurationService } from '@kion/kg-ang-configuration';
-import { KgDrawerService } from '@kion/kg-ang-drawer';
+import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { KgDrawerService } from '@anviltech/wuf-ang-drawer';
 
 
 @Component({

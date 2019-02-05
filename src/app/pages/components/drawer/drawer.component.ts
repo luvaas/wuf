@@ -4,7 +4,7 @@
  */
 
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { KgDrawerService } from '@kion/kg-ang-drawer';
+import { KgDrawerService } from '@anviltech/wuf-ang-drawer';
 
 
 @Component({

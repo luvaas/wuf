@@ -5,7 +5,7 @@
 
 import { Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { KgGridsterService } from '@kion/kg-ang-gridster';
+import { KgGridsterService } from '@anviltech/wuf-ang-gridster';
 
 
 @Component({
@@ -59,7 +59,7 @@ export class GridsterComponent implements OnInit, OnDestroy {
 
     serviceCode = `
 import { Subscription } from 'rxjs';
-import { KgGridsterService } from '@kion/kg-ang-gridster';
+import { KgGridsterService } from '@anviltech/wuf-ang-gridster';
 
 
 @Component({

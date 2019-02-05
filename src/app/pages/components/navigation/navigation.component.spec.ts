@@ -10,7 +10,7 @@ import { DebugElement } from '@angular/core';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { KgNavigationModule } from '@kion/kg-ang-navigation';
+import { KgNavigationModule } from '@anviltech/wuf-ang-navigation';
 
 import { NavigationComponent } from './navigation.component';
 

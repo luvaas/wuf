@@ -11,7 +11,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { FormsModule } from '@angular/forms';
 
 import { I18nComponent } from './i18n.component';
-import { KgContentFooterService } from '@kion/kg-ang-layout';
+import { KgContentFooterService } from '@anviltech/wuf-ang-layout';
 
 
 describe('I18nComponent', () => {

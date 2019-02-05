@@ -13,7 +13,7 @@ import {map, startWith} from 'rxjs/operators';
 import { MatDialog, MatAutocompleteSelectedEvent, MatChipInputEvent, MatAutocomplete} from '@angular/material';
 
 import {FormDialogExample} from './modal/form.dialog.component';
-import { KgDrawerService } from '@kion/kg-ang-drawer';
+import { KgDrawerService } from '@anviltech/wuf-ang-drawer';
 import { FormSettingsService } from './form.service';
 
 

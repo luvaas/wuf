@@ -62,8 +62,8 @@ export class SetupConfigurationComponent implements OnInit {
     appComponentExample = `
         import { Component, ViewEncapsulation, OnInit, Renderer2, OnDestroy } from '@angular/core';
 
-        import { KgConfigurationService } from '@kion/kg-ang-configuration'
-        import { deepMerge } from '@kion/kg-ang-utils';
+        import { KgConfigurationService } from '@anviltech/wuf-ang-configuration'
+        import { deepMerge } from '@anviltech/wuf-ang-utils';
         import { UserService } from './internal/services/user.service';
         
         // The following imports are only used for demo purposes
@@ -207,7 +207,7 @@ export class SetupConfigurationComponent implements OnInit {
         }
     `;
 
-    setupCode1 = `import { KgConfigurationModule, KgConfigurationService } from '@kion/kg-ang-configuration';`;
+    setupCode1 = `import { KgConfigurationModule, KgConfigurationService } from '@anviltech/wuf-ang-configuration';`;
     setupCode2 = `
     providers: [
         KgConfigurationService

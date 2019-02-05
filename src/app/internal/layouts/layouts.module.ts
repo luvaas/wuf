@@ -8,11 +8,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 /***** Import WUF *****/
-import { KgConfigurationService } from '@kion/kg-ang-configuration';
-import { KgLayoutModule } from '@kion/kg-ang-layout';
-import { KgDrawerModule } from '@kion/kg-ang-drawer';
-import { KgNavigationModule } from '@kion/kg-ang-navigation';
-import { KgLoginModule } from '@kion/kg-ang-login-animated';
+import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { KgLayoutModule } from '@anviltech/wuf-ang-layout';
+import { KgDrawerModule } from '@anviltech/wuf-ang-drawer';
+import { KgNavigationModule } from '@anviltech/wuf-ang-navigation';
+import { KgLoginModule } from '@anviltech/wuf-ang-login-animated';
 
 /***** 3rd Party *****/
 import { MatTooltipModule } from '@angular/material';

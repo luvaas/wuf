@@ -5,7 +5,7 @@
 
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
-import { KgConfigurationService } from '@kion/kg-ang-configuration';
+import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
 
 
 @Component({

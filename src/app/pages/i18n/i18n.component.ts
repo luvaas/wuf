@@ -5,7 +5,7 @@
 
 import { Component, OnInit, ViewEncapsulation, OnDestroy } from '@angular/core';
 
-import { KgContentFooterService } from '@kion/kg-ang-layout';
+import { KgContentFooterService } from '@anviltech/wuf-ang-layout';
 
 
 @Component({

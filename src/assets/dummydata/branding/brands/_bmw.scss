@@ -44,7 +44,7 @@ of component variables that can be overridden.
     ));
 
     /***** logo *****/
-    @include kg-theme-logo("/assets/images/example_images/logos/bmw.svg", 175px, 50px);
+    //@include kg-theme-logo("/assets/images/example_images/logos/bmw.svg", 175px, 50px);
 
     /***** buttons *****/
     @include kg-theme-button-radius(20px);

@@ -5,7 +5,7 @@
 
 import {Component, Input, OnInit, ViewChild} from '@angular/core';
 
-import {KgSmartTableViewCell} from '@kion/kg-ang-smart-table';
+import {KgSmartTableViewCell} from '@anviltech/wuf-ang-smart-table';
 
 
 // import {NgbPopover} from '@ng-bootstrap/ng-bootstrap';

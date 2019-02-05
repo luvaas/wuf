@@ -90,19 +90,19 @@
 
         <!--start API Content -->
         <div class="component_tabs_3">
-            <p>The <code>@kion/vaadin-elements</code> from Common Components doesn't provide any packages itself.
+            <p>The <code>@anviltech/vaadin-elements</code> from Common Components doesn't provide any packages itself.
                 Instead, it installs various package dependencies required for Vaadin components, like the Vaadin Grid.
-                It also declares a dependency on the <code>@kion/kg-grid</code> component, which includes KION-specifc
-                styling for Vaadin Grids. By installing <code>@kion/vaadin-elements</code> instead of the Vaadin Grid
+                It also declares a dependency on the <code>@anviltech/wuf-grid</code> component, which includes KION-specifc
+                styling for Vaadin Grids. By installing <code>@anviltech/vaadin-elements</code> instead of the Vaadin Grid
                 components (and required dependencies) directy, you are ensuring that your Vaadin component versions
                 have been tested for compatibility with WUF and that style dependencies will be available.</p>
 
-            <p>Similary, the <code>@kion/paper-elements</code> component from Common Components provides all of the
+            <p>Similary, the <code>@anviltech/paper-elements</code> component from Common Components provides all of the
                 controls used within Vaadin Grid for column sort icon, column filters, etc.</p>
             <h2>Installation</h2>
 
             <pre>
-				<code>$ yarn add @kion/kg-poly-vaadin-elements @kion/kg-poly-paper-elements</code>
+				<code>$ yarn add @anviltech/wuf-poly-vaadin-elements @anviltech/wuf-poly-paper-elements</code>
 			</pre>
 
             <p>Then add the following lines to your application's <code>app.module.ts</code> file:</p>
@@ -124,7 +124,7 @@ import '@vaadin/vaadin-grid/vaadin-grid-selection-column.js';
 import '@vaadin/vaadin-grid/vaadin-grid-column';
 import '@vaadin/vaadin-grid/vaadin-grid-sorter';
 import '@vaadin/vaadin-grid/vaadin-grid-filter';
-import '@kion/kg-poly-grid-styles'
+import '@anviltech/wuf-poly-grid-styles'
 				</code>
 			</pre>
 

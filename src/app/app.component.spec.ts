@@ -9,10 +9,10 @@ import { DebugElement } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { KgConfigurationModule, KgConfigurationService } from '@kion/kg-ang-configuration';
-import { KgLayoutModule, KgLayoutService } from '@kion/kg-ang-layout';
-import { KgUtilsModule } from '@kion/kg-ang-utils';
-import { KgLoginService } from '@kion/kg-ang-login-animated';
+import { KgConfigurationModule, KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { KgLayoutModule, KgLayoutService } from '@anviltech/wuf-ang-layout';
+import { KgUtilsModule } from '@anviltech/wuf-ang-utils';
+import { KgLoginService } from '@anviltech/wuf-ang-login-animated';
 
 import { Routes } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';

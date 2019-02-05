@@ -4,7 +4,7 @@
  */
 
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { KgConfigurationService } from '@kion/kg-ang-configuration';
+import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
 
 
 @Component({

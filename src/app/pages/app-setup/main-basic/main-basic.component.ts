@@ -46,9 +46,9 @@ export class LayoutMainBasicComponent implements OnInit {
 
     mainCodeComponent = `
     import { Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
-    import { KgNavigationService } from '@kion/kg-ang-navigation';
-    import { KgConfigurationService } from '@kion/kg-ang-configuration';
-    import { KgDrawerService } from '@kion/kg-ang-drawer';
+    import { KgNavigationService } from '@anviltech/wuf-ang-navigation';
+    import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+    import { KgDrawerService } from '@anviltech/wuf-ang-drawer';
     
     @Component({
         selector: 'app-layout-main',
@@ -119,10 +119,10 @@ export class LayoutMainBasicComponent implements OnInit {
     import { RouterModule } from '@angular/router';
     
     /***** Import WUF *****/
-    import { KgConfigurationService } from '@kion/kg-ang-configuration';
-    import { KgLayoutModule } from '@kion/kg-ang-layout';
-    import { KgDrawerModule } from '@kion/kg-ang-drawer';
-    import { KgNavigationModule } from '@kion/kg-ang-navigation';
+    import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+    import { KgLayoutModule } from '@anviltech/wuf-ang-layout';
+    import { KgDrawerModule } from '@anviltech/wuf-ang-drawer';
+    import { KgNavigationModule } from '@anviltech/wuf-ang-navigation';
     
     /***** 3rd Party *****/
     import { MatTooltipModule } from '@angular/material';

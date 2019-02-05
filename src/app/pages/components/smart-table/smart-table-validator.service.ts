@@ -6,7 +6,7 @@
 import { FormGroup, FormControl, Validators} from '@angular/forms';
 import { Injectable } from '@angular/core';
 
-import { KgSmartTableValidatorService } from '@kion/kg-ang-smart-table';
+import { KgSmartTableValidatorService } from '@anviltech/wuf-ang-smart-table';
 
 
 @Injectable()

@@ -5,7 +5,7 @@
 
 import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 
-import { KgSmartTableCell, KgSmartTableDefaultEditor, KgSmartTableEditor } from '@kion/kg-ang-smart-table';
+import { KgSmartTableCell, KgSmartTableDefaultEditor, KgSmartTableEditor } from '@anviltech/wuf-ang-smart-table';
 
 // import { NgbPopover } from '@ng-bootstrap/ng-bootstrap';
 

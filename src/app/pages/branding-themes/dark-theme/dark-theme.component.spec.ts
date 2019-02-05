@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 
 import { DarkThemeComponent } from './dark-theme.component';
 import { ThemeListService } from '../../../internal/theme-list.service';
-import { KgConfigurationService } from '@kion/kg-ang-configuration';
+import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
 
 
 describe('ThemesComponent', () => {

@@ -10,9 +10,9 @@ import { By } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
-import { KgConfigurationService } from '@kion/kg-ang-configuration';
-import { KgLayoutModule } from '@kion/kg-ang-layout';
-import { KgNavigationModule, KgNavigationService } from '@kion/kg-ang-navigation';
+import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { KgLayoutModule } from '@anviltech/wuf-ang-layout';
+import { KgNavigationModule, KgNavigationService } from '@anviltech/wuf-ang-navigation';
 
 import { LayoutMainComponent } from './main.component';
 import { CustomMaterialModule } from '../../material.module';

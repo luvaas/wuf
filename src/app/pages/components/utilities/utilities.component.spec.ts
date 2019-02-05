@@ -10,7 +10,7 @@ import { DebugElement } from '@angular/core';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { KgSentenceCasePipe } from '@kion/kg-ang-utils';
+import { KgSentenceCasePipe } from '@anviltech/wuf-ang-utils';
 import { UtilitiesComponent } from './utilities.component';
 
 

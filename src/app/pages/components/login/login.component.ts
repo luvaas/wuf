@@ -5,7 +5,7 @@
 
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
-import { KgLoginService } from '@kion/kg-ang-login-animated';
+import { KgLoginService } from '@anviltech/wuf-ang-login-animated';
 
 
 @Component({

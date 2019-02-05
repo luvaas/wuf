@@ -18,9 +18,9 @@ Create a Component Stub
 ### Determine Library Component Name
 Our component naming convention follows this format:
 
-@kion/kg-[type]-[component-name]
+@anviltech/wuf-[type]-[component-name]
 
-We use the "@kion/" scope for all components.
+We use the "@anviltech/" scope for all components.
 
 We use "kg-" (i.e., "KION Group") as our prefix for all services, components, modules, etc.
 
@@ -30,15 +30,15 @@ The "component-name" uses Angular's dash-spaced naming convention.
 
 Therefore, if my component is called "Hello World", it's library name will be:
 
-**@kion/kg-web-hello-world**
+**@anviltech/wuf-web-hello-world**
 
 We will use the token [name-of-library] to represent this library component name in the following instructions.
 
 ### Scaffold the Component
-In the following example, we're going to create a 'hello world' web component that shows some simple text as part of example branch DLABS-1234.  We'll call this component `@kion/kg-web-hello-world` and its class name will be `KgWebHelloWorld`.
+In the following example, we're going to create a 'hello world' web component that shows some simple text as part of example branch DLABS-1234.  We'll call this component `@anviltech/wuf-web-hello-world` and its class name will be `KgWebHelloWorld`.
 
 1. CD to root WUF folder in your terminal (i.e., `~web-ui-framework/`).
-2. Create the component scaffold: *$* `npm init @nutmeg kg-web-hello-world name:string`.  Note that we do NOT include "@kion/" in the package name here, which would create a superfluous @kion folder. A `kg-web-hello-world` folder is created at WUF root at `~web-ui-framework/kg-web-hello-world` folder.  This new folder includes a number of files and children folders.  
+2. Create the component scaffold: *$* `npm init @nutmeg kg-web-hello-world name:string`.  Note that we do NOT include "@anviltech/" in the package name here, which would create a superfluous @anviltech folder. A `kg-web-hello-world` folder is created at WUF root at `~web-ui-framework/kg-web-hello-world` folder.  This new folder includes a number of files and children folders.  
 3. MOVE the new folder into the `~web-ui-framework/` packages folder: *$* `mv kg-web-hello-world projects`
 4. Navigate into the component folder at its new location: *$* `cd packages/kg-web-hello-world`
 5. Remove the `.git` folder: *$* `rm -rf .git`  (Nutmeg assumes a pattern of one git repo per component.  We, on the other hand, want all web components to reside in the same repository as the rest of the WUF.)
@@ -48,7 +48,7 @@ In the following example, we're going to create a 'hello world' web component th
 ### Refine the Component
 * Navigate to the new component's root folder: *$* `cd  ~/web-ui-framework/packages/kg-web-hello-world`
 * Edit `kg-web-hello-world/package.json` as follows:
-  * Replace the `project/` string with the `@kion/` scope of the name property: `"name": "@kion/kg-web-hello-world"`
+  * Replace the `project/` string with the `@anviltech/` scope of the name property: `"name": "@anviltech/wuf-web-hello-world"`
   * Change the version: `"version": "1.0.0"`
   * Improve the description: `"description": "The kg-web-hello-world component"`
   * Add an author: `"author": "Your Name <your email>"`
@@ -141,9 +141,9 @@ Use the component in an External Angular Application
 -----------------------------------------------------
 Your component can only be used in external applications AFTER your work has been merged into master and the new version is automatically published to the Artifactory NPM registry via the Jenkins pipeline.  Once you have ensured that this is the case, follow the steps below to use it in your external application:
 
-* Declare the component in the web application's package.json dependencies:  `"@kion/kg-web-hello-world": "0.0.1",` and run `yarn install`.
-* Alternatively, you can install from the command line: *$* `yarn add @kion/kg-web-hello-world`
-* Import your web component into the app by adding `import "@kion/kg-web-hello-world";` to `~/web-ui-framework/scr/main.ts`.
+* Declare the component in the web application's package.json dependencies:  `"@anviltech/wuf-web-hello-world": "0.0.1",` and run `yarn install`.
+* Alternatively, you can install from the command line: *$* `yarn add @anviltech/wuf-web-hello-world`
+* Import your web component into the app by adding `import "@anviltech/wuf-web-hello-world";` to `~/web-ui-framework/scr/main.ts`.
 * Not all web browsers (like Firefox) support web components natively.  Refer to the Quick Start (Minimal)'s application for examples of how to structure your `polyfill.ts`, `main.ts`, and `index.html` files to implement the proper polyfills.
 * Make sure your `app.module.ts` files is using CUSTOM_ELEMENTS_SCHEMA:
   * Add `import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';` to the top of your `app.module.ts` file

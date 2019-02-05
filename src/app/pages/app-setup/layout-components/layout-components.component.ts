@@ -4,7 +4,7 @@
  */
 
 import { Component, OnInit } from '@angular/core';
-import { KgContentFooterService } from '@kion/kg-ang-layout';
+import { KgContentFooterService } from '@anviltech/wuf-ang-layout';
 
 
 @Component({
@@ -20,7 +20,7 @@ export class LayoutComponentsComponent implements OnInit {
     ngOnInit() {
     }
 
-    styleCode = `@import "~@kion/kg-web-assets/src/assets/styles/library”;`;
+    styleCode = `@import "~@anviltech/wuf-web-assets/src/assets/styles/library”;`;
 
     headCode = `<base href="/">
 	<meta charset="utf-8">
@@ -68,7 +68,7 @@ export class LayoutComponentsComponent implements OnInit {
 	`;
 
     footerToggleCode1 = `import { Component, OnInit } from '@angular/core';
-	import { KgContentFooterService } from '@kion/kg-ang-layout';
+	import { KgContentFooterService } from '@anviltech/wuf-ang-layout';
 	
 	
 	@Component({

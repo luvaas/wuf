@@ -18,4 +18,5 @@ of component variables that can be overridden.
 
 :root[kg-theme="dematic"],
 *[kg-theme="dematic"] {
+    @include kg-theme-logo("/assets/images/logo.svg", 150px, 45px);
 }

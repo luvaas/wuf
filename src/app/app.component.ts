@@ -5,8 +5,8 @@
 
 import { Component, ViewEncapsulation, OnInit, Renderer2, OnDestroy } from '@angular/core';
 
-import { KgConfigurationService } from '@kion/kg-ang-configuration';
-import { deepMerge } from '@kion/kg-ang-utils';
+import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { deepMerge } from '@anviltech/wuf-ang-utils';
 
 import { UserService } from './internal/services/user.service';
 
@@ -15,7 +15,7 @@ import { configuration } from './internal/configuration/configuration';
 
 // The following imports are only used for demo purposes
 import { FakeUser } from './internal/fake-backend/data/user';
-import { KgLoginService } from '@kion/kg-ang-login-animated';
+import { KgLoginService } from '@anviltech/wuf-ang-login-animated';
 
 
 @Component({

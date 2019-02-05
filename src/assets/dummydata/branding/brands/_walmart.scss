@@ -44,7 +44,7 @@ of component variables that can be overridden.
     ));
 
     /***** logo *****/
-    @include kg-theme-logo("/assets/images/example_images/logos/walmart.svg", 140px, 45px);
+    //@include kg-theme-logo("/assets/images/example_images/logos/walmart.svg", 140px, 45px);
 
     /***** buttons *****/
     @include kg-theme-button-radius(4px);
