@@ -17,7 +17,7 @@ import { KgSidebarService } from '../sidebar.service';
 export class KgSidebarFooterComponent implements OnInit {
     @Input() data?: any = [];
     @Input() dataUrl?: string;
-    @Input() copyrightName ? = 'Dematic, Inc.';
+    @Input() copyrightName ? = '';
 
     hasData: boolean;
     footerData: any = [];

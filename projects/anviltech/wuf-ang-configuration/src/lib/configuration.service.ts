@@ -34,7 +34,7 @@ export class KgConfigurationService implements OnInit {
     // Define default values for Configuration
     private _config: KgConfiguration = {
         id: 'kg-application',
-        copyrightName: 'Dematic, Inc.',
+        copyrightName: '',
         navigation: {
             position: 'left',
             iconPosition: 'left',

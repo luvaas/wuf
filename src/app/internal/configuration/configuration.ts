@@ -6,7 +6,7 @@
 export const configuration = {
     id: 'kg-living-style-guide',
     name: 'Living Style Guide',
-    copyrightName: 'Dematic, Inc.',
+    copyrightName: '[Company Name]',
     navigation: {
         position: 'left',
         iconPosition: 'left',

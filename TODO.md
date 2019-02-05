@@ -63,7 +63,7 @@ FUTURE:
 [ ] create a split-panel component
 [ ] implement BFF as a importable package for WUF
 [ ] add search functionality to styleguide
-[ ] move page title to right of page
+[x] move page title to right of page
 [ ] set page titles using value from navigation.json
 [ ] Add example Google charts to WUF
 [ ] create demo of theme creation

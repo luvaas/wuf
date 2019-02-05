@@ -49,7 +49,7 @@ export class SetupConfigurationComponent implements OnInit {
     {
         id:                     'kg-living-style-guide',
         name:                   'Living Style Guide',
-        copyrightName:          'Dematic, Inc.'
+        copyrightName:          'ACME, Inc.'
         navigation: {
             position:       'left',
             iconPosition:   'left',
