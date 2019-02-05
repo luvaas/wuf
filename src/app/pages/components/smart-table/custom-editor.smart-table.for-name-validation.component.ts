@@ -24,7 +24,7 @@ import { KgSmartTableCell, KgSmartTableDefaultEditor, KgSmartTableEditor } from 
         }
 
         .error {
-            border-color: var(--kg-color-danger)
+            border-color: var(--wuf-color-danger)
         }
     `],
     template: `

@@ -53,7 +53,7 @@ describe('<kg-code-sample>', () => {
         });
     });
 
-    // describe('--kg-code-sample-background-color', () => {
+    // describe('--wuf-code-sample-background-color', () => {
     // 	describe('with default', () => {
     // 		beforeEach(() => {
     // 			component = fixture.load(fixturePath)[FIXTURES.SLOT];

@@ -4,10 +4,10 @@
  */
 
 @mixin reset-text {
-    font-family: var(--kg-font-family-base);
+    font-family: var(--wuf-font-family-base);
     // We deliberately do NOT reset font-size or word-wrap.
     font-style: normal;
-    font-weight: var(--kg-font-weight-normal);
+    font-weight: var(--wuf-font-weight-normal);
     line-height: $line-height-base;
     text-align: left; // Fallback for where `start` is not supported
     text-align: start; // stylelint-disable-line declaration-block-no-duplicate-properties

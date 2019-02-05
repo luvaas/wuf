@@ -12,11 +12,11 @@ $loginAnimationSpeed: .75; // speed in seconds
 //Expose custom properties for overrides
 :host {
     /*     local var        ||       global override          ||       default value        */
-    --login-bg-color:           var(--kg-login-bg-color,            var(--kg-color-secondary, #424242));
-    --login-bg-accent-color:    var(--kg-login-bg-accent-color,     var(--kg-color-primary));
+    --login-bg-color:           var(--wuf-login-bg-color,            var(--wuf-color-secondary, #424242));
+    --login-bg-accent-color:    var(--wuf-login-bg-accent-color,     var(--wuf-color-primary));
 
     // header
-    --header-height:            var(--kg-header-height,             60px);
+    --header-height:            var(--wuf-header-height,             60px);
 }
 
 .login-wrap {
@@ -103,9 +103,9 @@ $loginAnimationSpeed: .75; // speed in seconds
         pointer-events: none;
         padding: 20px;
         .login-content-wrap {
-            background-color: rgba(var(--kg-color-rgb-secondary), .8);
+            background-color: rgba(var(--wuf-color-rgb-secondary), .8);
             text-align: left;
-            color: var(--kg-body-color);
+            color: var(--wuf-body-color);
             display: inline-block;
             margin: 0 auto;
             box-shadow: 0 10px 20px 0 rgba(#000, .5);
@@ -117,8 +117,8 @@ $loginAnimationSpeed: .75; // speed in seconds
             transition: all linear .25s;
             .login-titlebar {
                 padding: 10px 20px;
-                background-color: var(--kg-color-secondary-darker-10);
-                color: var(--kg-color-white);
+                background-color: var(--wuf-color-secondary-darker-10);
+                color: var(--wuf-color-white);
             }
             .login-content {
                 padding: 20px 10px;
@@ -136,13 +136,13 @@ $loginAnimationSpeed: .75; // speed in seconds
                     .login-button-wrap {
                         text-align: right;
                     }
-                    --kg-input-hover-bg-color:          var(--kg-input-bg-color);
+                    --wuf-input-hover-bg-color:          var(--wuf-input-bg-color);
                 }
             }
         }
     }
     .login-logo {
-        background-image: var(--kg-logo-url);
+        background-image: var(--wuf-logo-url);
         background-repeat: no-repeat;
         background-position: bottom right;
         width: 100px;

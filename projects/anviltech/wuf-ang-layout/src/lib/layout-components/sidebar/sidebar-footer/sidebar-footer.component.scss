@@ -10,10 +10,10 @@ kg-sidebar-footer {
 }
 
 .sidebar-footer-wrap {
-    height: var(--kg-sidebar-footer-height, var(--kg-footer-height));
-    background-color: var(--kg-sidebar-footer-bg-color, var(--kg-color-secondary-darker-15));
+    height: var(--wuf-sidebar-footer-height, var(--wuf-footer-height));
+    background-color: var(--wuf-sidebar-footer-bg-color, var(--wuf-color-secondary-darker-15));
     font-size: .75em;
-    color: var(--kg-sidebar-footer-color, var(--kg-color-secondary-lighter-10));
+    color: var(--wuf-sidebar-footer-color, var(--wuf-color-secondary-lighter-10));
     display: flex;
     align-items: center;
     ul.sidebar-footer {
@@ -54,8 +54,8 @@ kg-sidebar-footer {
                 display: inline-block;
                 padding: 10px 0;
                 &:hover {
-                    color: var(--kg-sidebar-footer-hover-color, var(--kg-color-secondary-lighter-20));
-                    background-color: var(--kg-sidebar-footer-hover-bg-color, var(--kg-color-secondary-darker-25));
+                    color: var(--wuf-sidebar-footer-hover-color, var(--wuf-color-secondary-lighter-20));
+                    background-color: var(--wuf-sidebar-footer-hover-bg-color, var(--wuf-color-secondary-darker-25));
                 }
                 .material-icons {
                     padding: 0px;
@@ -65,8 +65,8 @@ kg-sidebar-footer {
             }
             &.active {
                 a, a:hover {
-                    color: var(--kg-sidebar-footer-active-color, var(--kg-color-white));
-                    background-color: var(--kg-sidebar-footer-active-bg-color, var(--kg-color-primary));
+                    color: var(--wuf-sidebar-footer-active-color, var(--wuf-color-white));
+                    background-color: var(--wuf-sidebar-footer-active-bg-color, var(--wuf-color-primary));
                 }
             }
         }

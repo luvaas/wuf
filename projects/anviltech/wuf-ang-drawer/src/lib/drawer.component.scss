@@ -6,10 +6,10 @@
 //Expose custom properties for overrides
 :host {
     /*     local var           ||            global override            ||        default value        */
-    --drawer-width:                   var( --kg-drawer-width,                     300px );
-    --drawer-header-bg-color:         var( --kg-drawer-header-bg-color,           rgba(0,0,0, .05) );
-    --drawer-body-bg-color:           var( --kg-drawer-body-bg-color,             var(--kg-body-bg, var(--kg-color-gray-100, #404040) ) );
-    --drawer-shield-bg-color:         var( --kg-drawer-shield-bg-color,           rgba(0,0,0, .2) );
+    --drawer-width:                   var( --wuf-drawer-width,                     300px );
+    --drawer-header-bg-color:         var( --wuf-drawer-header-bg-color,           rgba(0,0,0, .05) );
+    --drawer-body-bg-color:           var( --wuf-drawer-body-bg-color,             var(--wuf-body-bg, var(--wuf-color-gray-100, #404040) ) );
+    --drawer-shield-bg-color:         var( --wuf-drawer-shield-bg-color,           rgba(0,0,0, .2) );
 }
 
 .drawer-wrap {

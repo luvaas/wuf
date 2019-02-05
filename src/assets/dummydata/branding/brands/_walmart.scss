@@ -51,7 +51,7 @@ of component variables that can be overridden.
 
     /***** typography *****/
     @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Slab');
-    $kg-brand-body-color: var(--kg-color-gray-700);
+    $kg-brand-body-color: var(--wuf-color-gray-700);
     $kg-brand-font-family-sans-serif: 'Oswald', Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     $kg-brand-font-family-serif: 'Roboto Slab', Times, serif;
     $kg-brand-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -59,7 +59,7 @@ of component variables that can be overridden.
     $kg-brand-font-size-base: 1rem;
     $kg-brand-headings-font-family: $kg-brand-font-family-serif;
     $kg-brand-headings-font-weight: 700;
-    $kg-brand-headings-color: var(--kg-color-primary-darker-10);
+    $kg-brand-headings-color: var(--wuf-color-primary-darker-10);
     $kg-brand-h1-font-size: 2.5rem;
     $kg-brand-h2-font-size: 2rem;
     $kg-brand-h3-font-size: 1.75rem;
@@ -86,29 +86,29 @@ of component variables that can be overridden.
     );
 
     /***** toolbar *****/
-    --kg-toolbar-bg-color: var(--kg-color-secondary-lighter-50);
+    --wuf-toolbar-bg-color: var(--wuf-color-secondary-lighter-50);
 
     /***** breadcrumb *****/
-    --kg-breadcrumb-color: var(--kg-color-secondary-lighter-30);
+    --wuf-breadcrumb-color: var(--wuf-color-secondary-lighter-30);
 
     /***** tabs *****/
-    --kg-tabs-color: var(--kg-body-color);
-    --kg-tabs-wrap-bg-color: var(--kg-toolbar-bg-color);
+    --wuf-tabs-color: var(--wuf-body-color);
+    --wuf-tabs-wrap-bg-color: var(--wuf-toolbar-bg-color);
 
     /***** dark theme overrides *****/
     &[kg-theme-dark="true"] {
 
         /***** body *****/
-        --kg-body-color: var(--kg-color-gray-100);
+        --wuf-body-color: var(--wuf-color-gray-100);
 
         /***** toolbar *****/
-        --kg-toolbar-bg-color: var(--kg-color-secondary-lighter-10);
+        --wuf-toolbar-bg-color: var(--wuf-color-secondary-lighter-10);
 
         /***** breadcrumb *****/
-        --kg-breadcrumb-color: var(--kg-color-secondary-lighter-40);
+        --wuf-breadcrumb-color: var(--wuf-color-secondary-lighter-40);
 
         /***** tabs *****/
-        --kg-tabs-color: var(--kg-body-color);
-        --kg-tabs-wrap-bg-color: var(--kg-toolbar-bg-color);
+        --wuf-tabs-color: var(--wuf-body-color);
+        --wuf-tabs-wrap-bg-color: var(--wuf-toolbar-bg-color);
     }
 }

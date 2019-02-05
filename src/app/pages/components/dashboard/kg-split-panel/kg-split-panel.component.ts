@@ -132,7 +132,7 @@ export class KgSplitPanelComponent implements OnInit {
 
     // restorePanelStyles(newWidth?: number, turnOffTransition?: boolean) {
     // 	if (newWidth) {
-    // 		// this.sidebarResizer.nativeElement.setProperty('--kg-Panel-width-current', `${newWidth}px`);
+    // 		// this.sidebarResizer.nativeElement.setProperty('--wuf-Panel-width-current', `${newWidth}px`);
     // 	}
     // }
     //

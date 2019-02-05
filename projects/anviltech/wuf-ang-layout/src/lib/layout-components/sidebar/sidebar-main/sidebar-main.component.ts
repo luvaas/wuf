@@ -231,8 +231,8 @@ export class KgSidebarMainComponent implements OnInit, OnDestroy {
 
     restoreSidebarStyles(newWidth?: number, turnOffTransition?: boolean) {
         if (newWidth) {
-            // We're doing something clever here with CSS custom properties.  When --kg-sidebar-width-current is set, the sidebar will use this value for sizing.  When not set, sidebar width will revert to --kg-sidebar-width.  View sidebar-main.component.scss to see how the CSS custom props are used.  This mechanism allows us to also expand/collapse the sidebar with the toggler without writing any inline CSS to the element.
-            document.documentElement.style.setProperty('--kg-sidebar-width-current', `${newWidth}px`);
+            // We're doing something clever here with CSS custom properties.  When --wuf-sidebar-width-current is set, the sidebar will use this value for sizing.  When not set, sidebar width will revert to --wuf-sidebar-width.  View sidebar-main.component.scss to see how the CSS custom props are used.  This mechanism allows us to also expand/collapse the sidebar with the toggler without writing any inline CSS to the element.
+            document.documentElement.style.setProperty('--wuf-sidebar-width-current', `${newWidth}px`);
         }
 
         // The above trick with CSS custom properties doesn't work for the transition property.  This is because setting a value for a custom property with "none" or "inherit" doesn't actually create a CSS custom property.  So instead we need to fall back on writing the cssText to the element.
@@ -241,13 +241,13 @@ export class KgSidebarMainComponent implements OnInit, OnDestroy {
         this.sidebarWrap.nativeElement.style.cssText = sidebarStyles;
 
         if (this.getSidebarWidth() <= this.fontsizeBreakpointTiny) {
-            document.documentElement.style.setProperty('--kg-sidebar-text-current', '.7rem');
+            document.documentElement.style.setProperty('--wuf-sidebar-text-current', '.7rem');
         }
         else if (this.getSidebarWidth() <= this.fontsizeBreakpointSmall) {
-            document.documentElement.style.setProperty('--kg-sidebar-text-current', '.8rem');
+            document.documentElement.style.setProperty('--wuf-sidebar-text-current', '.8rem');
         }
         else {
-            document.documentElement.style.setProperty('--kg-sidebar-text-current', '1rem');
+            document.documentElement.style.setProperty('--wuf-sidebar-text-current', '1rem');
         }
     }
 

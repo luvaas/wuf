@@ -47,7 +47,7 @@ kg-drawer {
             display: block;
         }
         .mat-slide-toggle {
-            margin-bottom: calc(var(--kg-spacer)/2);
+            margin-bottom: calc(var(--wuf-spacer)/2);
             ::ng-deep {
                 label.mat-slide-toggle-label {
                     display: flex;

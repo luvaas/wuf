@@ -12,7 +12,7 @@ $_documentContainer1.innerHTML = `
 		<style>
 			/* Table */
 			#table {
-				background-color: var(--kg-table-bg-color);
+				background-color: var(--wuf-table-bg-color);
 			}
 			
 			/* Headers and footers */
@@ -21,8 +21,8 @@ $_documentContainer1.innerHTML = `
 			}
 			
 			[part~="header-cell"]:not([part~="details-cell"]) {
-				background-color: var(--kg-table-head-bg-color);
-				color: var(--kg-body-color);
+				background-color: var(--wuf-table-head-bg-color);
+				color: var(--wuf-body-color);
 				box-shadow: 0 3px 3px rgba(0,0,0,0.14), 0 1px 1px rgba(0,0,0,0.2);
 				position: relative;
 				height: 55px;
@@ -44,10 +44,10 @@ $_documentContainer1.innerHTML = `
 				
 				/***** make the filter's floating label use the primary color both on focus and when there is a value in the input.  As per UX Board guidelines, a filter with a value should always show its label using the primary color. *****/
 				--paper-input-container-label-floating: {
-					color: var(--kg-color-primary, var(--primary-color));
+					color: var(--wuf-color-primary, var(--primary-color));
 				};
 				--paper-input-container-label-focus: {
-					color: var(--kg-color-primary, var(--primary-color));
+					color: var(--wuf-color-primary, var(--primary-color));
 				};
 			}
 			
@@ -57,20 +57,20 @@ $_documentContainer1.innerHTML = `
 			}
 			[part~="body-cell"] {
 				background-color: transparent;
-				color: var(--kg-body-color);
+				color: var(--wuf-body-color);
 			}
 		
 			/* Row stripes */
 			[part~="row"] {
-				background-color: var(--kg-table-bg-color);
+				background-color: var(--wuf-table-bg-color);
 			}
 			[part~="row"]:not([odd]) [part~="body-cell"],
 			[part~="row"]:not([odd]) [part~="details-cell"] {
-				background-color: var(--kg-table-accent-bg-color);
+				background-color: var(--wuf-table-accent-bg-color);
 				background-repeat: repeat-x;
 			}
 			[part~="row"]:hover [part~="body-cell"] {
-				background-color: var(--kg-table-hover-bg-color);
+				background-color: var(--wuf-table-hover-bg-color);
 			}
 		</style>
 	</template>
@@ -87,7 +87,7 @@ $_documentContainer2.innerHTML = `
 		<style>
 			:host {
 				line-height: inherit;
-				color: var(--kg-body-color);
+				color: var(--wuf-body-color);
 			}
 			
 			[part="indicators"]::before {
@@ -107,14 +107,14 @@ $_documentContainer3.innerHTML = `
 	
 	vaadin-grid-sorter,
 	vaadin-grid-sorter[direction] {
-		color: var(--kg-body-color);
+		color: var(--wuf-body-color);
 	}
 	
 	vaadin-grid-sorter iron-icon {
 		transform: scale(0.8) translateZ(0);
 		transition: all 0.3s;
 		display:inline-block;
-		color: var(--kg-body-color);
+		color: var(--wuf-body-color);
 	}
 	
 	/* left-align sorter */

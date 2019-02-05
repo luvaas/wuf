@@ -10,31 +10,31 @@
     /*     local var         ||                  global override              ||                 default value        */
 
     // Default toolbar
-    --toolbar-color:                        var(--kg-toolbar-color,                         var(--kg-body-color));
-    --toolbar-bg-color:                     var(--kg-toolbar-bg-color,                      var(--kg-color-gray-200));
-    --toolbar-height:                       var(--kg-toolbar-height,                        40px);
-    --toolbar-link-color:                   var(--kg-toolbar-link-color,                    var(--kg-gray));
-    --toolbar-link-hover-color:             var(--kg-toolbar-link-hover-color,              var(--kg-color-gray-800));
-    --toolbar-button-color:                 var(--kg-toolbar-button-color,                  var(--kg-gray));
-    --toolbar-button-bg-color:              var(--kg-toolbar-button-bg-color,               var(--kg-color-gray-200));
-    --toolbar-button-hover-color:           var(--kg-toolbar-button-bg-hover-color,         var(--kg-color-gray-100));
+    --toolbar-color:                        var(--wuf-toolbar-color,                         var(--wuf-body-color));
+    --toolbar-bg-color:                     var(--wuf-toolbar-bg-color,                      var(--wuf-color-gray-200));
+    --toolbar-height:                       var(--wuf-toolbar-height,                        40px);
+    --toolbar-link-color:                   var(--wuf-toolbar-link-color,                    var(--wuf-gray));
+    --toolbar-link-hover-color:             var(--wuf-toolbar-link-hover-color,              var(--wuf-color-gray-800));
+    --toolbar-button-color:                 var(--wuf-toolbar-button-color,                  var(--wuf-gray));
+    --toolbar-button-bg-color:              var(--wuf-toolbar-button-bg-color,               var(--wuf-color-gray-200));
+    --toolbar-button-hover-color:           var(--wuf-toolbar-button-bg-hover-color,         var(--wuf-color-gray-100));
 
     // Application-level header toolbar
 
     // logo
-    --logo-url:                             var(--kg-logo-url,                              url('~@anviltech/wuf-web-assets/assets/images/logo.svg')); // Point to the local instance.  Angular compiler will figure out what the path should be in the consuming app.
-    --header-logo-width:                    var(--kg-header-logo-width,                     150px);
-    --header-logo-height:                   var(--kg-header-logo-height,                    45px);
+    --logo-url:                             var(--wuf-logo-url,                              url('~@anviltech/wuf-web-assets/assets/images/logo.svg')); // Point to the local instance.  Angular compiler will figure out what the path should be in the consuming app.
+    --header-logo-width:                    var(--wuf-header-logo-width,                     150px);
+    --header-logo-height:                   var(--wuf-header-logo-height,                    45px);
 
-    --header-color:                         var(--kg-header-color,                          var(--kg-color-secondary-lighter-50));
-    --header-bg-color:                      var(--kg-header-bg-color,                       var(--kg-color-secondary-darker-15));
-    --header-height:                        var(--kg-header-height,                         60px);
-    --header-link-color:                    var(--kg-header-link-color,                     var(--kg-color-secondary-lighter-50));
-    --header-link-hover-color:              var(--kg-header-link-hover-color,               var(--kg-color-secondary-lighter-60));
-    --header-button-color:                  var(--kg-header-button-color,                   var(--kg-color-secondary-lighter-60));
-    --header-button-color-hover:            var(--kg-header-button-color-hover,             var(--kg-color-white));
-    --header-button-bg-color:               var(--kg-header-button-bg-color,                var(--kg-color-secondary-lighter-20));
-    --header-button-bg-hover-color:         var(--kg-header-button-bg-hover-color,          var(--kg-color-secondary-lighter-30));
+    --header-color:                         var(--wuf-header-color,                          var(--wuf-color-secondary-lighter-50));
+    --header-bg-color:                      var(--wuf-header-bg-color,                       var(--wuf-color-secondary-darker-15));
+    --header-height:                        var(--wuf-header-height,                         60px);
+    --header-link-color:                    var(--wuf-header-link-color,                     var(--wuf-color-secondary-lighter-50));
+    --header-link-hover-color:              var(--wuf-header-link-hover-color,               var(--wuf-color-secondary-lighter-60));
+    --header-button-color:                  var(--wuf-header-button-color,                   var(--wuf-color-secondary-lighter-60));
+    --header-button-color-hover:            var(--wuf-header-button-color-hover,             var(--wuf-color-white));
+    --header-button-bg-color:               var(--wuf-header-button-bg-color,                var(--wuf-color-secondary-lighter-20));
+    --header-button-bg-hover-color:         var(--wuf-header-button-bg-hover-color,          var(--wuf-color-secondary-lighter-30));
 }
 
 :host {
@@ -153,8 +153,8 @@
             vertical-align: middle;
             width: var(--header-logo-width);
             height: var(--header-logo-height);
-            max-width: 250px;
-            max-height: 40px;
+            max-width: 200px;
+            max-height: 35px;
             margin: 0 40px 0 6px;
         }
         .header-title-wrap {

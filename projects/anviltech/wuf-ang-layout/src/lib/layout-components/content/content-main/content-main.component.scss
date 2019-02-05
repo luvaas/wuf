@@ -5,7 +5,7 @@
 
 :host {
     /*     local var           ||               global override           ||           default value      */
-    --content-padding:                      var(--kg-content-padding,                       20px);
+    --content-padding:                      var(--wuf-content-padding,                       20px);
 }
 
 :host {

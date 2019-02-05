@@ -97,7 +97,7 @@ export class ThemesComponent implements OnInit {
     exampleFontCode = `
 	body {
 		/***** typography *****/
-		$kg-brand-body-color:                  var(--kg-color-gray-700);
+		$kg-brand-body-color:                  var(--wuf-color-gray-700);
 		$kg-brand-font-family-sans-serif:      Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 		$kg-brand-font-family-serif:           "Times New Roman", Times, serif;
 		$kg-brand-font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -105,7 +105,7 @@ export class ThemesComponent implements OnInit {
 		$kg-brand-font-size-base:              1rem;
 		$kg-brand-headings-font-family:        inherit;
 		$kg-brand-headings-font-weight:        700;
-		$kg-brand-headings-color:              var(--kg-color-primary-darker-10);
+		$kg-brand-headings-color:              var(--wuf-color-primary-darker-10);
 		$kg-brand-h1-font-size:                2.5rem;
 		$kg-brand-h2-font-size:                2rem;
 		$kg-brand-h3-font-size:                1.75rem;
@@ -162,7 +162,7 @@ export class ThemesComponent implements OnInit {
 		@include kg-theme-button-radius(20px);
 		
 		/***** typography *****/
-		$kg-brand-body-color:                  var(--kg-color-gray-700);
+		$kg-brand-body-color:                  var(--wuf-color-gray-700);
 		$kg-brand-font-family-sans-serif:      Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 		$kg-brand-font-family-serif:           "Times New Roman", Times, serif;
 		$kg-brand-font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -170,7 +170,7 @@ export class ThemesComponent implements OnInit {
 		$kg-brand-font-size-base:              1rem;
 		$kg-brand-headings-font-family:        inherit;
 		$kg-brand-headings-font-weight:        700;
-		$kg-brand-headings-color:              var(--kg-color-primary-darker-10);
+		$kg-brand-headings-color:              var(--wuf-color-primary-darker-10);
 		$kg-brand-h1-font-size:                2.5rem;
 		$kg-brand-h2-font-size:                2rem;
 		$kg-brand-h3-font-size:                1.75rem;

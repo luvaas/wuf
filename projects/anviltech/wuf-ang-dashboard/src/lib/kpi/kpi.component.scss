@@ -5,7 +5,7 @@
 
 :host {
     /*     local var                  ||         global override              ||                 default value        */
-    --dashboard-content-padding:        var(--kg-dashboard-content-padding,                         20px);
+    --dashboard-content-padding:        var(--wuf-dashboard-content-padding,                         20px);
 }
 
 .kpi-content {

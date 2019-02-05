@@ -10,8 +10,8 @@
 .alert {
     position: relative;
     padding: 15px;
-    margin-bottom: var(--kg-spacer);
-    @include border-radius(var(--kg-border-radius));
+    margin-bottom: var(--wuf-spacer);
+    @include border-radius(var(--wuf-border-radius));
 }
 
 // Headings for larger alerts
@@ -22,7 +22,7 @@
 
 // Provide class for links that match alerts
 .alert-link {
-    font-weight: var(--kg-font-weight-bold);
+    font-weight: var(--wuf-font-weight-bold);
 }
 
 // Alternate styles

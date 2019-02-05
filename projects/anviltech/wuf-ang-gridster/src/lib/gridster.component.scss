@@ -6,13 +6,13 @@
 //Expose custom properties for overrides
 :host {
     /*     local var           ||            global override                  ||          default value        */
-    --gridster-bg-color:                var( --kg-gridster-bg-color,                   rgba(0,0,0,.15) );
-    --gridster-preview-bg-color:        var( --kg-gridster-preview-bg-color,           rgba(0, 0, 0, 0.15) );
-    --gridster-grid-line-color:         var( --kg-gridster-grid-line-color,            rgba(0, 0, 0, 0.15) );
-    --gridster-title-bg-color:          var( --kg-gridster-title-bg-color,             var(--kg-card-bg-color, transparent ) );
-    --gridster-title-border-color:      var( --kg-gridster-title-border-color,         var(--kg-gridster-title-border-color, var(--kg-border-color)) );
-    --gridster-resize-handle-color:     var( --kg-gridster-resize-handle-color,        rgba(0,0,0,.15) );
-    --gridster-content-padding:         var( --kg-gridster-content-padding,            20px );
+    --gridster-bg-color:                var( --wuf-gridster-bg-color,                   rgba(0,0,0,.15) );
+    --gridster-preview-bg-color:        var( --wuf-gridster-preview-bg-color,           rgba(0, 0, 0, 0.15) );
+    --gridster-grid-line-color:         var( --wuf-gridster-grid-line-color,            rgba(0, 0, 0, 0.15) );
+    --gridster-title-bg-color:          var( --wuf-gridster-title-bg-color,             var(--wuf-card-bg-color, transparent ) );
+    --gridster-title-border-color:      var( --wuf-gridster-title-border-color,         var(--wuf-gridster-title-border-color, var(--wuf-border-color)) );
+    --gridster-resize-handle-color:     var( --wuf-gridster-resize-handle-color,        rgba(0,0,0,.15) );
+    --gridster-content-padding:         var( --wuf-gridster-content-padding,            20px );
 }
 
 gridster {
@@ -33,7 +33,7 @@ gridster {
 
 gridster-item {
     box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-    background-color: var(--kg-card-bg-color);
+    background-color: var(--wuf-card-bg-color);
 
     ::ng-deep {
         .gridster-item-title {

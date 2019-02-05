@@ -17,58 +17,58 @@ The general rules of SCSS vs CSS custom properties are:
 
     /***** colors *****/
     // Note that most color-related CSS Custom propeties are created in the _theme-default.scss file
-    --kg-color-white: #{$white};
-    --kg-color-gray-100: #{$gray-100};
-    --kg-color-gray-200: #{$gray-200};
-    --kg-color-gray-300: #{$gray-300};
-    --kg-color-gray-400: #{$gray-400};
-    --kg-color-gray-500: #{$gray-500};
-    --kg-color-gray-600: #{$gray-600};
-    --kg-color-gray-700: #{$gray-700};
-    --kg-color-gray-800: #{$gray-800};
-    --kg-color-gray-900: #{$gray-900};
-    --kg-color-black: #{$black};
+    --wuf-color-white: #{$white};
+    --wuf-color-gray-100: #{$gray-100};
+    --wuf-color-gray-200: #{$gray-200};
+    --wuf-color-gray-300: #{$gray-300};
+    --wuf-color-gray-400: #{$gray-400};
+    --wuf-color-gray-500: #{$gray-500};
+    --wuf-color-gray-600: #{$gray-600};
+    --wuf-color-gray-700: #{$gray-700};
+    --wuf-color-gray-800: #{$gray-800};
+    --wuf-color-gray-900: #{$gray-900};
+    --wuf-color-black: #{$black};
 
     /***** misc *****/
-    --kg-spacer: #{$spacer};
+    --wuf-spacer: #{$spacer};
 
     /***** body *****/
-    --kg-body-bg: var(--kg-color-gray-100);
+    --wuf-body-bg: var(--wuf-color-gray-100);
 
     /***** border *****/
-    --kg-border-width: #{$border-width};
-    --kg-border-color: #{$border-color};
-    --kg-border-radius: #{$border-radius};
+    --wuf-border-width: #{$border-width};
+    --wuf-border-color: #{$border-color};
+    --wuf-border-radius: #{$border-radius};
 
     /***** links *****/
-    --kg-link-color: var(--kg-color-primary);
-    --kg-link-decoration: none;
-    --kg-link-hover-color: var(--kg-color-primary-darker-5);
-    --kg-link-hover-decoration: underline;
+    --wuf-link-color: var(--wuf-color-primary);
+    --wuf-link-decoration: none;
+    --wuf-link-hover-color: var(--wuf-color-primary-darker-5);
+    --wuf-link-hover-decoration: underline;
 
     /***** tables (table props are here because they are shared across standard HTML tables, Vaadin grids, and the Smart Table component) *****/
-    --kg-table-bg-color: var(--kg-color-white);
-    --kg-table-border-width: var(--kg-border-width);
-    --kg-table-border-color: var(--kg-border-color);
-    --kg-table-head-bg-color: var(--kg-color-white);
-    --kg-table-head-color: var(--kg-body-color);
-    --kg-table-filter-bg-color: var(--kg-color-secondary-lighter-30);
-    --kg-table-filter-color: var(--kg-color-gray-400);
-    --kg-table-cell-padding-vert: 5px;
-    --kg-table-cell-padding-horiz: 20px;
-    --kg-table-action-padding: 4px;
-    --kg-table-font-size: 1rem;
-    --kg-table-active-bg-color: var(--kg-color-primary-lighter-30);
-    --kg-table-accent-bg-color: var(--kg-color-gray-100);
-    --kg-table-hover-bg-color: var(--kg-color-gray-200);
+    --wuf-table-bg-color: var(--wuf-color-white);
+    --wuf-table-border-width: var(--wuf-border-width);
+    --wuf-table-border-color: var(--wuf-border-color);
+    --wuf-table-head-bg-color: var(--wuf-color-white);
+    --wuf-table-head-color: var(--wuf-body-color);
+    --wuf-table-filter-bg-color: var(--wuf-color-secondary-lighter-30);
+    --wuf-table-filter-color: var(--wuf-color-gray-400);
+    --wuf-table-cell-padding-vert: 5px;
+    --wuf-table-cell-padding-horiz: 20px;
+    --wuf-table-action-padding: 4px;
+    --wuf-table-font-size: 1rem;
+    --wuf-table-active-bg-color: var(--wuf-color-primary-lighter-30);
+    --wuf-table-accent-bg-color: var(--wuf-color-gray-100);
+    --wuf-table-hover-bg-color: var(--wuf-color-gray-200);
 
     /***** layout sizing *****/
-    --kg-header-height: #{$header-height};
-    --kg-footer-height: #{$footer-height};
-    --kg-content-footer-height: var(--kg-footer-height);
-    --kg-sidebar-width: 230px;
+    --wuf-header-height: #{$header-height};
+    --wuf-footer-height: #{$footer-height};
+    --wuf-content-footer-height: var(--wuf-footer-height);
+    --wuf-sidebar-width: 230px;
 
     /***** scrolling areas *****/
-    --kg-scroll-track-bg-color: var(--kg-color-gray-200);
-    --kg-scroll-thumb-bg-color: var(--kg-color-gray-400);
+    --wuf-scroll-track-bg-color: var(--wuf-color-gray-200);
+    --wuf-scroll-thumb-bg-color: var(--wuf-color-gray-400);
 }

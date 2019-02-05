@@ -53,7 +53,7 @@ $print-body-min-width: map-get($grid-breakpoints, "lg");
         }
         pre,
         blockquote {
-            border: var(--kg-border-width) solid #999; // Bootstrap custom code; using `$border-width` instead of 1px
+            border: var(--wuf-border-width) solid #999; // Bootstrap custom code; using `$border-width` instead of 1px
             page-break-inside: avoid;
         }
 
@@ -103,7 +103,7 @@ $print-body-min-width: map-get($grid-breakpoints, "lg");
             display: none;
         }
         .badge {
-            border: var(--kg-border-width) solid #000;
+            border: var(--wuf-border-width) solid #000;
         }
 
         .table {

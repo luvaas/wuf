@@ -5,13 +5,13 @@
 
 :host {
     /*     local var         ||         global override              ||                 default value        */
-    --kpi-border-color:             var(--kg-kpi-border-color,                  var(--kg-color-gray-400));
-    --kpi-stripe-color:             var(--kg-kpi-stripe-color,                  var(--kpi-border-color));
-    --kpi-label-color:              var(--kg-kpi-label-color,                   var(--kg-color-gray-600));
-    --kpi-bg-color:                 var(--kg-kpi-bg-color,                      var(--kg-color-gray-200));
+    --kpi-border-color:             var(--wuf-kpi-border-color,                  var(--wuf-color-gray-400));
+    --kpi-stripe-color:             var(--wuf-kpi-stripe-color,                  var(--kpi-border-color));
+    --kpi-label-color:              var(--wuf-kpi-label-color,                   var(--wuf-color-gray-600));
+    --kpi-bg-color:                 var(--wuf-kpi-bg-color,                      var(--wuf-color-gray-200));
 
-    --kpi-active-bg-color:          var(--kg-kpi-active-bg-color,               var(--kg-color-primary-darker-5));
-    --kpi-active-stripe-color:      var(--kg-kpi-active-stripe-color,           var(--kg-color-primary-lighter-10));
+    --kpi-active-bg-color:          var(--wuf-kpi-active-bg-color,               var(--wuf-color-primary-darker-5));
+    --kpi-active-stripe-color:      var(--wuf-kpi-active-stripe-color,           var(--wuf-color-primary-lighter-10));
 }
 
 :host {
@@ -67,7 +67,7 @@
         background-color: var(--kpi-active-bg-color);
         border-right-color: var(--kpi-active-stripe-color);
         background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
-        --kg-body-color: var(--kg-color-white);
+        --wuf-body-color: var(--wuf-color-white);
         .label-wrap {
             .label {
                 color: #fff;

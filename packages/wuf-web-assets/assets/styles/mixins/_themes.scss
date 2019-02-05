@@ -207,43 +207,43 @@
 
     // Create CSS custom properties for every theme color passed in the map
     @each $name, $color in $map {
-        --kg-color-#{$name}: #{$color};
+        --wuf-color-#{$name}: #{$color};
     }
 
-    // Create CSS custom properties for RGB variants of theme colors -- these can be used in CSS rgb/rgba functions.  E.g. rgba(var(--kg-color-rgb-primary), .5);
+    // Create CSS custom properties for RGB variants of theme colors -- these can be used in CSS rgb/rgba functions.  E.g. rgba(var(--wuf-color-rgb-primary), .5);
     @each $name, $color in $map {
-        --kg-color-rgb-#{$name}: #{red($color)}, #{green($color)}, #{blue($color)};
+        --wuf-color-rgb-#{$name}: #{red($color)}, #{green($color)}, #{blue($color)};
     }
 
     // Create CSS custom properties for lighter/darker shade variants of theme colors
     @each $name, $color in $map {
-        --kg-color-#{$name}-lighter-10: #{lighten($color, 10%)};
-        --kg-color-#{$name}-lighter-20: #{lighten($color, 20%)};
-        --kg-color-#{$name}-lighter-30: #{lighten($color, 30%)};
-        --kg-color-#{$name}-lighter-40: #{lighten($color, 40%)};
-        --kg-color-#{$name}-lighter-50: #{lighten($color, 50%)};
-        --kg-color-#{$name}-lighter-60: #{lighten($color, 60%)};
-        --kg-color-#{$name}-lighter-70: #{lighten($color, 70%)};
-        --kg-color-#{$name}-darker-5: #{darken($color, 5%)};
-        --kg-color-#{$name}-darker-10: #{darken($color, 10%)};
-        --kg-color-#{$name}-darker-15: #{darken($color, 15%)};
-        --kg-color-#{$name}-darker-20: #{darken($color, 20%)};
-        --kg-color-#{$name}-darker-25: #{darken($color, 25%)};
-        --kg-color-#{$name}-darker-30: #{darken($color, 30%)};
-        --kg-color-#{$name}-darker-35: #{darken($color, 35%)};
-        --kg-color-#{$name}-darker-40: #{darken($color, 40%)};
-        --kg-color-#{$name}-darker-45: #{darken($color, 45%)};
-        --kg-color-#{$name}-darker-50: #{darken($color, 50%)};
+        --wuf-color-#{$name}-lighter-10: #{lighten($color, 10%)};
+        --wuf-color-#{$name}-lighter-20: #{lighten($color, 20%)};
+        --wuf-color-#{$name}-lighter-30: #{lighten($color, 30%)};
+        --wuf-color-#{$name}-lighter-40: #{lighten($color, 40%)};
+        --wuf-color-#{$name}-lighter-50: #{lighten($color, 50%)};
+        --wuf-color-#{$name}-lighter-60: #{lighten($color, 60%)};
+        --wuf-color-#{$name}-lighter-70: #{lighten($color, 70%)};
+        --wuf-color-#{$name}-darker-5: #{darken($color, 5%)};
+        --wuf-color-#{$name}-darker-10: #{darken($color, 10%)};
+        --wuf-color-#{$name}-darker-15: #{darken($color, 15%)};
+        --wuf-color-#{$name}-darker-20: #{darken($color, 20%)};
+        --wuf-color-#{$name}-darker-25: #{darken($color, 25%)};
+        --wuf-color-#{$name}-darker-30: #{darken($color, 30%)};
+        --wuf-color-#{$name}-darker-35: #{darken($color, 35%)};
+        --wuf-color-#{$name}-darker-40: #{darken($color, 40%)};
+        --wuf-color-#{$name}-darker-45: #{darken($color, 45%)};
+        --wuf-color-#{$name}-darker-50: #{darken($color, 50%)};
     }
 
     // Create a Material Design Theme
     @include kg-mat-theme($brand-primary, $brand-accent, $brand-danger);
 }
 
-@mixin kg-theme-logo($url, $width: 250px, $height: 40px) {
-    --kg-logo-url: #{'url(' + $url + ')'};
-    --kg-header-logo-width: #{$width};
-    --kg-header-logo-height: #{$height};
+@mixin kg-theme-logo($url, $width: 200px, $height: 35px) {
+    --wuf-logo-url: #{'url(' + $url + ')'};
+    --wuf-header-logo-width: #{$width};
+    --wuf-header-logo-height: #{$height};
 }
 
 @mixin kg-theme-button-radius($radius) {
@@ -272,19 +272,19 @@
 	$h5-size: $h5-font-size,
 	$h6-size: $h6-font-size
 ) {
-    --kg-body-color: #{$font-color};
-    --kg-font-family-sans-serif: #{$font-family-sans-serif};
-    --kg-font-family-serif: #{$font-family-serif};
-    --kg-font-family-monospace: #{$font-monospace};
-    --kg-font-family-base: #{$font-family-base};
-    --kg-font-size-base: #{$font-size};
-    --kg-headings-font-family: #{$headings-font-family};
-    --kg-headings-font-weight: #{$headings-weight};
-    --kg-headings-color: #{$headings-color};
-    --kg-h1-font-size: #{$h1-size};
-    --kg-h2-font-size: #{$h2-size};
-    --kg-h3-font-size: #{$h3-size};
-    --kg-h4-font-size: #{$h4-size};
-    --kg-h5-font-size: #{$h5-size};
-    --kg-h6-font-size: #{$h6-size};
+    --wuf-body-color: #{$font-color};
+    --wuf-font-family-sans-serif: #{$font-family-sans-serif};
+    --wuf-font-family-serif: #{$font-family-serif};
+    --wuf-font-family-monospace: #{$font-monospace};
+    --wuf-font-family-base: #{$font-family-base};
+    --wuf-font-size-base: #{$font-size};
+    --wuf-headings-font-family: #{$headings-font-family};
+    --wuf-headings-font-weight: #{$headings-weight};
+    --wuf-headings-color: #{$headings-color};
+    --wuf-h1-font-size: #{$h1-size};
+    --wuf-h2-font-size: #{$h2-size};
+    --wuf-h3-font-size: #{$h3-size};
+    --wuf-h4-font-size: #{$h4-size};
+    --wuf-h5-font-size: #{$h5-size};
+    --wuf-h6-font-size: #{$h6-size};
 }

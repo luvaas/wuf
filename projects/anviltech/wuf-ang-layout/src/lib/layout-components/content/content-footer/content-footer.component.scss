@@ -8,8 +8,8 @@
 //Expose custom properties for overrides
 :host {
     /*     local var     ||         global override             ||        default value        */
-    --footer-height:            var(--kg-content-footer-height,         var(--kg-footer-height));
-    --footer-bg-color:          var(--kg-content-footer-bg-color,       rgba(255, 255, 255, .9));
+    --footer-height:            var(--wuf-content-footer-height,         var(--wuf-footer-height));
+    --footer-bg-color:          var(--wuf-content-footer-bg-color,       rgba(255, 255, 255, .9));
 }
 
 .main-footer-wrap {

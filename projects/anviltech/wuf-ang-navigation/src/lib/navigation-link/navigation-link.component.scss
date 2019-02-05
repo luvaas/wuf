@@ -6,34 +6,34 @@
 //Expose custom properties for overrides
 :host {
     /*     local var                   ||                       global override                         ||                        default value        */
-    --navigation-link-color:                        var(--kg-navigation-link-color,                                 var(--kg-color-secondary-lighter-50));
-    --navigation-link-bg-color:                     var(--kg-navigation-link-bg-color,                              transparent);
-    --navigation-link-hover-color:                  var(--kg-navigation-link-hover-color,                           var(--kg-color-secondary-lighter-60));
-    --navigation-link-hover-bg-color:               var(--kg-navigation-link-hover-bg-color,                        var(--kg-color-secondary-lighter-10));
-    --navigation-link-active-color:                 var(--kg-navigation-link-active-color,                          var(--kg-color-white));
-    --navigation-link-active-hover-color:           var(--kg-navigation-link-active-hover-color,                    var(--kg-color-white));
-    --navigation-link-active-bg-color:              var(--kg-navigation-link-active-bg-color,                       var(--kg-color-secondary-lighter-10));
-    --navigation-link-active-accent-color:          var(--kg-navigation-link-active-accent-color,                   var(--kg-color-primary));
-    --navigation-link-margin:                       var(--kg-navigation-link-margin, 0px);
+    --navigation-link-color:                        var(--wuf-navigation-link-color,                                 var(--wuf-color-secondary-lighter-50));
+    --navigation-link-bg-color:                     var(--wuf-navigation-link-bg-color,                              transparent);
+    --navigation-link-hover-color:                  var(--wuf-navigation-link-hover-color,                           var(--wuf-color-secondary-lighter-60));
+    --navigation-link-hover-bg-color:               var(--wuf-navigation-link-hover-bg-color,                        var(--wuf-color-secondary-lighter-10));
+    --navigation-link-active-color:                 var(--wuf-navigation-link-active-color,                          var(--wuf-color-white));
+    --navigation-link-active-hover-color:           var(--wuf-navigation-link-active-hover-color,                    var(--wuf-color-white));
+    --navigation-link-active-bg-color:              var(--wuf-navigation-link-active-bg-color,                       var(--wuf-color-secondary-lighter-10));
+    --navigation-link-active-accent-color:          var(--wuf-navigation-link-active-accent-color,                   var(--wuf-color-primary));
+    --navigation-link-margin:                       var(--wuf-navigation-link-margin, 0px);
 
     // Nested links
-    --navigation-link-nested-color:                 var(--kg-navigation-link-nested-color,                          var(--kg-color-secondary-lighter-30));
-    --navigation-link-nested-bg-color:              var(--kg-navigation-link-nested-bg-color,                       var(--kg-color-secondary-darker-5));
-    --navigation-link-nested-hover-color:           var(--kg-navigation-link-nested-hover-color,                    var(--kg-color-secondary-lighter-40));
-    --navigation-link-nested-hover-bg-color:        var(--kg-navigation-link-nested-hover-bg-color,                 var(--kg-color-secondary-darker-10));
-    --navigation-link-nested-active-color:          var(--kg-navigation-link-nested-active-color,                   var(--kg-color-white));
-    --navigation-link-nested-active-hover-color:    var(--kg-navigation-link-nested-active-hover-color,             var(--kg-color-white));
-    --navigation-link-nested-active-bg-color:       var(--kg-navigation-link-nested-active-bg-color,                var(--kg-color-secondary-darker-10));
-    --navigation-link-nested-active-accent-color:   var(--kg-navigation-link-nested-active-accent-color,            var(--kg-color-primary));
+    --navigation-link-nested-color:                 var(--wuf-navigation-link-nested-color,                          var(--wuf-color-secondary-lighter-30));
+    --navigation-link-nested-bg-color:              var(--wuf-navigation-link-nested-bg-color,                       var(--wuf-color-secondary-darker-5));
+    --navigation-link-nested-hover-color:           var(--wuf-navigation-link-nested-hover-color,                    var(--wuf-color-secondary-lighter-40));
+    --navigation-link-nested-hover-bg-color:        var(--wuf-navigation-link-nested-hover-bg-color,                 var(--wuf-color-secondary-darker-10));
+    --navigation-link-nested-active-color:          var(--wuf-navigation-link-nested-active-color,                   var(--wuf-color-white));
+    --navigation-link-nested-active-hover-color:    var(--wuf-navigation-link-nested-active-hover-color,             var(--wuf-color-white));
+    --navigation-link-nested-active-bg-color:       var(--wuf-navigation-link-nested-active-bg-color,                var(--wuf-color-secondary-darker-10));
+    --navigation-link-nested-active-accent-color:   var(--wuf-navigation-link-nested-active-accent-color,            var(--wuf-color-primary));
 
     // Horizontal Orientation
-    --navigation-link-font-size:                    var(--kg-navigation-link-font-size,                             inherit);
-    --navigation-link-icon-size:                    var(--kg-navigation-link-icon-size,                             1.5em);
+    --navigation-link-font-size:                    var(--wuf-navigation-link-font-size,                             inherit);
+    --navigation-link-icon-size:                    var(--wuf-navigation-link-icon-size,                             1.5em);
 
     // Internal
-    --sidebar-bg-color:                             var(--kg-sidebar-bg-color,                                      var(--kg-color-secondary));
-    --sidebar-scroll-track-bg-color:                var(--kg-sidebar-scroll-track-bg-color,                         var(--kg-color-secondary-darker-10));
-    --sidebar-scroll-thumb-bg-color:                var(--kg-sidebar-scroll-thumb-bg-color,                         var(--kg-color-secondary-lighter-20));
+    --sidebar-bg-color:                             var(--wuf-sidebar-bg-color,                                      var(--wuf-color-secondary));
+    --sidebar-scroll-track-bg-color:                var(--wuf-sidebar-scroll-track-bg-color,                         var(--wuf-color-secondary-darker-10));
+    --sidebar-scroll-thumb-bg-color:                var(--wuf-sidebar-scroll-thumb-bg-color,                         var(--wuf-color-secondary-lighter-20));
 }
 
 li {

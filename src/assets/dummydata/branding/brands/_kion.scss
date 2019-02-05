@@ -52,11 +52,11 @@ of component variables that can be overridden.
     /***** dark theme overrides *****/
     &[kg-theme-dark="true"] {
 
-        $kionThemeLightLinkColor: var(--kg-color-primary-lighter-20);
+        $kionThemeLightLinkColor: var(--wuf-color-primary-lighter-20);
 
         /***** links *****/
-        --kg-link-color: #{$kionThemeLightLinkColor};
-        --kg-link-hover-color: var(--kg-color-primary-lighter-10);
+        --wuf-link-color: #{$kionThemeLightLinkColor};
+        --wuf-link-hover-color: var(--wuf-color-primary-lighter-10);
 
         /***** Material form fields *****/
         .mat-focused {

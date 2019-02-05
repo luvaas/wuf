@@ -7,17 +7,17 @@
 :host {
     /*     local var        ||                          global override           ||               default value        */
     // sidebar
-    --sidebar-resizer-width:                    var(--kg-sidebar-resizer-width,                 6px);
-    --sidebar-resizer-bg-color:                 var(--kg-sidebar-resizer-bg-color,              var(--kg-color-gray-300));
-    --sidebar-resizer-draghandle-color:         var(--kg-sidebar-resizer-draghandle-color,      var(--kg-color-gray-100));
+    --sidebar-resizer-width:                    var(--wuf-sidebar-resizer-width,                 6px);
+    --sidebar-resizer-bg-color:                 var(--wuf-sidebar-resizer-bg-color,              var(--wuf-color-gray-300));
+    --sidebar-resizer-draghandle-color:         var(--wuf-sidebar-resizer-draghandle-color,      var(--wuf-color-gray-100));
 
     // header
-    --header-height:                            var(--kg-header-height,                         60px);
+    --header-height:                            var(--wuf-header-height,                         60px);
 
     // layout
-    --page-width:                               var(--kg-page-width,                            100%);
-    --page-margin:                              var(--kg-page-margin,                           0);
-    --page-padding:                             var(--kg-page-padding,                          0);
+    --page-width:                               var(--wuf-page-width,                            100%);
+    --page-margin:                              var(--wuf-page-margin,                           0);
+    --page-padding:                             var(--wuf-page-padding,                          0);
 }
 
 // INTERNAL: Access all <app-*> tags that are an immediate child of .main, appearing just after the <router-outlet> to apply some necessary flex box properties these tags need for proper content area scrolling.
@@ -28,7 +28,7 @@
             > *:not(router-outlet) {
                 display: flex;
                 flex-direction: column;
-                --page-width: var(--kg-page-width, 100%);
+                --page-width: var(--wuf-page-width, 100%);
                 min-height: 100%;
             }
         }

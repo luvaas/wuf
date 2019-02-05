@@ -20,7 +20,7 @@ $kg-default-logo-path: '~@anviltech/wuf-web-assets/assets/images' !default;
     @include kg-theme-colors($theme-colors);
 
     /***** logo *****/
-    @include kg-theme-logo('#{$kg-default-logo-path}/logo.svg', 250px, 40px);
+    @include kg-theme-logo('#{$kg-default-logo-path}/logo.svg', 200px, 35px);
 
     /***** buttons *****/
     @include kg-theme-button-radius(4px);
@@ -31,6 +31,6 @@ $kg-default-logo-path: '~@anviltech/wuf-web-assets/assets/images' !default;
     // These overrides ONLY apply to the Dematic theme
 
     /***** fancy login screen *****/
-    --kg-login-bg-accent-color: var(--kg-color-accent); // Usually we use primary color here.  In the Dematic theme we want to use Dematic gold instead.
+    --wuf-login-bg-accent-color: var(--wuf-color-accent); // Usually we use primary color here.  In the Dematic theme we want to use Dematic gold instead.
 }
 

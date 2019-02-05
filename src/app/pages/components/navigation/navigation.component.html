@@ -25,7 +25,7 @@
             <p>The following example loads <strong>&lt;kg-navigation&gt;</strong> inside of a container with a fixed
                 width and color background in order to simulate the appearance of the component inside a sidebar.</p>
 
-            <div style="width: 230px; background-color:var(--kg-color-secondary); color: var(--kg-color-secondary-lighter-50); margin-bottom: 20px;">
+            <div style="width: 230px; background-color:var(--wuf-color-secondary); color: var(--wuf-color-secondary-lighter-50); margin-bottom: 20px;">
                 <kg-navigation [dataUrl]="dataUrl"></kg-navigation>
             </div>
 
@@ -34,13 +34,13 @@
                 and orients itself vertically. By changing the value of the "position" attribute, however, we can
                 instruct the <strong>&lt;kg-navigation&gt;</strong> to orient itself <em>horizontally</em> for
                 positioning at the top of the layout.</p>
-            <div style="width: 100%; background-color:var(--kg-color-secondary); color: var(--kg-color-secondary-lighter-50); margin-bottom: 20px; overflow-x: auto">
+            <div style="width: 100%; background-color:var(--wuf-color-secondary); color: var(--wuf-color-secondary-lighter-50); margin-bottom: 20px; overflow-x: auto">
                 <kg-navigation [dataUrl]="dataUrl" position="top"></kg-navigation>
             </div>
 
             <p>By default navigation items place their icons to the left of the text label. To place the icons on top,
                 change the "iconPosition" attribute to "top".</p>
-            <div style="width: 100%; background-color:var(--kg-color-secondary); color: var(--kg-color-secondary-lighter-50); margin-bottom: 20px; overflow-x: auto">
+            <div style="width: 100%; background-color:var(--wuf-color-secondary); color: var(--wuf-color-secondary-lighter-50); margin-bottom: 20px; overflow-x: auto">
                 <kg-navigation [dataUrl]="dataUrl" position="top" iconPosition="top" alignment="center"></kg-navigation>
             </div>
         </div>
@@ -236,49 +236,49 @@
                     </tr>
                 </thead>
                 <tr>
-                    <td class="propName">--kg-navigation-link-color</td>
+                    <td class="propName">--wuf-navigation-link-color</td>
                     <td class="description">Navigation item link text color.</td>
-                    <td class="value">var(--kg-color-primary-lighter-50)</td>
+                    <td class="value">var(--wuf-color-primary-lighter-50)</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-bg-color</td>
+                    <td class="propName">--wuf-navigation-link-bg-color</td>
                     <td class="description">Background color for navigation items. By default, the background color is
-                        transparent and, therefore, takes on the color of <strong>--kg-sidebar-bg-color</strong>.
+                        transparent and, therefore, takes on the color of <strong>--wuf-sidebar-bg-color</strong>.
                     </td>
                     <td class="value">transparent</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-hover-color</td>
+                    <td class="propName">--wuf-navigation-link-hover-color</td>
                     <td class="description">Navigation item link hover text color.</td>
-                    <td class="value">var(--kg-color-primary-lighter-60)</td>
+                    <td class="value">var(--wuf-color-primary-lighter-60)</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-hover-bg-color</td>
+                    <td class="propName">--wuf-navigation-link-hover-bg-color</td>
                     <td class="description">Navigation item link background color.</td>
-                    <td class="value">var(--kg-color-primary-lighter-10)</td>
+                    <td class="value">var(--wuf-color-primary-lighter-10)</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-active-color</td>
+                    <td class="propName">--wuf-navigation-link-active-color</td>
                     <td class="description">Navigation item link hover background color.</td>
-                    <td class="value">var(--kg-color-white)</td>
+                    <td class="value">var(--wuf-color-white)</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-active-bg-color</td>
+                    <td class="propName">--wuf-navigation-link-active-bg-color</td>
                     <td class="description">Navigation active item link background color.</td>
-                    <td class="value">var(--kg-color-primary-lighter-10)</td>
+                    <td class="value">var(--wuf-color-primary-lighter-10)</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-active-hover-color</td>
+                    <td class="propName">--wuf-navigation-link-active-hover-color</td>
                     <td class="description">Navigation active item link hover background color.</td>
-                    <td class="value">var(--kg-color-white)</td>
+                    <td class="value">var(--wuf-color-white)</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-active-accent-color</td>
+                    <td class="propName">--wuf-navigation-link-active-accent-color</td>
                     <td class="description">The color accent to show on active navigation items.</td>
-                    <td class="value">var(--kg-color-accent)</td>
+                    <td class="value">var(--wuf-color-accent)</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-font-size</td>
+                    <td class="propName">--wuf-navigation-link-font-size</td>
                     <td class="description">The navigation item text size. Only applies when configuration is set to
                         navigation.position='top'. It is highly recommended to us "em" unit values here so the text can
                         be resized responsively.
@@ -286,7 +286,7 @@
                     <td class="value">inherit</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-icon-size</td>
+                    <td class="propName">--wuf-navigation-link-icon-size</td>
                     <td class="description">The navigation item icon size. Only applies when configuration is set to
                         navigation.position='top'. It is highly recommended to us "em" unit values here so the text can
                         be resized responsively.
@@ -294,7 +294,7 @@
                     <td class="value">1.5em</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-margin</td>
+                    <td class="propName">--wuf-navigation-link-margin</td>
                     <td class="description">The margin around each top-level navigation item. Only applies when
                         configuration is set to navigation.position='top'. It is highly recommended to us "em" unit
                         values here so the text can be resized responsively.
@@ -302,44 +302,44 @@
                     <td class="value">1.5em</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-nested-color</td>
+                    <td class="propName">--wuf-navigation-link-nested-color</td>
                     <td class="description">Nested navigation item link text color.</td>
-                    <td class="value">var(--kg-color-primary-lighter-30)</td>
+                    <td class="value">var(--wuf-color-primary-lighter-30)</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-nested-hover-color</td>
+                    <td class="propName">--wuf-navigation-link-nested-hover-color</td>
                     <td class="description">Nested navigation item link hover text color.</td>
-                    <td class="value">var(--kg-color-primary-lighter-40)</td>
+                    <td class="value">var(--wuf-color-primary-lighter-40)</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-nested-bg-color</td>
+                    <td class="propName">--wuf-navigation-link-nested-bg-color</td>
                     <td class="description">Nested navigation item background color.</td>
-                    <td class="value">var(--kg-color-primary-darker-5)</td>
+                    <td class="value">var(--wuf-color-primary-darker-5)</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-nested-hover-bg-color</td>
+                    <td class="propName">--wuf-navigation-link-nested-hover-bg-color</td>
                     <td class="description">Nested navigation item hover background color.</td>
-                    <td class="value">var(--kg-color-primary-darker-10)</td>
+                    <td class="value">var(--wuf-color-primary-darker-10)</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-nested-active-color</td>
+                    <td class="propName">--wuf-navigation-link-nested-active-color</td>
                     <td class="description">Nested navigation active item background color.</td>
-                    <td class="value">var(--kg-color-white)</td>
+                    <td class="value">var(--wuf-color-white)</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-nested-active-hover-color</td>
+                    <td class="propName">--wuf-navigation-link-nested-active-hover-color</td>
                     <td class="description">Nested active navigation item hover text color.</td>
-                    <td class="value">var(--kg-color-white)</td>
+                    <td class="value">var(--wuf-color-white)</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-nested-active-bg-color</td>
+                    <td class="propName">--wuf-navigation-link-nested-active-bg-color</td>
                     <td class="description">Nested active navigation item hover background color.</td>
-                    <td class="value">var(--kg-color-primary-darker-10)</td>
+                    <td class="value">var(--wuf-color-primary-darker-10)</td>
                 </tr>
                 <tr>
-                    <td class="propName">--kg-navigation-link-nested-active-accent-color</td>
+                    <td class="propName">--wuf-navigation-link-nested-active-accent-color</td>
                     <td class="description">The color accent to show on nested active navigation items.</td>
-                    <td class="value">var(--kg-navigation-link-active-accent-color)</td>
+                    <td class="value">var(--wuf-navigation-link-active-accent-color)</td>
                 </tr>
             </table>
 

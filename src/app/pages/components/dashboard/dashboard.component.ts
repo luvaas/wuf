@@ -80,7 +80,7 @@ export class DashboardComponent implements OnInit {
 
     usageCode2 = `
 	:host {
-		--kg-content-padding: 0px;
+		--wuf-content-padding: 0px;
 	}
 	
 	kg-content-header {

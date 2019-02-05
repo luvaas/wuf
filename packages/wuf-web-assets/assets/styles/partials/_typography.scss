@@ -18,24 +18,24 @@ $kg-font-path: '' !default;
 /***** CSS custom properties *****/
 :root {
     @include kg-theme-typography(); // Create font theme
-    --kg-font-weight-light: 300;
-    --kg-font-weight-normal: 400;
-    --kg-font-weight-bold: 700;
-    --kg-font-muted-color: var(--kg-color-gray-600);
+    --wuf-font-weight-light: 300;
+    --wuf-font-weight-normal: 400;
+    --wuf-font-weight-bold: 700;
+    --wuf-font-muted-color: var(--wuf-color-gray-600);
 }
 
 /***** default styles *****/
 body {
-    font-family: var(--kg-font-family-base);
-    font-size: var(--kg-font-size-base);
-    font-weight: var(--kg-font-weight-base);
+    font-family: var(--wuf-font-family-base);
+    font-size: var(--wuf-font-size-base);
+    font-weight: var(--wuf-font-weight-base);
     line-height: $line-height-base;
-    color: var(--kg-body-color);
+    color: var(--wuf-body-color);
 }
 
 p {
     margin-top: 0;
-    margin-bottom: var(--kg-spacer);
+    margin-bottom: var(--wuf-spacer);
 }
 
 /***** headings *****/
@@ -43,43 +43,43 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-top: 0;
     margin-bottom: $headings-margin-bottom;
-    font-family: var(--kg-headings-font-family);
-    font-weight: var(--kg-headings-font-weight);
+    font-family: var(--wuf-headings-font-family);
+    font-weight: var(--wuf-headings-font-weight);
     line-height: $headings-line-height;
-    color: var(--kg-headings-color);
+    color: var(--wuf-headings-color);
 }
 
 h1, .h1 {
-    font-size: var(--kg-h1-font-size);
+    font-size: var(--wuf-h1-font-size);
 }
 
 h2, .h2 {
-    font-size: var(--kg-h2-font-size);
+    font-size: var(--wuf-h2-font-size);
 }
 
 h3, .h3 {
-    font-size: var(--kg-h3-font-size);
+    font-size: var(--wuf-h3-font-size);
 }
 
 h4, .h4 {
-    font-size: var(--kg-h4-font-size);
+    font-size: var(--wuf-h4-font-size);
 }
 
 h5, .h5 {
-    font-size: var(--kg-h5-font-size);
+    font-size: var(--wuf-h5-font-size);
 }
 
 h6, .h6 {
-    font-size: var(--kg-h6-font-size);
+    font-size: var(--wuf-h6-font-size);
 }
 
 /***** links *****/
 a {
-    color: var(--kg-link-color);
-    text-decoration: var(--kg-link-decoration);
+    color: var(--wuf-link-color);
+    text-decoration: var(--wuf-link-decoration);
     &:hover {
-        color: var(--kg-link-hover-color);
-        text-decoration: var(--kg-link-hover-decoration);
+        color: var(--wuf-link-hover-color);
+        text-decoration: var(--wuf-link-hover-decoration);
     }
 }
 
@@ -177,15 +177,15 @@ a {
 
 /***** weight and italics *****/
 .font-weight-light {
-    font-weight: var(--kg-font-weight-light) !important;
+    font-weight: var(--wuf-font-weight-light) !important;
 }
 
 .font-weight-normal {
-    font-weight: var(--kg-font-weight-normal) !important;
+    font-weight: var(--wuf-font-weight-normal) !important;
 }
 
 .font-weight-bold {
-    font-weight: var(--kg-font-weight-bold) !important;
+    font-weight: var(--wuf-font-weight-bold) !important;
 }
 
 .font-italic {
@@ -194,7 +194,7 @@ a {
 
 /***** text colors *****/
 .text-white {
-    color: var(--kg-color-white) !important;
+    color: var(--wuf-color-white) !important;
 }
 
 @each $color, $value in $theme-colors {
@@ -202,7 +202,7 @@ a {
 }
 
 .text-muted {
-    color: var(--kg-font-muted-color);
+    color: var(--wuf-font-muted-color);
 }
 
 /***** horizontal rules *****/
@@ -210,7 +210,7 @@ hr {
     margin-top: $hr-margin-y;
     margin-bottom: $hr-margin-y;
     border: 0;
-    border-top: $hr-border-width solid var(--kg-border-color);
+    border-top: $hr-border-width solid var(--wuf-border-color);
 }
 
 /***** sizing *****/
@@ -229,8 +229,8 @@ small, .small {
 
 /***** misc text styles *****/
 strong, .strong {
-    color: var(--kg-body-color);
-    font-weight: var(--kg-font-weight-bold);
+    color: var(--wuf-body-color);
+    font-weight: var(--wuf-font-weight-bold);
 }
 
 .disabled {
@@ -238,14 +238,14 @@ strong, .strong {
 }
 
 dt {
-    font-weight: var(--kg-font-weight-bold);
+    font-weight: var(--wuf-font-weight-bold);
 }
 
 caption, .caption {
-    color: var(--kg-color-gray-400);
+    color: var(--wuf-color-gray-400);
     font-size: 10px;
     font-style: italic;
     display: block;
     width: 100%;
-    margin-bottom: var(--kg-spacer);
+    margin-bottom: var(--wuf-spacer);
 }

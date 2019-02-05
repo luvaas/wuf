@@ -10,35 +10,35 @@
 .table {
     width: 100%;
     max-width: 100%;
-    margin-bottom: var(--kg-spacer);
-    background-color: var(--kg-table-bg-color); // Reset for nesting within parents with `background-color`.
-    border: var(--kg-table-border-width) solid var(--kg-table-border-color);
+    margin-bottom: var(--wuf-spacer);
+    background-color: var(--wuf-table-bg-color); // Reset for nesting within parents with `background-color`.
+    border: var(--wuf-table-border-width) solid var(--wuf-table-border-color);
 
     th,
     td {
-        padding: var(--kg-table-cell-padding-vert) var(--kg-table-cell-padding-horiz);
+        padding: var(--wuf-table-cell-padding-vert) var(--wuf-table-cell-padding-horiz);
         vertical-align: top;
-        border-top: var(--kg-table-border-width) solid var(--kg-table-border-color);
+        border-top: var(--wuf-table-border-width) solid var(--wuf-table-border-color);
     }
 
     thead tr {
-        background-color: var(--kg-table-head-bg-color);
+        background-color: var(--wuf-table-head-bg-color);
     }
 
     thead th {
         vertical-align: bottom;
-        border-bottom: calc(2 * var(--kg-table-border-width)) solid var(--kg-table-border-color);
+        border-bottom: calc(2 * var(--wuf-table-border-width)) solid var(--wuf-table-border-color);
         padding: 20px 20px 10px 20px;
         font-size: 1.1em;
         font-weight: bold;
     }
 
     tbody + tbody {
-        border-top: calc(2 * var(--kg-table-border-width)) solid var(--kg-table-border-color);
+        border-top: calc(2 * var(--wuf-table-border-width)) solid var(--wuf-table-border-color);
     }
 
     .table {
-        background-color: var(--kg-table-bg-color);
+        background-color: var(--wuf-table-bg-color);
     }
 }
 
@@ -48,7 +48,7 @@
 
 .table-striped {
     tbody tr:nth-of-type(odd) {
-        background-color: var(--kg-table-accent-bg-color);
+        background-color: var(--wuf-table-accent-bg-color);
     }
 }
 
@@ -59,7 +59,7 @@
 .table-hover {
     tbody tr {
         &:hover {
-            background-color: var(--kg-table-hover-bg-color);
+            background-color: var(--wuf-table-hover-bg-color);
         }
     }
 }
@@ -93,6 +93,6 @@
 
 // Vaadin Grid
 vaadin-grid {
-    border-color: var(--kg-table-border-color);
+    border-color: var(--wuf-table-border-color);
     @include scrollbars;
 }

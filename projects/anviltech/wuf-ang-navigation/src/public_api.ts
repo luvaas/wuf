@@ -4,7 +4,7 @@
  */
 
 /*
- * Public API Surface of kg-ang-navigation
+ * Public API Surface of wuf-ang-navigation
  */
 
 export * from './lib/navigation.module';

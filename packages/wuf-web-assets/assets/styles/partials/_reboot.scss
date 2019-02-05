@@ -60,7 +60,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 body {
     margin: 0; // 1
     text-align: left; // 3
-    background-color: var(--kg-body-bg); // 2
+    background-color: var(--wuf-body-bg); // 2
 }
 
 // Suppress the focus outline on elements that cannot be accessed via keyboard.
@@ -276,9 +276,9 @@ table {
 }
 
 caption {
-    padding-top: var(--kg-table-cell-padding-vert);
-    padding-bottom: var(--kg-table-cell-padding-vert);
-    color: var(--kg-font-muted-color);
+    padding-top: var(--wuf-table-cell-padding-vert);
+    padding-bottom: var(--wuf-table-cell-padding-vert);
+    color: var(--wuf-font-muted-color);
     text-align: left;
     caption-side: bottom;
 }

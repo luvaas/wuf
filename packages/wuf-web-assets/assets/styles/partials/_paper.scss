@@ -7,16 +7,16 @@
 // Create styles for polymer paper elements
 
 :root {
-    --primary-color: var(--kg-color-primary);
-    --secondary-color: var(--kg-color-secondary);
-    --accent-color: var(--kg-color-accent);
-    --secondary-text-color: var(--kg-body-color); /* color of input and underline */
+    --primary-color: var(--wuf-color-primary);
+    --secondary-color: var(--wuf-color-secondary);
+    --accent-color: var(--wuf-color-accent);
+    --secondary-text-color: var(--wuf-body-color); /* color of input and underline */
 
     /***** inputs *****/
-    --paper-input-container-input-color: var(--kg-body-color);
+    --paper-input-container-input-color: var(--wuf-body-color);
 
     /***** typography *****/
-    --lumo-font-family: var(--kg-font-family-base);
+    --lumo-font-family: var(--wuf-font-family-base);
     // TODO: update all of these paper styles:
 
     //--primary-text-color: var(--light-theme-text-color);

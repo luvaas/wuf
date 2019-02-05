@@ -44,36 +44,36 @@ export class KpiDisplayComponent implements OnInit {
 
             switch (this.color) {
                 case 'primary':
-                    bgColor = 'var(--kg-color-primary)';
-                    stripeColor = 'var(--kg-color-primary-lighter-10)';
+                    bgColor = 'var(--wuf-color-primary)';
+                    stripeColor = 'var(--wuf-color-primary-lighter-10)';
                     break;
                 case 'secondary':
-                    bgColor = 'var(--kg-color-secondary)';
-                    stripeColor = 'var(--kg-color-secondary-lighter-10)';
+                    bgColor = 'var(--wuf-color-secondary)';
+                    stripeColor = 'var(--wuf-color-secondary-lighter-10)';
                     break;
                 case 'accent':
-                    bgColor = 'var(--kg-color-accent)';
-                    stripeColor = 'var(--kg-color-accent-lighter-10)';
+                    bgColor = 'var(--wuf-color-accent)';
+                    stripeColor = 'var(--wuf-color-accent-lighter-10)';
                     break;
                 case 'success':
-                    bgColor = 'var(--kg-color-success)';
-                    stripeColor = 'var(--kg-color-success-lighter-10)';
+                    bgColor = 'var(--wuf-color-success)';
+                    stripeColor = 'var(--wuf-color-success-lighter-10)';
                     break;
                 case 'info':
-                    bgColor = 'var(--kg-color-info)';
-                    stripeColor = 'var(--kg-color-info-lighter-10)';
+                    bgColor = 'var(--wuf-color-info)';
+                    stripeColor = 'var(--wuf-color-info-lighter-10)';
                     break;
                 case 'warning':
-                    bgColor = 'var(--kg-color-warning)';
-                    stripeColor = 'var(--kg-color-warning-lighter-10)';
+                    bgColor = 'var(--wuf-color-warning)';
+                    stripeColor = 'var(--wuf-color-warning-lighter-10)';
                     break;
                 case 'danger':
-                    bgColor = 'var(--kg-color-danger)';
-                    stripeColor = 'var(--kg-color-danger-lighter-10)';
+                    bgColor = 'var(--wuf-color-danger)';
+                    stripeColor = 'var(--wuf-color-danger-lighter-10)';
                     break;
                 default:
                     bgColor = 'inherit';
-                    stripeColor = 'var(--kg-color-primary-lighter-10)';
+                    stripeColor = 'var(--wuf-color-primary-lighter-10)';
             }
 
             if (bgColor) {

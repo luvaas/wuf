@@ -5,15 +5,15 @@
 
 .close {
     float: right;
-    font-size: calc(var(--kg-font-size-base) * 1.5);
-    font-weight: var(--kg-font-weight-bold);
+    font-size: calc(var(--wuf-font-size-base) * 1.5);
+    font-weight: var(--wuf-font-weight-bold);
     line-height: 1;
-    color: var(--kg-color-gray-700);
-    text-shadow: 0 1px 0 var(--kg-color-white);
+    color: var(--wuf-color-gray-700);
+    text-shadow: 0 1px 0 var(--wuf-color-white);
     opacity: .5;
 
     &:hover, &:focus {
-        color: var(--kg-color-black);
+        color: var(--wuf-color-black);
         text-decoration: none;
         opacity: .75;
     }

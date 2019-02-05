@@ -8,17 +8,17 @@
 
 :root {
     /*     local var         ||               global override         ||    default value        */
-    --kg-tabs-color: var(--kg-body-color, #616161);
-    --kg-tabs-wrap-bg-color: var(--kg-color-gray-200, #eeeeee);
+    --wuf-tabs-color: var(--wuf-body-color, #616161);
+    --wuf-tabs-wrap-bg-color: var(--wuf-color-gray-200, #eeeeee);
 
     // Internal
-    --kg-content-padding: 20px;
+    --wuf-content-padding: 20px;
 }
 
 .tab-wrap {
-    margin: calc(-1 * var(--kg-content-padding)) calc(-1 * var(--kg-content-padding)) var(--kg-content-padding) calc(-1 * var(--kg-content-padding));
+    margin: calc(-1 * var(--wuf-content-padding)) calc(-1 * var(--wuf-content-padding)) var(--wuf-content-padding) calc(-1 * var(--wuf-content-padding));
     border-radius: 0;
-    background-color: var(--kg-tabs-wrap-bg-color);
+    background-color: var(--wuf-tabs-wrap-bg-color);
     position: relative;
     padding: 10px 20px 50px;
     .mdc-tab-bar {
@@ -28,7 +28,7 @@
         display: inline-block;
         .mdc-tab {
             padding: 10px 20px;
-            color: var(--kg-tabs-color);
+            color: var(--wuf-tabs-color);
             &.active {
                 font-weight: bold;
             }
