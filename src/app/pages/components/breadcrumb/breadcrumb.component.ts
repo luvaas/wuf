@@ -17,10 +17,10 @@ export class BreadcrumbComponent implements OnInit {
 	breadcrumbHtmlCode1 = `
 	<kg-content-header>
 		<!-- insert page header content here -->
-		<ng-container toolbarContent>
+		<ng-container toolbarLeft>
 			<kg-breadcrumb></kg-breadcrumb>
 		</ng-container>
-		<ng-container utilities>
+		<ng-container toolbarRight>
 			<!--page-level utilities here-->
 		</ng-container>
 	</kg-content-header>`;

@@ -22,10 +22,10 @@ export class ToolbarComponent implements OnInit {
 
     toolbarHtmlCode = `
 	<kg-toolbar>
-		<ng-container toolbarContent>
+		<ng-container toolbarLeft>
 			left side
 		</ng-container>
-		<ng-container utilities>
+		<ng-container toolbarRight>
 			right side
 		</ng-container>
 	</kg-toolbar>

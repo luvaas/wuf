@@ -26,22 +26,15 @@
         <kg-sidebar-footer [copyrightName]="configService.config.copyrightName"></kg-sidebar-footer>
     </ng-container>
 
-    <ng-container toolbarContent>
+    <ng-container toolbarLeft>
         <!--Optionally add app-level title here-->
         Living Style Guide
     </ng-container>
 
-    <ng-container utilities>
+    <ng-container toolbarRight>
         <!--Add app-level utilities here-->
 
         <div class="util-wrap">
-            <div *ngIf="configService.config.theme === 'still'" class="theme-still-wrap">
-                <i class="material-icons"
-                   matTooltip="Edit"
-                   matTooltipPosition="below"
-                >edit</i>
-            </div>
-
             <i class="material-icons"
                matTooltip="Account"
                matTooltipPosition="below"

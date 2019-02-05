@@ -29,12 +29,12 @@ export class LayoutMainBasicComponent implements OnInit {
             <kg-sidebar-footer></kg-sidebar-footer>
         </ng-container>
     
-        <ng-container toolbarContent>
+        <ng-container toolbarLeft>
             <!--Optionally add app-level title here-->
             [Application Name]
         </ng-container>
     
-        <ng-container utilities>
+        <ng-container toolbarRight>
             <!--Add app-level utilities here-->
         </ng-container>
     

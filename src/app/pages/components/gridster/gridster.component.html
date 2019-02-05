@@ -5,12 +5,12 @@
 
 <kg-content-header xmlns="http://www.w3.org/1999/html">
     <!-- insert page header content here -->
-    <ng-container toolbarContent>
+    <ng-container toolbarLeft>
         <kg-breadcrumb
             [items]="[{ link: '/', label: 'Introduction' }, { link: '/components', label: 'Components' }, { link: null, label: 'Material Cards', active: true }]"></kg-breadcrumb>
     </ng-container>
 
-    <ng-container utilities>
+    <ng-container toolbarRight>
         <!--page-level utilities here-->
         <button mat-raised-button (click)="onAddItemClick()">Add new item</button>
     </ng-container>

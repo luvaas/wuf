@@ -10,17 +10,17 @@
         <div class="main-header-placeholder"></div>
         <div class="main-header" [class.hidden]="!layoutService.headerVisible">
             <kg-toolbar class="main-header-toolbar">
-                <ng-container toolbarContent>
+                <ng-container toolbarLeft>
                     <i class="sidebar-toggler material-icons" (click)="onSidebarTogglerClick($event)"
                        *ngIf="configService.config.navigation.position!=='top'">menu</i>
                     <a class="header-logo d-none d-sm-inline-block" [routerLink]="logoRoute" *ngIf="logoRoute"></a>
                     <span class="header-logo" *ngIf="!logoRoute"></span>
-                    <div class="header-title-wrap">
-                        <ng-content select="[toolbarContent]"></ng-content>
-                    </div>
                 </ng-container>
-                <ng-container utilities>
-                    <ng-content select="[utilities]"></ng-content>
+                <ng-container toolbarRight>
+                    <div class="header-title-wrap">
+                        <ng-content select="[toolbarLeft]"></ng-content>
+                    </div>
+                    <ng-content select="[toolbarRight]"></ng-content>
                 </ng-container>
             </kg-toolbar>
         </div>
