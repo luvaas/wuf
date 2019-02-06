@@ -25,6 +25,7 @@ https://docs.npmjs.com/orgs/managing-teams/index.html
 [x] Set package.json from private to public.  If you set "private": true in your package.json, then npm will refuse to publish it.
 [ ] search for gitlab.dematic.com
 [ ] search for artifactory.dematic.com
+[ ] remove references to Quick Start Application (Minimal) and Quick Start Application (Complete)
 [ ] search for Dematic
 [ ] change skin/config names
 [ ] update all readme files
@@ -32,7 +33,8 @@ https://docs.npmjs.com/orgs/managing-teams/index.html
 [ ] init NPM (include this in documentation?): https://docs.npmjs.com/creating-and-publishing-scoped-public-packages
 [ ] publish all v1 packages using  `npm publish --access public`
 [ ] provide documentation to Denis about the repo(s) to build, the order in which they ought to be build, etc.  Could be the Jenkins file.
-[ ] remove polymer and nutmeg
+[ ] remove polymer and nutmeg? (would need to rewrite wuf-code-sample and wuf-messages as angular components)
+[ ] fix Jenkinsfile documentation
 
 FUTURE:
 [x] move page title to right of page

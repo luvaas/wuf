@@ -29,7 +29,7 @@ We will use the token [name-of-library] to represent this library component name
 Run the following command from @anviltech/wuf's root folder:
 
 ```bash
-ng generate library @anviltech/[name-of-library] --prefix=kg
+ng generate library @anviltech/[name-of-library] --prefix=wuf
 ``` 
 
 This will create a new folder for `@anviltech/[name-of-library]` at `./projects/anviltech/[name-of-library]` and populate that folder with scaffolding files for a new module, one service, and one component.  Collectively, Angular 6 refers to this collection as a "project".
@@ -44,7 +44,7 @@ Revise the root `angular.json` file at `./angular.json` to include a "production
             "root": "projects/anviltech/[name-of-library]",
             "sourceRoot": "projects/anviltech/[name-of-library]/src",
             "projectType": "library",
-            "prefix": "kg",
+            "prefix": "wuf",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-ng-packagr:build",
