@@ -479,8 +479,8 @@ $kg-input-hint-vert-padding: .3em;
     /**************************************************/
     /*****               DARK THEME               *****/
     /**************************************************/
-    &[kg-theme-dark="true"],
-    *[kg-theme-dark="true"] {
+    &[wuf-theme-dark="true"],
+    *[wuf-theme-dark="true"] {
         // Everything below applies to dark themes only
 
         /***** input errors *****/

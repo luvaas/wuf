@@ -84,10 +84,10 @@ table.prop-table {
     }
 }
 
-:root[kg-theme-dark="true"],
-*[kg-theme-dark="true"],
-:root[kg-theme-dark="true"][kg-theme],
-*[kg-theme-dark="true"][kg-theme] {
+:root[wuf-theme-dark="true"],
+*[wuf-theme-dark="true"],
+:root[wuf-theme-dark="true"][wuf-theme],
+*[wuf-theme-dark="true"][wuf-theme] {
     .mat-form-field-invalid.mat-form-field-appearance-legacy {
         // Error message
         .mat-error {

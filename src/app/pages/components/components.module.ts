@@ -31,7 +31,7 @@ import { CustomMaterialModule } from '../../internal/material.module';
 import { UtilsModule } from '../../internal/utils/utils.module';
 
 /***** TODO *****/
-import { KgSplitPanelComponent } from './dashboard/kg-split-panel/kg-split-panel.component'; // TODO: move this to common-components once component is built
+import { WufSplitPanelComponent } from './dashboard/wuf-split-panel/wuf-split-panel.component'; // TODO: move this to common-components once component is built
 
 /***** Smart Table extras *****/
 import { CustomEditorForFoodsSmartTable } from './smart-table/custom-editor.smart-table.for-foods.component';
@@ -138,7 +138,7 @@ import { ToastsComponent } from './toasts/toasts.component';
         CustomEditorForIDValidationSmartTable,
 
         // TODO: move this to common-components
-        KgSplitPanelComponent
+        WufSplitPanelComponent
     ],
     entryComponents: [
         MaterialDialogExample,

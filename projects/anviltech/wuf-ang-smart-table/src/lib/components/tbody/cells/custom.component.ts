@@ -14,7 +14,7 @@ import { Grid } from '../../../lib/grid';
     changeDetection: ChangeDetectionStrategy.OnPush,
     template: `
         <a *ngFor="let action of grid.getSetting('actions.custom')" href="#"
-           class="kg-smart-action kg-smart-action-custom-custom"
+           class="wuf-smart-action wuf-smart-action-custom-custom"
            [innerHTML]="action.title"
            (click)="onCustom(action, $event)"></a>
     `,

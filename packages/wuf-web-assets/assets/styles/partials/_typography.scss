@@ -17,7 +17,7 @@ $kg-font-path: '' !default;
 
 /***** CSS custom properties *****/
 :root {
-    @include kg-theme-typography(); // Create font theme
+    @include wuf-theme-typography(); // Create font theme
     --wuf-font-weight-light: 300;
     --wuf-font-weight-normal: 400;
     --wuf-font-weight-bold: 700;

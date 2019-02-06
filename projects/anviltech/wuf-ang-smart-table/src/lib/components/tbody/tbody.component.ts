@@ -10,7 +10,7 @@ import { DataSource } from '../../lib/data-source/data-source';
 
 
 @Component({
-    selector: '[kg-st-tbody]',
+    selector: '[wuf-st-tbody]',
     styleUrls: ['./tbody.component.scss'],
     templateUrl: './tbody.component.html',
     encapsulation: ViewEncapsulation.None

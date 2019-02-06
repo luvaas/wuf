@@ -12,7 +12,7 @@ import { DataSource } from '../../../lib/data-source/data-source';
 @Component({
     selector: 'wuf-st-column-title',
     template: `
-        <div class="kg-smart-title">
+        <div class="wuf-smart-title">
             <wuf-smart-table-title [source]="source" [column]="column"
                                   (sort)="sort.emit($event)"></wuf-smart-table-title>
         </div>

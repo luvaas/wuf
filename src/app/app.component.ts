@@ -156,20 +156,20 @@ export class AppComponent implements OnInit, OnDestroy {
     }
 
     applyTheme(themeId: string) {
-        // Set the 'kg-theme' property on the <html> element.  This is what makes the SCSS selectors inside /src/assets/dummydata/branding work.
+        // Set the 'wuf-theme' property on the <html> element.  This is what makes the SCSS selectors inside /src/assets/dummydata/branding work.
         this.currentThemeId = themeId;
-        this.renderer.setAttribute(document.documentElement, 'kg-theme', themeId);
+        this.renderer.setAttribute(document.documentElement, 'wuf-theme', themeId);
     }
 
     applyDarkTheme(applyDark: boolean) {
         if (!applyDark) {
-            // Remove the 'kg-theme-dark' property, if no longer applicable
-            this.renderer.removeAttribute(document.documentElement, 'kg-theme-dark');
+            // Remove the 'wuf-theme-dark' property, if no longer applicable
+            this.renderer.removeAttribute(document.documentElement, 'wuf-theme-dark');
         }
         else if (applyDark) {
-            // Set the 'kg-theme-dark' property on the <html> element.
+            // Set the 'wuf-theme-dark' property on the <html> element.
             // This is what makes the SCSS selectors inside /src/assets/dummydata/branding work.
-            this.renderer.setAttribute(document.documentElement, 'kg-theme-dark', 'true');
+            this.renderer.setAttribute(document.documentElement, 'wuf-theme-dark', 'true');
         }
     }
 

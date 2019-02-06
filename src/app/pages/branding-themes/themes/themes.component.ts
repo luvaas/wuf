@@ -38,7 +38,7 @@ export class ThemesComponent implements OnInit {
     }
 
     onButtonThemeSelectChange($event) {
-        this.exampleButtonWrap.nativeElement.setAttribute('kg-theme', this.buttonTheme.config.theme);
+        this.exampleButtonWrap.nativeElement.setAttribute('wuf-theme', this.buttonTheme.config.theme);
         this.getButtonStyles();
     }
 
@@ -68,7 +68,7 @@ export class ThemesComponent implements OnInit {
 		$kg-brand-danger:       #dd2c00;
 	
 		/***** create a theme *****/
-		@include kg-theme-colors((
+		@include wuf-theme-colors((
 			"primary":      $kg-brand-primary,
 			"secondary":    $kg-brand-secondary,
 			"accent":       $kg-brand-accent,
@@ -83,14 +83,14 @@ export class ThemesComponent implements OnInit {
     exampleLogoCode = `
 	body {
 		/***** logo *****/
-		@include kg-theme-logo("/assets/images/example_images/logos/walmart.svg", 140px, 45px);
+		@include wuf-theme-logo("/assets/images/example_images/logos/walmart.svg", 140px, 45px);
 	}
 	`;
 
     exampleButtonCode = `
 	body {
 		/***** buttons *****/
-		@include kg-theme-button-radius(20px);
+		@include wuf-theme-button-radius(20px);
 	}
 	`;
 
@@ -113,7 +113,7 @@ export class ThemesComponent implements OnInit {
 		$kg-brand-h5-font-size:                1.25rem;
 		$kg-brand-h6-font-size:                1rem;
 	
-		@include kg-theme-typography(
+		@include wuf-theme-typography(
 			$kg-brand-body-color,
 			$kg-brand-font-family-sans-serif,
 			$kg-brand-font-family-serif,
@@ -145,7 +145,7 @@ export class ThemesComponent implements OnInit {
 		$kg-brand-danger:       #dd2c00;
 	
 		/***** create a theme *****/
-		@include kg-theme-colors((
+		@include wuf-theme-colors((
 			"primary":      $kg-brand-primary,
 			"secondary":    $kg-brand-secondary,
 			"accent":       $kg-brand-accent,
@@ -156,10 +156,10 @@ export class ThemesComponent implements OnInit {
 		));
 			
 		/***** logo *****/
-		@include kg-theme-logo("/assets/images/example_images/logos/walmart.svg", 140px, 45px);
+		@include wuf-theme-logo("/assets/images/example_images/logos/walmart.svg", 140px, 45px);
 		
 		/***** buttons *****/
-		@include kg-theme-button-radius(20px);
+		@include wuf-theme-button-radius(20px);
 		
 		/***** typography *****/
 		$kg-brand-body-color:                  var(--wuf-color-gray-700);
@@ -178,7 +178,7 @@ export class ThemesComponent implements OnInit {
 		$kg-brand-h5-font-size:                1.25rem;
 		$kg-brand-h6-font-size:                1rem;
 	
-		@include kg-theme-typography(
+		@include wuf-theme-typography(
 			$kg-brand-body-color,
 			$kg-brand-font-family-sans-serif,
 			$kg-brand-font-family-serif,

@@ -110,10 +110,10 @@
             <p>The <strong>KgDashboardModule</strong> is comprised of two different components working together:</p>
 
             <ul>
-                <li>The <strong>&lt;kg-dashboard&gt;</strong> component, which handles the overall layout of the
+                <li>The <strong>&lt;wuf-dashboard&gt;</strong> component, which handles the overall layout of the
                     dashboard.
                 </li>
-                <li>Any number of <strong>&lt;kg-kpi&gt;</strong> components, which make up the contents of the
+                <li>Any number of <strong>&lt;wuf-kpi&gt;</strong> components, which make up the contents of the
                     dashboard and display corresponding Key Performance Indicators on the left side of the layout.
                 </li>
             </ul>
@@ -124,11 +124,11 @@
 
             <hr>
 
-            <h3>&lt;kg-dashboard&gt; Usage</h3>
+            <h3>&lt;wuf-dashboard&gt; Usage</h3>
 
             <p>Once installed, using the dashboard component is relatively simple. The
-                <strong>&lt;kg-dashboard&gt;</strong> itself has no attributes. Simply add it inside your page's
-                <strong>&lt;kg-content-main&gt;</strong> tag:
+                <strong>&lt;wuf-dashboard&gt;</strong> itself has no attributes. Simply add it inside your page's
+                <strong>&lt;wuf-content-main&gt;</strong> tag:
             </p>
 
             <wuf-code-sample type="html" [code]="usageCode1"></wuf-code-sample>
@@ -156,30 +156,30 @@
                 page space without any spacing around it.
             </p>
 
-            <p>The <code>kg-content-header</code> section causes the toolbar to float above the dashboard component,
+            <p>The <code>wuf-content-header</code> section causes the toolbar to float above the dashboard component,
                 allowing it to cast its dropshadow over the KPI section, which looks a little better and gives the sense
                 of depth that suggests the dashboard is a child of the toolbar (which it is).
             </p>
 
             <hr>
 
-            <h3>&lt;kg-kpi&gt; Usage</h3>
+            <h3>&lt;wuf-kpi&gt; Usage</h3>
 
             <p>Now that we have the dashboard framework in place, we can add some content to it. Dashboard content comes
-                in the form of <strong>&lt;kg-kpi&gt;</strong> components. To add content to a dashboard, place as many
-                <strong>&lt;kg-kpi&gt;</strong> tags inside the <strong>&lt;kg-dashboard&gt;</strong> tag as you'd like:
+                in the form of <strong>&lt;wuf-kpi&gt;</strong> components. To add content to a dashboard, place as many
+                <strong>&lt;wuf-kpi&gt;</strong> tags inside the <strong>&lt;wuf-dashboard&gt;</strong> tag as you'd like:
             </p>
 
             <wuf-code-sample type="html" [code]="usageCode3"></wuf-code-sample>
 
-            <p>The only required attributes for the &lt;kg-kpi&gt; component are <strong>label</strong> and <strong>value</strong>.
+            <p>The only required attributes for the &lt;wuf-kpi&gt; component are <strong>label</strong> and <strong>value</strong>.
                 When added, a new KPI will appear in the KPI section on the left displaying the label and value
-                provided. Additionally, the content you provided within the <code>&lt;kg-kpi&gt;</code> tags will be
+                provided. Additionally, the content you provided within the <code>&lt;wuf-kpi&gt;</code> tags will be
                 shown on the right.
             </p>
 
-            <p>If you have added multiple <code>&lt;kg-kpi&gt;</code> tags to the parent
-                <code>&lt;kg-dashboard&gt;</code> tag, the <code>&lt;kg-dashboard&gt;</code> tag will ensure that only
+            <p>If you have added multiple <code>&lt;wuf-kpi&gt;</code> tags to the parent
+                <code>&lt;wuf-dashboard&gt;</code> tag, the <code>&lt;wuf-dashboard&gt;</code> tag will ensure that only
                 one KPI will be active at a time and that only the contents of that active KPI will be displayed in the
                 content area. KPIs behave like tabs in this way and display their corresponding content only when
                 clicked and active. The first KPI added to the page is the initially active KPI on page load.
@@ -188,7 +188,7 @@
             <h4>Dyname Value Sizing</h4>
 
             <p>Notice that in the example to the left the "API" section displays a long string of 9 characters. In order
-                for the entire string to be visible, the <code>&lt;kg-kpi&gt;</code> tag is dynamically sizing the value
+                for the entire string to be visible, the <code>&lt;wuf-kpi&gt;</code> tag is dynamically sizing the value
                 element based on string length. Additionally, the text size of the value will grow/shrink as the
                 available realestate within the browser grows/shrinks. It does this using a combination of SVG, CSS, and
                 some javascript. This mechanism ensures that KPI values can be displayed on as many different devices as
@@ -198,7 +198,7 @@
 
             <hr>
 
-            <h3>&lt;kg-dashboard&gt; Properties</h3>
+            <h3>&lt;wuf-dashboard&gt; Properties</h3>
 
             <table class="table prop-table">
                 <thead>
@@ -215,14 +215,14 @@
                     <td class="prop-type"><code>number</code></td>
                     <td class="prop-default">4</td>
                     <td class="prop-description">Minimum number of KPIs to show. If the dashboard includes fewer than
-                        this number of &lt;kg-kpi&gt; elements, filler KPIs will be added to match this number of
+                        this number of &lt;wuf-kpi&gt; elements, filler KPIs will be added to match this number of
                         displayed KPIs. Set to 0 to allow any number of KPIs.
                     </td>
                 </tr>
                 </tbody>
             </table>
 
-            <h3>&lt;kg-kpi&gt; Properties</h3>
+            <h3>&lt;wuf-kpi&gt; Properties</h3>
 
             <table class="table prop-table">
                 <thead>

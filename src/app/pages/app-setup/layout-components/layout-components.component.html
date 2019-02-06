@@ -26,8 +26,8 @@
 
     <h2>Page Scaffolding</h2>
 
-    <p>Basic page scaffolding is provided by the <code>&lt;kg-content-header&gt;</code>,
-        <code>&lt;kg-content-main&gt;</code>, and <code>&lt;kg-content-footer&gt;</code> components.</p>
+    <p>Basic page scaffolding is provided by the <code>&lt;wuf-content-header&gt;</code>,
+        <code>&lt;wuf-content-main&gt;</code>, and <code>&lt;wuf-content-footer&gt;</code> components.</p>
 
     <p>Every page in your application should include these three components. Even if you don't intend to use all three,
         we recommend including each for consistency and for future functionality. Consider them layout "slots" into
@@ -38,9 +38,9 @@
 
     <hr>
 
-    <h2>&lt;kg-content-header&gt;</h2>
+    <h2>&lt;wuf-content-header&gt;</h2>
 
-    <p>The <code>&lt;kg-content-header&gt;</code> slot is used to add a <a routerLink="/components/toolbars">toolbar</a>,
+    <p>The <code>&lt;wuf-content-header&gt;</code> slot is used to add a <a routerLink="/components/toolbars">toolbar</a>,
         <a routerLink="/components/breadcrumbs">breadcrumb trail</a>, and page-level utility links to an application
         page. Or other content that is not scrollable and need to stay on top.</p>
 
@@ -48,18 +48,18 @@
 
     <hr>
 
-    <h2>&lt;kg-content-main&gt;</h2>
+    <h2>&lt;wuf-content-main&gt;</h2>
 
-    <p>The <code>&lt;kg-content-main&gt;</code> slot is used to host the main page content. It generates the HTML/CSS
+    <p>The <code>&lt;wuf-content-main&gt;</code> slot is used to host the main page content. It generates the HTML/CSS
         necessary to control content padding, content scrolling, etc.</p>
 
     <wuf-code-sample type="html" [code]="contentCode"></wuf-code-sample>
 
     <hr>
 
-    <h2>&lt;kg-content-footer&gt;</h2>
+    <h2>&lt;wuf-content-footer&gt;</h2>
 
-    <p>The <code>&lt;kg-content-footer&gt;</code> slot is used to (optionally) display page-level footer content. A
+    <p>The <code>&lt;wuf-content-footer&gt;</code> slot is used to (optionally) display page-level footer content. A
         page
         footer is fixed in position and always appears at the bottom of the content area overlaid on TOP of page
         content.</p>

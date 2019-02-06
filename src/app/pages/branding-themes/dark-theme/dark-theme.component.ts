@@ -20,7 +20,7 @@ export class DarkThemeComponent implements OnInit {
     ngOnInit() {
     }
 
-    htmlCode = `<html lang="en" kg-theme-dark="true">`;
+    htmlCode = `<html lang="en" wuf-theme-dark="true">`;
 
     appComponentCode = `
 	ngOnInit() {
@@ -46,12 +46,12 @@ export class DarkThemeComponent implements OnInit {
 	
 	applyDarkTheme(applyDark: boolean) {
 		if (!applyDark) {
-			// Remove the 'kg-theme-dark' property, if no longer applicable
-			this.renderer.removeAttribute(document.documentElement, 'kg-theme-dark');
+			// Remove the 'wuf-theme-dark' property, if no longer applicable
+			this.renderer.removeAttribute(document.documentElement, 'wuf-theme-dark');
 		}
 		else if (applyDark) {
-			// Set the 'kg-theme-dark' property on the <html> element.  This is what makes the SCSS selectors inside /src/assets/dummydata/branding work.
-			this.renderer.setAttribute(document.documentElement, 'kg-theme-dark', "true");
+			// Set the 'wuf-theme-dark' property on the <html> element.  This is what makes the SCSS selectors inside /src/assets/dummydata/branding work.
+			this.renderer.setAttribute(document.documentElement, 'wuf-theme-dark', "true");
 		}
 	}
 `;

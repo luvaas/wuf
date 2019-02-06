@@ -6,20 +6,20 @@
 <tr *ngFor="let row of grid.getRows()"
     (click)="userSelectRow.emit(row)"
     (mouseover)="rowHover.emit(row)"
-    class="kg-smart-row"
+    class="wuf-smart-row"
     [className]="rowClassFunction(row)"
     [class.selected]="row.isSelected"
-    [class.kg-smart-form-row]="row.isInEditing"
+    [class.wuf-smart-form-row]="row.isInEditing"
 >
     <td *ngIf="isMultiSelectVisible"
-        class="kg-smart-actions kg-smart-action-multiple-select"
+        class="wuf-smart-actions wuf-smart-action-multiple-select"
         (click)="multipleSelectRow.emit(row)"
         [style.vertical-align]="valign">
         <input type="checkbox" class="form-control" [ngModel]="row.isSelected">
     </td>
 
     <td *ngIf="!row.isInEditing && showActionColumnLeft"
-        class="kg-smart-actions"
+        class="wuf-smart-actions"
         [style.vertical-align]="valign">
         <!--<wuf-st-tbody-custom [grid]="grid" (custom)="custom.emit($event)" [row]="row" [source]="source"></wuf-st-tbody-custom>-->
         <wuf-st-tbody-edit-delete [grid]="grid"
@@ -34,7 +34,7 @@
     </td>
 
     <td *ngIf="row.isInEditing && showActionColumnLeft"
-        class="kg-smart-actions"
+        class="wuf-smart-actions"
         [style.vertical-align]="valign">
         <wuf-st-tbody-create-cancel [grid]="grid" [row]="row" [editConfirm]="editConfirm"></wuf-st-tbody-create-cancel>
     </td>
@@ -53,13 +53,13 @@
     </td>
 
     <td *ngIf="row.isInEditing && showActionColumnRight"
-        class="kg-smart-actions"
+        class="wuf-smart-actions"
         [style.vertical-align]="valign">
         <wuf-st-tbody-create-cancel [grid]="grid" [row]="row" [editConfirm]="editConfirm"></wuf-st-tbody-create-cancel>
     </td>
 
     <td *ngIf="!row.isInEditing && showActionColumnRight"
-        class="kg-smart-actions"
+        class="wuf-smart-actions"
         [style.vertical-align]="valign">
         <!--<wuf-st-tbody-custom [grid]="grid" (custom)="custom.emit($event)" [row]="row" [source]="source"></wuf-st-tbody-custom>-->
 

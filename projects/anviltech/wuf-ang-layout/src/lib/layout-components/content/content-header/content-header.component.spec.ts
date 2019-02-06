@@ -55,7 +55,7 @@ describe('KgContentHeaderComponent', () => {
     });
 
     it('should have a toolbar', () => {
-        de = fixture.debugElement.query(By.css('kg-toolbar'));
+        de = fixture.debugElement.query(By.css('wuf-toolbar'));
         expect(de).toBeTruthy();
     });
 

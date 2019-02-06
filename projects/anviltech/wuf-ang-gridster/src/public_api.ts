@@ -4,7 +4,7 @@
  */
 
 /*
- * Public API Surface of kg-ang-gridster
+ * Public API Surface of wuf-ang-gridster
  */
 
 export * from './lib/gridster.interface';

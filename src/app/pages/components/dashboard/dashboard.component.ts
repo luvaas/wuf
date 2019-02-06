@@ -83,7 +83,7 @@ export class DashboardComponent implements OnInit {
 		--wuf-content-padding: 0px;
 	}
 	
-	kg-content-header {
+	wuf-content-header {
 		// Make the page toolbar's shadow overlap the dashboard
 		z-index: 4;
 	}

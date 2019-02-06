@@ -67,11 +67,11 @@
                         padding-top: 20px;
                         padding-bottom: 10px;
                         border-bottom: none;
-                        &[kg-st-actions-title] {
+                        &[wuf-st-actions-title] {
                             text-align: center;
                         }
                     }
-                    &.kg-smart-filters {
+                    &.wuf-smart-filters {
                         border-bottom: 2px solid var(--table-border-color);
                         background-color: var(--table-filter-bg-color);
                         th {
@@ -82,12 +82,12 @@
                             padding-top: 0;
                             padding-bottom: 0;
                             vertical-align: middle;
-                            &.kg-smart-actions-title {
+                            &.wuf-smart-actions-title {
                                 width: 1px;
                                 white-space: nowrap;
                                 text-align: center;
                                 vertical-align: middle;
-                                &.kg-smart-actions-title-add {
+                                &.wuf-smart-actions-title-add {
                                     padding: 4px;
                                 }
                             }
@@ -139,8 +139,8 @@
                     &:last-child {
                         padding-right: var(--table-cell-padding-horiz);
                     }
-                    &.kg-smart-actions {
-                        button.kg-smart-action {
+                    &.wuf-smart-actions {
+                        button.wuf-smart-action {
                             &:not(:hover) {
                                 background-color: transparent;
                             }
@@ -156,8 +156,8 @@
                 &.selected {
                     background-color: var(--table-active-bg-color);
                 }
-                &.kg-smart-form-row {
-                    th, td:not(.kg-smart-actions) {
+                &.wuf-smart-form-row {
+                    th, td:not(.wuf-smart-actions) {
                         vertical-align: middle;
                         padding: 2px 10px 0px 0;
                         font-weight: normal;
@@ -170,10 +170,10 @@
                 }
             }
         }
-        .kg-smart-titles {
+        .wuf-smart-titles {
             background-color: var(--table-head-bg-color);
             color: var(--table-head-color);
-            .kg-smart-title {
+            .wuf-smart-title {
                 position: relative;
                 a {
                     color: var(--table-head-color);
@@ -184,21 +184,21 @@
                 }
             }
         }
-        .kg-smart-actions {
+        .wuf-smart-actions {
             width: 1px;
             padding: var(--table-action-padding);
             white-space: nowrap;
             text-align: center;
-            &.kg-smart-action-multiple-select {
+            &.wuf-smart-action-multiple-select {
                 text-align: center;
             }
         }
-        .kg-smart-pagination-nav {
+        .wuf-smart-pagination-nav {
             margin-top: 5px;
         }
         // Buttons
-        .kg-smart-action {
-            &.kg-smart-action-add-add {
+        .wuf-smart-action {
+            &.wuf-smart-action-add-add {
                 width: 100%;
                 padding: 2px;
                 .material-icons {

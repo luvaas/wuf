@@ -1,7 +1,7 @@
 Documentation of Smart Table Component
 ====================================================
 
-The kg-smart-table component is a table-based component customized from ng2-smart-table.
+The wuf-smart-table component is a table-based component customized from ng2-smart-table.
 You can find the original ng2-smart-table documentation [here](https://akveo.github.io/ng2-smart-table/#/demo)
 
 
@@ -9,13 +9,13 @@ Table Documentation
 -----------------------
 The table documentation is based on the original ng2-smart-table documentation from [here](https://akveo.github.io/ng2-smart-table/#/documentation)
 
-***NOTE:*** For Add/Delete/Edit actions, if you want to confirm changes before they applied to the kg-smart-table, please add confirmCreate: true/confirmDelete: true/confirmSave: true to the settings object, you can find the example in smart-table.component.ts
+***NOTE:*** For Add/Delete/Edit actions, if you want to confirm changes before they applied to the wuf-smart-table, please add confirmCreate: true/confirmDelete: true/confirmSave: true to the settings object, you can find the example in smart-table.component.ts
 
 ***NOTE:*** For using multi-select mode, please add selectMode: 'multi' in the settings object, you can find the example in smart-table.component.ts
 
 ### Custom-editor and Custom-render Components
 
-The kg-smart-table component provides custom-editor and custom-render components for user to customize their EDIT and VIEW cell.
+The wuf-smart-table component provides custom-editor and custom-render components for user to customize their EDIT and VIEW cell.
 You can find two simple examples in custom-editor.smart-table.for-foods.component.ts and custom-render.smart-table.for-grade.component.ts.
 
 ***NOTE:*** For settings configuration of custom-editor and custom-render components , you can refer to the settings in the smart-table.component.ts, don't forget to add type: 'custom' first

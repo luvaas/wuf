@@ -10,7 +10,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 // import 'rxjs/add/operator/debounceTime';
 // import 'rxjs/add/operator/skip';
 
-// We are going to simulate loading data from a remote source for demo purposes, so include the KgSmartTableLocalDataSource object from kg-library-angular
+// We are going to simulate loading data from a remote source for demo purposes, so include the KgSmartTableLocalDataSource object from wuf-library-angular
 import { KgSmartTableLocalDataSource, KgSmartTableValidatorService } from '@anviltech/wuf-ang-smart-table';
 
 // Load custom editors and renderers

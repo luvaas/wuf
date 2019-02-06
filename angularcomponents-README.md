@@ -7,9 +7,9 @@ The WUF's Library of Components is comprised of components of many flavors, incl
 
 Creating An Angular Library Component
 -------------------------------------------------------
-All WUF library components, including Angular components, are created and added inside the @anviltech/web-ui-framework repository at: [https://github.com/anvil-open-software/wuf](https://github.com/anvil-open-software/wuf)
+All WUF library components, including Angular components, are created and added inside the @anviltech/wuf repository at: [https://github.com/anvil-open-software/wuf](https://github.com/anvil-open-software/wuf)
 
-Clone the @anviltech/web-ui-framework to your local machine.  Be sure to follow the setup instructions at [https://github.com/anvil-open-software/wuf/blob/master/README.md](https://github.com/anvil-open-software/wuf/blob/master/README.md).
+Clone the @anviltech/wuf repo to your local machine.  Be sure to follow the setup instructions at [https://github.com/anvil-open-software/wuf/blob/master/README.md](https://github.com/anvil-open-software/wuf/blob/master/README.md).
 
 ### Name the Library Component
 Our component naming convention follows this format:
@@ -18,7 +18,7 @@ Our component naming convention follows this format:
 
 We use the "@anviltech/" scope for all components.
 
-We use "kg-" (i.e., "KION Group") as our prefix for all services, components, modules, etc.
+We use "wuf-" as our prefix for all services, components, modules, etc.
 
 The "type" in this case is "Angular", or "-ang".
 
@@ -31,7 +31,7 @@ Therefore, if my component is called "My Component", it's library name will be:
 We will use the token [name-of-library] to represent this library component name in the following instructions.
 
 ### Create the Library Component
-Run the following command from @anviltech/web-ui-framework's root folder:
+Run the following command from @anviltech/wuf's root folder:
 
 ```bash
 ng generate library @anviltech/[name-of-library] --prefix=kg
@@ -106,12 +106,12 @@ Add the following properties to the project's `./projects/anviltech/[name-of-lib
 
 Modify the `version` number in the project's `./projects/anviltech/[name-of-library]/package.json` file so that the major version matches that used by the other packages.  In WUF, version 2.0, for example, the version number of the new package should be `2.0.0`.
 
-Simplify the selector name of the component in the `[name-of-library].component.ts` to remove the superfluous "kg-ang".  "kg-kg-ang-[name]" becomes simply "kg-[name]".  For example, the selector "kg-kg-ang-my-component" would become "kg-my-component".
+Simplify the selector name of the component in the `[name-of-library].component.ts` to remove the superfluous "wuf-ang".  "wuf-wuf-ang-[name]" becomes simply "wuf-[name]".  For example, the selector "wuf-wuf-ang-my-component" would become "wuf-my-component".
 ```typescript
 @Component({
     selector: 'wuf-[name]',
-    templateUrl: 'kg-ang-[name].component.html',
-    styleUrls: ['kg-ang-[name].component.scss']
+    templateUrl: 'wuf-ang-[name].component.html',
+    styleUrls: ['wuf-ang-[name].component.scss']
 })
 ```
 
@@ -122,8 +122,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'wuf-[name]',
-    templateUrl: 'kg-ang-[name].component.html',
-    styleUrls: ['kg-ang-[name].component.scss'],
+    templateUrl: 'wuf-ang-[name].component.html',
+    styleUrls: ['wuf-ang-[name].component.scss'],
     encapsulation: ViewEncapsulation.Emulated
 })
 ```
@@ -170,7 +170,7 @@ You now need to whitelist each of these local dependencies.  To do so add a `whi
 ### Install All Dependencies
 We now need to install all of your new package's dependencies.
 
-If we were to run a typical `npm install` or `yarn install`, these commands would *only* install packages that are published publicly in the NPM registry or in the internal Artifactory registry.  If your new library component depends on other new, unpublished library components from within @anviltech/web-ui-framework or new, as-yet unpublished versions of library components from within @anviltech/web-ui-framework, however, the above command will *fail* with a 404 error.  That is because the component or the updated component version number only exists locally and does not yet exist in the registry.
+If we were to run a typical `npm install` or `yarn install`, these commands would *only* install packages that are published publicly in the NPM registry or in the internal Artifactory registry.  If your new library component depends on other new, unpublished library components from within @anviltech/wuf or new, as-yet unpublished versions of library components from within @anviltech/wuf, however, the above command will *fail* with a 404 error.  That is because the component or the updated component version number only exists locally and does not yet exist in the registry.
 
 We often want to declare dependencies *between* our different library components.  @anviltech/wuf-ang-layout, for example, depends on @anviltech/wuf-ang-configuration and @anviltech/wuf-web-assets.  If we make local changes to @anviltech/wuf-ang-configuration or @anviltech/wuf-web-assets, we want @anviltech/wuf-ang-layout to see those changes right away so we can develop against those changes.
 
@@ -234,7 +234,7 @@ Because we set up our NPM build script to use the `--prod` flag, your new compon
 
 Unit Testing
 ------------
-Angular-CLI is present in @anviltech/web-ui-framework, which means unit tests can be run through it.  As you are developing your component, it's a good idea to also run the test runner at the same time.  Navigate to the application root and issue the following command:
+Angular-CLI is present in @anviltech/wuf, which means unit tests can be run through it.  As you are developing your component, it's a good idea to also run the test runner at the same time.  Navigate to the application root and issue the following command:
 
 ```bash
 $ yarn test
@@ -246,9 +246,9 @@ You can also run the test for *only* your library component by running this comm
 
 Cross-Linking Packages
 -----------------------
-The main workspace application in @anviltech/web-ui-framework is the Living Style Guide.  When you run `npm run start` at the root of @anviltech/web-ui-framework and visit http://localhost:4200 in your browser, you will see the Living Style Guide.
+The main workspace application in @anviltech/wuf is the Living Style Guide.  When you run `npm run start` at the root of @anviltech/wuf and visit http://localhost:4200 in your browser, you will see the Living Style Guide.
 
-@anviltech/web-ui-framework uses Lerna and Yarn Workspaces to link library components from `./packages` and `./projects` to the main workspace application (the Living Style Guide) and also link any cross-dependencies.
+@anviltech/wuf uses Lerna and Yarn Workspaces to link library components from `./packages` and `./projects` to the main workspace application (the Living Style Guide) and also link any cross-dependencies.
 
 This linking process allows you to develop library components within this repo and see the results immediately within the workspace application *without having to publish your libraries to Artifactory*.  This makes component development *much* easier.
 

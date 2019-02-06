@@ -4,7 +4,7 @@
  */
 
 /*
- * Public API Surface of kg-ang-layout
+ * Public API Surface of wuf-ang-layout
  */
 
 export * from './lib/layout.module';

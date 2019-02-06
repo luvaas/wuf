@@ -29,7 +29,7 @@ Therefore, the only way to style these navigation menus is with global CSS.
     // * include variable to displaying nav icon ABOVE the text as a block element (as per STILL)
 }
 
-div.kg-nav-menu-panel.mat-menu-panel {
+div.wuf-nav-menu-panel.mat-menu-panel {
     background-color: var(--wuf-navigation-link-nested-bg-color, var(--wuf-color-secondary-darker-5)) !important;
     a.nav-link.mat-menu-item {
         text-decoration: none;

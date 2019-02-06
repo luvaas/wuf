@@ -10,7 +10,7 @@
        [class.table-striped]="alternatingRowColors"
        [class.table-hover]="hover">
 
-    <thead kg-st-thead
+    <thead wuf-st-thead
            *ngIf="!isHideHeader || !isHideSubHeader"
            [grid]="grid"
            [isAllSelected]="isAllSelected"
@@ -23,7 +23,7 @@
            [class.hasFilters]="!isHideSubHeader">
     </thead>
 
-    <tbody kg-st-tbody [grid]="grid"
+    <tbody wuf-st-tbody [grid]="grid"
            [source]="source"
            [deleteConfirm]="deleteConfirm"
            [editConfirm]="editConfirm"

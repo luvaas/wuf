@@ -33,7 +33,7 @@ export class KgConfigurationService implements OnInit {
 
     // Define default values for Configuration
     private _config: KgConfiguration = {
-        id: 'kg-application',
+        id: 'wuf-application',
         copyrightName: '',
         navigation: {
             position: 'left',

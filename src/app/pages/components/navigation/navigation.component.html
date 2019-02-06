@@ -22,17 +22,17 @@
 
         <!--start EXAMPLE Content -->
         <div class="component_tabs_1">
-            <p>The following example loads <strong>&lt;kg-navigation&gt;</strong> inside of a container with a fixed
+            <p>The following example loads <strong>&lt;wuf-navigation&gt;</strong> inside of a container with a fixed
                 width and color background in order to simulate the appearance of the component inside a sidebar.</p>
 
             <div style="width: 230px; background-color:var(--wuf-color-secondary); color: var(--wuf-color-secondary-lighter-50); margin-bottom: 20px;">
                 <wuf-navigation [dataUrl]="dataUrl"></wuf-navigation>
             </div>
 
-            <p>By default <strong>&lt;kg-navigation&gt;</strong> assumes it is positioned on the left side of the
+            <p>By default <strong>&lt;wuf-navigation&gt;</strong> assumes it is positioned on the left side of the
                 layout
                 and orients itself vertically. By changing the value of the "position" attribute, however, we can
-                instruct the <strong>&lt;kg-navigation&gt;</strong> to orient itself <em>horizontally</em> for
+                instruct the <strong>&lt;wuf-navigation&gt;</strong> to orient itself <em>horizontally</em> for
                 positioning at the top of the layout.</p>
             <div style="width: 100%; background-color:var(--wuf-color-secondary); color: var(--wuf-color-secondary-lighter-50); margin-bottom: 20px; overflow-x: auto">
                 <wuf-navigation [dataUrl]="dataUrl" position="top"></wuf-navigation>
@@ -58,14 +58,14 @@
 
             <hr>
 
-            <h3>Provide Content to <strong>kg-navigation</strong></h3>
+            <h3>Provide Content to <strong>wuf-navigation</strong></h3>
 
-            <p>You can construct a <strong>kg-navigation</strong> component using one of two methods: using a JSON
+            <p>You can construct a <strong>wuf-navigation</strong> component using one of two methods: using a JSON
                 object to describe the content, or manually inserting content through <strong>content
                     projection</strong>.</p>
 
             <h4>Using a JSON Object</h4>
-            <p>The <strong>kg-navigation</strong> can use a JSON object to build the list of <code>kg-nav-link</code>
+            <p>The <strong>wuf-navigation</strong> can use a JSON object to build the list of <code>wuf-nav-link</code>
                 components that make up the navigation pane.</p>
 
             <p>You can use either one of two different methods for retrieving the JSON object:</p>
@@ -85,7 +85,7 @@
 
             <p>component takes a dataUrl which is used to retrieve a json object used for building the navigation.</p>
 
-            <!--<pre><code class="html highlight">{{'&lt;kg-navigation [dataUrl]="dataUrl"&gt;&lt;/kg-navigation&gt;'}}</code></pre>-->
+            <!--<pre><code class="html highlight">{{'&lt;wuf-navigation [dataUrl]="dataUrl"&gt;&lt;/wuf-navigation&gt;'}}</code></pre>-->
 
             For demonstration purposes, the <strong>dataUrl</strong> in this app is bound to the local
             '/assets/dummydata/navigation.json' asset which returns a JSON object. In your application
@@ -108,11 +108,11 @@
 
             <h4>Using Content Projection</h4>
 
-            <p>The <strong>kg-navigation</strong> component supports <strong>Content projection</strong> (aka,
+            <p>The <strong>wuf-navigation</strong> component supports <strong>Content projection</strong> (aka,
                 "transclusion" in previous versions of Angular). To use content projection, don't include either a
                 [dataUrl] or [data] attribute when constructing your component. Instead, simply manually pass a list of
-                <strong>&lt;kg-navigation-link&gt;</strong>s as the content of the
-                <strong>&lt;kg-navigation&gt;</strong> tag:</p>
+                <strong>&lt;wuf-navigation-link&gt;</strong>s as the content of the
+                <strong>&lt;wuf-navigation&gt;</strong> tag:</p>
 
             <wuf-code-sample type="html" [code]="exampleHtml3">
             </wuf-code-sample>
@@ -121,16 +121,16 @@
 
             <h3>Orientation</h3>
 
-            <p>By default <strong>&lt;kg-navigation&gt;</strong> assumes it is positioned on the left side of the
+            <p>By default <strong>&lt;wuf-navigation&gt;</strong> assumes it is positioned on the left side of the
                 layout
                 and orients itself vertically. By changing the value of the "position" attribute, however, we can
-                instruct the <strong>&lt;kg-navigation&gt;</strong> to orient itself <em>horizontally</em> for
+                instruct the <strong>&lt;wuf-navigation&gt;</strong> to orient itself <em>horizontally</em> for
                 positioning at the top of the layout. It is <strong>strongly</strong> recommended to use the <a
                     routerLink="/setup/configuration">configuation service</a> (via KgConfigurationService) to supply
-                <strong>&lt;kg-navigation&gt;</strong> with the value for the position attribute.</p>
+                <strong>&lt;wuf-navigation&gt;</strong> with the value for the position attribute.</p>
 
-            <p>The position attribute from <strong>&lt;kg-navigation&gt;</strong> will propagate down to the children
-                <strong>&lt;kg-navigation-link&gt;</strong> elements.</p>
+            <p>The position attribute from <strong>&lt;wuf-navigation&gt;</strong> will propagate down to the children
+                <strong>&lt;wuf-navigation-link&gt;</strong> elements.</p>
 
             <wuf-code-sample type="html" [code]="exampleHtml4">
             </wuf-code-sample>
@@ -142,8 +142,8 @@
             <p>By default icons are positioned on the left side of a navigation item. To change this behavior, pass a
                 value to the "iconPosition" attribute. Possible values include "top", "left".</p>
 
-            <p>The iconPosition attribute from <strong>&lt;kg-navigation&gt;</strong> will propagate down to the
-                children <strong>&lt;kg-navigation-link&gt;</strong> elements.</p>
+            <p>The iconPosition attribute from <strong>&lt;wuf-navigation&gt;</strong> will propagate down to the
+                children <strong>&lt;wuf-navigation-link&gt;</strong> elements.</p>
 
             <wuf-code-sample type="html" [code]="exampleHtml5">
             </wuf-code-sample>

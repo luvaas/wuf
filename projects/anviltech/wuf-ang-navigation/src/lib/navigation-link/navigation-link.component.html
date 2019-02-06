@@ -45,7 +45,7 @@
         </ng-container>
     </div>
 
-    <mat-menu #subnavMenu="matMenu" [overlapTrigger]="false" yPosition="below" class="kg-nav-menu-panel">
+    <mat-menu #subnavMenu="matMenu" [overlapTrigger]="false" yPosition="below" class="wuf-nav-menu-panel">
         <span class="nav-item nav-wrap-nested">
             <a *ngFor="let item of links" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="activeOptions"
                 [routerLink]="item.link" mat-menu-item><i *ngIf="item.icon" class="material-icons" [innerHTML]="item.icon"></i>

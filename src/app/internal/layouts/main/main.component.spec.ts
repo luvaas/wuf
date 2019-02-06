@@ -58,8 +58,8 @@ describe('LayoutMainComponent', () => {
     });
 
     describe('Layout elements', () => {
-        it('should have a kg-view-main element', () => {
-            de = fixture.debugElement.query(By.css('kg-view-main'));
+        it('should have a wuf-view-main element', () => {
+            de = fixture.debugElement.query(By.css('wuf-view-main'));
             el = de.nativeElement;
             expect(de).toBeTruthy();
         });

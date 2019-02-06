@@ -19,17 +19,17 @@ import { DataSource } from '../../../lib/data-source/data-source';
 
 
 @Component({
-    selector: '[kg-st-add-button]',
+    selector: '[wuf-st-add-button]',
     template: `
 
         <button mat-raised-button
                 *ngIf="isActionAdd && !isCreateFormShownAlways && addNewButtonContent"
-                class="kg-smart-action kg-smart-action-add-add"
+                class="wuf-smart-action wuf-smart-action-add-add"
                 [innerHTML]="addNewButtonContent"
                 (click)="onAdd($event)"></button>
         <button mat-raised-button
                 *ngIf="isActionAdd && !isCreateFormShownAlways && !addNewButtonContent"
-                class="kg-smart-action kg-smart-action-add-add"
+                class="wuf-smart-action wuf-smart-action-add-add"
                 (click)="onAdd($event)"
                 [matTooltip]="addTip"
                 matTooltipPosition="above">
@@ -53,7 +53,7 @@ export class AddButtonComponent implements AfterViewInit, OnChanges {
     }
 
     ngAfterViewInit() {
-        this.ref.nativeElement.classList.add('kg-smart-actions-title', 'kg-smart-actions-title-add');
+        this.ref.nativeElement.classList.add('wuf-smart-actions-title', 'wuf-smart-actions-title-add');
     }
 
     ngOnChanges() {

@@ -13,26 +13,26 @@ import { DataSource } from '../../lib/data-source/data-source';
     selector: 'wuf-smart-table-pager',
     styleUrls: ['./pager.component.scss'],
     template: `
-        <nav *ngIf="shouldShow()" class="kg-smart-pagination-nav">
-            <ul class="kg-smart-pagination pagination">
-                <li class="kg-smart-page-item page-item" [ngClass]="{disabled: getPage() == 1}">
-                    <a class="kg-smart-page-link page-link" href="#"
+        <nav *ngIf="shouldShow()" class="wuf-smart-pagination-nav">
+            <ul class="wuf-smart-pagination pagination">
+                <li class="wuf-smart-page-item page-item" [ngClass]="{disabled: getPage() == 1}">
+                    <a class="wuf-smart-page-link page-link" href="#"
                        (click)="getPage() == 1 ? false : paginate(1)" aria-label="First">
                         <span aria-hidden="true">&laquo;</span>
                         <span class="sr-only">First</span>
                     </a>
                 </li>
-                <li class="kg-smart-page-item page-item"
+                <li class="wuf-smart-page-item page-item"
                     [ngClass]="{active: getPage() == page}" *ngFor="let page of getPages()">
-                    <span class="kg-smart-page-link page-link" *ngIf="getPage() == page">{{ page }} <span
+                    <span class="wuf-smart-page-link page-link" *ngIf="getPage() == page">{{ page }} <span
                         class="sr-only">(current)</span></span>
-                    <a class="kg-smart-page-link page-link" href="#"
+                    <a class="wuf-smart-page-link page-link" href="#"
                        (click)="paginate(page)" *ngIf="getPage() != page">{{ page }}</a>
                 </li>
 
-                <li class="kg-smart-page-item page-item"
+                <li class="wuf-smart-page-item page-item"
                     [ngClass]="{disabled: getPage() == getLast()}">
-                    <a class="kg-smart-page-link page-link" href="#"
+                    <a class="wuf-smart-page-link page-link" href="#"
                        (click)="getPage() == getLast() ? false : paginate(getLast())" aria-label="Last">
                         <span aria-hidden="true">&raquo;</span>
                         <span class="sr-only">Last</span>

@@ -127,7 +127,7 @@ You can now use this new page in the Living Style Guide to document the new libr
 * **Changelog**. Tracks history of all changes to the component.
 
 ### Perform Integration Testing
-Be sure to write e2e tests for your components within the kg-styleguide.  Doing so helps ensure that your new component works as expected within a consuming application.
+Be sure to write e2e tests for your components within the Living Style Guide.  Doing so helps ensure that your new component works as expected within a consuming application.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 

@@ -13,4 +13,4 @@
 @import 'mixins/themes';
 
 // Create default material design theme
-@include kg-mat-theme($primary, $accent, $danger);
+@include wuf-mat-theme($primary, $accent, $danger);

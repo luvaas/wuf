@@ -8,10 +8,10 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
     selector: 'wuf-split-panel',
-    templateUrl: './kg-split-panel.component.html',
-    styleUrls: ['./kg-split-panel.component.scss']
+    templateUrl: './wuf-split-panel.component.html',
+    styleUrls: ['./wuf-split-panel.component.scss']
 })
-export class KgSplitPanelComponent implements OnInit {
+export class WufSplitPanelComponent implements OnInit {
 
     @ViewChild('panelResizer') sidebarResizer: ElementRef;
 

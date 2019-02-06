@@ -22,7 +22,7 @@ Our component naming convention follows this format:
 
 We use the "@anviltech/" scope for all components.
 
-We use "kg-" (i.e., "KION Group") as our prefix for all services, components, modules, etc.
+We use "wuf-" as our prefix for all services, components, modules, etc.
 
 The "type" in this case is "Web Component", for which we use the abbreviation "-web".
 
@@ -38,19 +38,19 @@ We will use the token [name-of-library] to represent this library component name
 In the following example, we're going to create a 'hello world' web component that shows some simple text as part of example branch DLABS-1234.  We'll call this component `@anviltech/wuf-web-hello-world` and its class name will be `KgWebHelloWorld`.
 
 1. CD to root WUF folder in your terminal (i.e., `~web-ui-framework/`).
-2. Create the component scaffold: *$* `npm init @nutmeg kg-web-hello-world name:string`.  Note that we do NOT include "@anviltech/" in the package name here, which would create a superfluous @anviltech folder. A `kg-web-hello-world` folder is created at WUF root at `~web-ui-framework/kg-web-hello-world` folder.  This new folder includes a number of files and children folders.  
-3. MOVE the new folder into the `~web-ui-framework/` packages folder: *$* `mv kg-web-hello-world projects`
-4. Navigate into the component folder at its new location: *$* `cd packages/kg-web-hello-world`
+2. Create the component scaffold: *$* `npm init @nutmeg wuf-web-hello-world name:string`.  Note that we do NOT include "@anviltech/" in the package name here, which would create a superfluous @anviltech folder. A `wuf-web-hello-world` folder is created at WUF root at `~web-ui-framework/wuf-web-hello-world` folder.  This new folder includes a number of files and children folders.  
+3. MOVE the new folder into the `~web-ui-framework/` packages folder: *$* `mv wuf-web-hello-world projects`
+4. Navigate into the component folder at its new location: *$* `cd packages/wuf-web-hello-world`
 5. Remove the `.git` folder: *$* `rm -rf .git`  (Nutmeg assumes a pattern of one git repo per component.  We, on the other hand, want all web components to reside in the same repository as the rest of the WUF.)
 6. Remove the `.gitignore` file: *$* `rm .gitignore`
 7. Install dependencies: *$* `npm install`
 
 ### Refine the Component
-* Navigate to the new component's root folder: *$* `cd  ~/web-ui-framework/packages/kg-web-hello-world`
-* Edit `kg-web-hello-world/package.json` as follows:
+* Navigate to the new component's root folder: *$* `cd  ~/web-ui-framework/packages/wuf-web-hello-world`
+* Edit `wuf-web-hello-world/package.json` as follows:
   * Replace the `project/` string with the `@anviltech/` scope of the name property: `"name": "@anviltech/wuf-web-hello-world"`
   * Change the version: `"version": "1.0.0"`
-  * Improve the description: `"description": "The kg-web-hello-world component"`
+  * Improve the description: `"description": "The wuf-web-hello-world component"`
   * Add an author: `"author": "Your Name <your email>"`
   * Update the scripts section to include a "packagr" and a "publish" script: 
   ```typescript
@@ -70,18 +70,18 @@ In the following example, we're going to create a 'hello world' web component th
 
 Develop the Component
 ----------------------
-* Ensure that `~/web-ui-framework/packages/kg-web-hello-world/package.json.version` reflects the desired component version.
-* Edit the `~/web-ui-framework/packages/kg-web-hello-world/src/kg-web-hello-world.ts` component logic as required to fulfill its acceptance criteria
-* Edit the `~/web-ui-framework/packages/kg-web-hello-world/test/kg-web-hello-world.test.ts` component test as required to validate its acceptance criteria. You might have to change `test/fixture/kg-web-hello-world.fixiture.html` as well
-* Test the component from within `~/web-ui-framework/packages/kg-web-hello-world/`: *$* `npm run test`
+* Ensure that `~/web-ui-framework/packages/wuf-web-hello-world/package.json.version` reflects the desired component version.
+* Edit the `~/web-ui-framework/packages/wuf-web-hello-world/src/wuf-web-hello-world.ts` component logic as required to fulfill its acceptance criteria
+* Edit the `~/web-ui-framework/packages/wuf-web-hello-world/test/wuf-web-hello-world.test.ts` component test as required to validate its acceptance criteria. You might have to change `test/fixture/wuf-web-hello-world.fixiture.html` as well
+* Test the component from within `~/web-ui-framework/packages/wuf-web-hello-world/`: *$* `npm run test`
 * Edit and test until all the requirements are implemented and the acceptance criteria satisfied.
 
 Component Structure
 -------------------
-All packages should be structured in the following way when built/published.  Using the `kg-web-hello-world` example from above, the structure for that package should look like:
+All packages should be structured in the following way when built/published.  Using the `wuf-web-hello-world` example from above, the structure for that package should look like:
 
 ```text
-kg-web-hello-world/
+wuf-web-hello-world/
 ├── dist/
 |  └── <source>.ts
 |  └── (optional) package.json
@@ -93,16 +93,16 @@ kg-web-hello-world/
 
 This structure is fairly common for distributed components.  It is, in fact, the structure `nutmeg` creates when scaffolding and developing new web components.  If you use a scaffolding mechanism other than `nutmeg` and/or create your own components from scratch, be sure that your component structure adheres to this same structure.
 
-While the package.json file at `kg-web-hello-world/package.json` is required for development, the package.json file at `kg-web-hello-world/dist/package.json` is optional.  Many developers decide to publish ONLY the dist/ folder to the NPM registry and create a `package.json` file (using through the build process) specifically tailored for distribution with the built files.  They will remove the scripts section and devDependencies section of such a `package.json` file, for example.
+While the package.json file at `wuf-web-hello-world/package.json` is required for development, the package.json file at `wuf-web-hello-world/dist/package.json` is optional.  Many developers decide to publish ONLY the dist/ folder to the NPM registry and create a `package.json` file (using through the build process) specifically tailored for distribution with the built files.  They will remove the scripts section and devDependencies section of such a `package.json` file, for example.
 
-The second option (also common) is to publish the entire web component folder, source content, test files, and all.  In this pattern the developer may decide not to create a specially tailored package.json file, and simply include the package.json file they use for development in the web component's root folder.  Refer to the [main](https://docs.npmjs.com/files/package.json#main) documentation for NPM when using this approach.  The "main" property of the componennt's root `package.json` must point to the `kg-web-hello-world/dist/<source>.js` file. 
+The second option (also common) is to publish the entire web component folder, source content, test files, and all.  In this pattern the developer may decide not to create a specially tailored package.json file, and simply include the package.json file they use for development in the web component's root folder.  Refer to the [main](https://docs.npmjs.com/files/package.json#main) documentation for NPM when using this approach.  The "main" property of the componennt's root `package.json` must point to the `wuf-web-hello-world/dist/<source>.js` file. 
 
 Either option is fine.
 
 Build the Component
 ----------------------
 Building the component uses webpack to generate bundle files inside the `dist/` folder.  It is this `dist/` folder that is usually published to the Artifactory NPM repository.
-* Build the component from within `~/web-ui-framework/packages/kg-web-hello-world/`: *$* `yarn build`
+* Build the component from within `~/web-ui-framework/packages/wuf-web-hello-world/`: *$* `yarn build`
 * Verify everything builds as expected.
 * Check in the changes.
 
@@ -130,8 +130,8 @@ Publishing the component
 ----------------------
 You do not need to manually publish your component to the NPM registry.  Your component will be published automatically via a Jenkins pipeline when your merge request into master is accepted.
 
-* Ensure that `~/common-components/packages/kg-web-hello-world/package.json#version` reflects the desired component version. You MUST increment the version number so that it does not conflict with any existing published version number.
-* If, for any reason, you want to override the default `npm publish` behavior for your component, ensure that your component has a `publish` script in `~/common-components/packages/kg-web-hello-world/package.json#scripts`.  If present, this script will be run in lieu of the standard `npm publish` command.  This can be helpful when you would like to, for example, publish only the contents of the dist folder, which you could accomplish by adding a script with the contents: `npm publish dist`
+* Ensure that `~/common-components/packages/wuf-web-hello-world/package.json#version` reflects the desired component version. You MUST increment the version number so that it does not conflict with any existing published version number.
+* If, for any reason, you want to override the default `npm publish` behavior for your component, ensure that your component has a `publish` script in `~/common-components/packages/wuf-web-hello-world/package.json#scripts`.  If present, this script will be run in lieu of the standard `npm publish` command.  This can be helpful when you would like to, for example, publish only the contents of the dist folder, which you could accomplish by adding a script with the contents: `npm publish dist`
 * Ensure that all changed files are checked in: *$* `git status`. 
   * There should be nothing outstanding
 * Create a merge request for your branch.

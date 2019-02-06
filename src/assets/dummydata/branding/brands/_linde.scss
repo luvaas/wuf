@@ -20,8 +20,8 @@ of component variables that can be overridden.
 /* EXAMPLE USE OF BRANDING (LINDE) */
 /*************************************/
 
-:root[kg-theme="linde"],
-*[kg-theme="linde"] {
+:root[wuf-theme="linde"],
+*[wuf-theme="linde"] {
 
     /***** set color values to use in theme *****/
     $kg-brand-primary: #a90019;
@@ -33,7 +33,7 @@ of component variables that can be overridden.
     $kg-brand-danger: #dd2c00;
 
     /***** create a theme *****/
-    @include kg-theme-colors((
+    @include wuf-theme-colors((
         "primary": $kg-brand-primary,
         "secondary": $kg-brand-secondary,
         "accent": $kg-brand-accent,
@@ -44,10 +44,10 @@ of component variables that can be overridden.
     ));
 
     /***** logo *****/
-    //@include kg-theme-logo("/assets/images/example_images/logos/linde.svg", 120px, 30px);
+    //@include wuf-theme-logo("/assets/images/example_images/logos/linde.svg", 120px, 30px);
 
     /***** buttons *****/
-    @include kg-theme-button-radius(20px);
+    @include wuf-theme-button-radius(20px);
 
     /***** typography *****/
     @import url('https://fonts.googleapis.com/css?family=Bitter');
@@ -67,7 +67,7 @@ of component variables that can be overridden.
     $kg-brand-h5-font-size: 1.25rem;
     $kg-brand-h6-font-size: 1rem;
 
-    @include kg-theme-typography(
+    @include wuf-theme-typography(
             $kg-brand-body-color,
             $kg-brand-font-family-sans-serif,
             $kg-brand-font-family-serif,
@@ -114,7 +114,7 @@ of component variables that can be overridden.
     --wuf-kpi-alert-stripe-color: #a7061f;
 
     /***** dark theme overrides *****/
-    &[kg-theme-dark="true"] {
+    &[wuf-theme-dark="true"] {
 
         /***** body *****/
         --wuf-body-color: var(--wuf-color-gray-100);

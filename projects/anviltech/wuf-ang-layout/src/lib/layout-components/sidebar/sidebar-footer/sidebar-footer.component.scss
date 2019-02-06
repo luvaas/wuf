@@ -5,7 +5,7 @@
 
 // NOTE: There is no shadow DOM used for this component so that the following styles can be applied to content passed via content projection.  This means we can't use the typical :host trick for declaring local CSS custom properties.
 
-kg-sidebar-footer {
+wuf-sidebar-footer {
     width: 100%;
 }
 

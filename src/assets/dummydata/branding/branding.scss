@@ -16,7 +16,7 @@ Refer to available variables in ./partials/_variables.scss for a full list
 of component variables that can be overridden.
 */
 
-// The following is only required in kion-components library because relative ~ imports don't work in an Angular 6 workspace.  These SCSS variables shouldn't be necessary outside of kg-components
+// The following is only required in kion-components library because relative ~ imports don't work in an Angular 6 workspace.  These SCSS variables shouldn't be necessary outside of wuf-components
 $kg-is-local: true;
 $kg-default-logo-path: '../../../../packages/wuf-web-assets/assets/images';
 

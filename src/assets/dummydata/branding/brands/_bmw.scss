@@ -20,8 +20,8 @@ of component variables that can be overridden.
 /* EXAMPLE USE OF BRANDING (BMW) */
 /*************************************/
 
-:root[kg-theme="bmw"],
-*[kg-theme="bmw"] {
+:root[wuf-theme="bmw"],
+*[wuf-theme="bmw"] {
 
     /***** set color values to use in theme *****/
     $kg-brand-primary: #0099d8;
@@ -33,7 +33,7 @@ of component variables that can be overridden.
     $kg-brand-danger: #dd2c00;
 
     /***** create a theme *****/
-    @include kg-theme-colors((
+    @include wuf-theme-colors((
         "primary": $kg-brand-primary,
         "secondary": $kg-brand-secondary,
         "accent": $kg-brand-accent,
@@ -44,10 +44,10 @@ of component variables that can be overridden.
     ));
 
     /***** logo *****/
-    //@include kg-theme-logo("/assets/images/example_images/logos/bmw.svg", 175px, 50px);
+    //@include wuf-theme-logo("/assets/images/example_images/logos/bmw.svg", 175px, 50px);
 
     /***** buttons *****/
-    @include kg-theme-button-radius(20px);
+    @include wuf-theme-button-radius(20px);
 
     /***** links *****/
     --wuf-link-color: var(--wuf-color-primary);

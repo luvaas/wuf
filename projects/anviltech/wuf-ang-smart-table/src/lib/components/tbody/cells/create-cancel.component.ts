@@ -13,13 +13,13 @@ import { Row } from '../../../lib/data-set/row';
     selector: 'wuf-st-tbody-create-cancel',
     template: `
         <button mat-raised-button
-                class="kg-smart-action kg-smart-action-edit-save"
+                class="wuf-smart-action wuf-smart-action-edit-save"
                 [innerHTML]="saveButtonContent"
                 (click)="onSave($event)"
                 *ngIf="saveButtonContent"></button>
         <button mat-icon-button
                 *ngIf="!saveButtonContent"
-                class="kg-smart-action kg-smart-action-edit-save"
+                class="wuf-smart-action wuf-smart-action-edit-save"
                 (click)="onSave($event)"
                 [matTooltip]="saveTip"
                 matTooltipPosition="left">
@@ -27,13 +27,13 @@ import { Row } from '../../../lib/data-set/row';
         </button>
 
         <button mat-raised-button
-                class="kg-smart-action kg-smart-action-edit-cancel"
+                class="wuf-smart-action wuf-smart-action-edit-cancel"
                 [innerHTML]="cancelButtonContent"
                 (click)="onCancelEdit($event)"
                 *ngIf="cancelButtonContent"></button>
         <button mat-icon-button
                 *ngIf="!cancelButtonContent"
-                class="kg-smart-action kg-smart-action-edit-cancel"
+                class="wuf-smart-action wuf-smart-action-edit-cancel"
                 (click)="onCancelEdit($event)"
                 [matTooltip]="cancelTip"
                 matTooltipPosition="left">

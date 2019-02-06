@@ -10,7 +10,7 @@ import { DataSource } from '../../lib/data-source/data-source';
 
 
 @Component({
-    selector: '[kg-st-thead]',
+    selector: '[wuf-st-thead]',
     templateUrl: './thead.component.html',
     encapsulation: ViewEncapsulation.None
 })

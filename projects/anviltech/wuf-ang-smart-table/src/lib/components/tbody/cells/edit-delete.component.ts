@@ -16,12 +16,12 @@ import { DataSource } from '../../../lib/data-source/data-source';
     template: `
         <button mat-raised-button
                 *ngIf="isActionEdit && editRowButtonContent"
-                class="kg-smart-action kg-smart-action-edit-edit"
+                class="wuf-smart-action wuf-smart-action-edit-edit"
                 [innerHTML]="editRowButtonContent"
                 (click)="onEdit($event)"></button>
         <button mat-icon-button
                 *ngIf="isActionEdit && !editRowButtonContent"
-                class="kg-smart-action kg-smart-action-edit-edit"
+                class="wuf-smart-action wuf-smart-action-edit-edit"
                 (click)="onEdit($event)"
                 [matTooltip]="editTip"
                 matTooltipPosition="left">
@@ -30,13 +30,13 @@ import { DataSource } from '../../../lib/data-source/data-source';
 
         <button mat-raised-button
                 *ngIf="isActionDelete && deleteRowButtonContent"
-                class="kg-smart-action kg-smart-action-delete-delete"
+                class="wuf-smart-action wuf-smart-action-delete-delete"
                 [innerHTML]="deleteRowButtonContent"
                 (click)="onDelete($event)"></button>
 
         <button mat-icon-button
                 *ngIf="isActionDelete && !deleteRowButtonContent"
-                class="kg-smart-action kg-smart-action-edit-edit"
+                class="wuf-smart-action wuf-smart-action-edit-edit"
                 (click)="onDelete($event)"
                 [matTooltip]="deleteTip"
                 matTooltipPosition="left">

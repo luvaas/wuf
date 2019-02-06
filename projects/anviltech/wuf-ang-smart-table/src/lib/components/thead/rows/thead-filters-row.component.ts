@@ -10,14 +10,14 @@ import { DataSource } from '../../../lib/data-source/data-source';
 
 
 @Component({
-    selector: '[kg-st-thead-filters-row]',
+    selector: '[wuf-st-thead-filters-row]',
     template: `
         <th *ngIf="isMultiSelectVisible"></th>
-        <th kg-st-add-button *ngIf="showActionColumnLeft"
+        <th wuf-st-add-button *ngIf="showActionColumnLeft"
             [grid]="grid"
             (create)="create.emit($event)">
         </th>
-        <th *ngFor="let column of grid.getColumns()" class="kg-smart-th {{ column.id }}">
+        <th *ngFor="let column of grid.getColumns()" class="wuf-smart-th {{ column.id }}">
             <wuf-smart-table-filter [source]="source"
                                    [filterPlaceholder]="filterPlaceholder"
                                    [column]="column"
@@ -25,7 +25,7 @@ import { DataSource } from '../../../lib/data-source/data-source';
                                    (filter)="filter.emit($event)">
             </wuf-smart-table-filter>
         </th>
-        <th kg-st-add-button *ngIf="showActionColumnRight"
+        <th wuf-st-add-button *ngIf="showActionColumnRight"
             [grid]="grid"
             [source]="source"
             (create)="create.emit($event)">

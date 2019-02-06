@@ -4,7 +4,7 @@
  */
 
 export const configuration = {
-    id: 'kg-living-style-guide',
+    id: 'living-style-guide',
     name: 'Living Style Guide',
     copyrightName: '[Company Name]',
     navigation: {

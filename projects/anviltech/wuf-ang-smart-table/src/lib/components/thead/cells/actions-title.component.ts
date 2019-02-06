@@ -9,9 +9,9 @@ import { Grid } from '../../../lib/grid';
 
 
 @Component({
-    selector: '[kg-st-actions-title]',
+    selector: '[wuf-st-actions-title]',
     template: `
-        <div class="kg-smart-title">{{ actionsColumnTitle }}</div>
+        <div class="wuf-smart-title">{{ actionsColumnTitle }}</div>
     `,
     encapsulation: ViewEncapsulation.None
 })

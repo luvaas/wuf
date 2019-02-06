@@ -16,7 +16,7 @@ import { Column } from '../../../../lib/data-set/column';
     template: `
         <a href="#" *ngIf="column.isSortable"
            (click)="_sort($event)"
-           class="kg-smart-sort-link"
+           class="wuf-smart-sort-link"
            [ngClass]="currentDirection">
             {{ column.title }}
         </a>
@@ -30,7 +30,7 @@ import { Column } from '../../../../lib/data-set/column';
            [ngClass]="currentDirection">
             arrow_upward
         </i>
-        <span class="kg-smart-sort" *ngIf="!column.isSortable">{{ column.title }}</span>
+        <span class="wuf-smart-sort" *ngIf="!column.isSortable">{{ column.title }}</span>
     `,
     encapsulation: ViewEncapsulation.None
 })

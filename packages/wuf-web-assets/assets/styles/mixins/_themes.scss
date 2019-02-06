@@ -57,7 +57,7 @@
     @return map-get(map-get($text-colors, $contrast-tone), $text-style);
 }
 
-@function kg-mat-make-palette($color) {
+@function wuf-mat-make-palette($color) {
     $kg-mat-app-theme: (
         50: lighten($color, 50),
         100: lighten($color, 40),
@@ -96,16 +96,16 @@
 
 /** Create a Material Design theme for components
  */
-@mixin kg-mat-theme($primary, $accent, $warn) {
+@mixin wuf-mat-theme($primary, $accent, $warn) {
 
     // Define the palettes for your theme using the Material Design palettes available in palette.scss
     // (imported above). For each palette, you can optionally specify a default, lighter, and darker
     // hue. Available color palettes: https://www.google.com/design/spec/style/color.html
-    $kg-mat-palette-primary: kg-mat-make-palette($primary);
-    $kg-mat-palette-accent: kg-mat-make-palette($accent);
+    $kg-mat-palette-primary: wuf-mat-make-palette($primary);
+    $kg-mat-palette-accent: wuf-mat-make-palette($accent);
 
     // The warn palette is optional (defaults to red).
-    $kg-mat-palette-warn: kg-mat-make-palette($warn); //mat-palette($mat-red);
+    $kg-mat-palette-warn: wuf-mat-make-palette($warn); //mat-palette($mat-red);
 
     // Create the theme object (a Sass map containing all of the palettes).
     $kg-mat-app-theme: mat-light-theme($kg-mat-palette-primary, $kg-mat-palette-accent, $kg-mat-palette-warn);
@@ -195,7 +195,7 @@
 
 /** Create a theme for general layout and base styles
  */
-@mixin kg-theme-colors($map) {
+@mixin wuf-theme-colors($map) {
     // Create local SCSS variables for colors, defaulting to a matching color key in $kg-mat-app-theme-colors
     $brand-primary: getMapColor($map, "primary");
     $brand-secondary: getMapColor($map, "secondary");
@@ -237,16 +237,16 @@
     }
 
     // Create a Material Design Theme
-    @include kg-mat-theme($brand-primary, $brand-accent, $brand-danger);
+    @include wuf-mat-theme($brand-primary, $brand-accent, $brand-danger);
 }
 
-@mixin kg-theme-logo($url, $width: 200px, $height: 35px) {
+@mixin wuf-theme-logo($url, $width: 200px, $height: 35px) {
     --wuf-logo-url: #{'url(' + $url + ')'};
     --wuf-header-logo-width: #{$width};
     --wuf-header-logo-height: #{$height};
 }
 
-@mixin kg-theme-button-radius($radius) {
+@mixin wuf-theme-button-radius($radius) {
     button.mat-button, button.mat-raised-button,
     a.mat-button, a.mat-raised-button {
         @include mdc-button-corner-radius($radius);
@@ -255,7 +255,7 @@
 
 /** Create a theme for typography styles
  */
-@mixin kg-theme-typography(
+@mixin wuf-theme-typography(
     $font-color: $body-color,
 	$font-family-sans-serif: $font-family-sans-serif,
 	$font-family-serif: $font-family-serif,

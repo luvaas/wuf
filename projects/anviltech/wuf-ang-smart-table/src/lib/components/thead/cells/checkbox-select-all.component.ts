@@ -10,7 +10,7 @@ import { DataSource } from '../../../lib/data-source/data-source';
 
 
 @Component({
-    selector: '[kg-st-checkbox-select-all]',
+    selector: '[wuf-st-checkbox-select-all]',
     template: `
         <input type="checkbox" [ngModel]="isAllSelected">
     `,

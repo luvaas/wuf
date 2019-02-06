@@ -13,12 +13,12 @@ import { Grid } from '../../../lib/grid';
     template: `
         <button mat-button
                 *ngIf="createButtonContent"
-                class="kg-smart-action kg-smart-action-add-create"
+                class="wuf-smart-action wuf-smart-action-add-create"
                 [innerHTML]="createButtonContent"
                 (click)="$event.preventDefault();create.emit($event)"></button>
         <button mat-icon-button
                 *ngIf="!createButtonContent"
-                class="kg-smart-action kg-smart-action-add-create"
+                class="wuf-smart-action wuf-smart-action-add-create"
                 (click)="$event.preventDefault();create.emit($event)"
                 [matTooltip]="createTip"
                 matTooltipPosition="left">
@@ -27,12 +27,12 @@ import { Grid } from '../../../lib/grid';
 
         <button mat-button
                 *ngIf="cancelButtonContent"
-                class="kg-smart-action kg-smart-action-add-cancel"
+                class="wuf-smart-action wuf-smart-action-add-cancel"
                 [innerHTML]="cancelButtonContent"
                 (click)="cancelButton($event)"></button>
         <button mat-icon-button
                 *ngIf="!cancelButtonContent"
-                class="kg-smart-action kg-smart-action-add-cancel"
+                class="wuf-smart-action wuf-smart-action-add-cancel"
                 (click)="cancelButton($event)"
                 [matTooltip]="cancelTip"
                 matTooltipPosition="left">

@@ -38,8 +38,3 @@ imports: [
     KgDashboardModule
 ]
 ```
-
-Usage
------
-
-Refer to the Living Style Guide for documentation on usage of this package. 

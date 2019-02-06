@@ -12,9 +12,10 @@ https://docs.npmjs.com/orgs/managing-teams/index.html
 [x] convert file names from kg- --> wuf-
 [x] change darren.luvaas@dematic.com --> delete
 [x] replace https://gitlab.dematic.com/cloud_visualization_services/common-components with https://github.com/anvil-open-software/wuf
+[ ] change selectors to replace kg-
+[ ] change all package names from Kg___ to Wuf_______
 [ ] change registry entries for all package.json
 [ ] change repository entries for all package.json
-[ ] change all package names from Kg___ to Wuf_______
 [ ] package.json delete publishConfig entry
 [ ] Set package.json from private to public.  If you set "private": true in your package.json, then npm will refuse to publish it.
 [ ] search for gitlab.dematic.com
@@ -33,6 +34,7 @@ https://docs.npmjs.com/orgs/managing-teams/index.html
 [ ] remove polymer and nutmeg
 
 FUTURE:
+[x] move page title to right of page
 [ ] Smart Table fixes:
     [ ] forms.js:1181 
         It looks like you're using ngModel on the same form field as formControl. 
@@ -63,7 +65,6 @@ FUTURE:
 [ ] create a split-panel component
 [ ] implement BFF as a importable package for WUF
 [ ] add search functionality to styleguide
-[x] move page title to right of page
 [ ] set page titles using value from navigation.json
 [ ] Add example Google charts to WUF
 [ ] create demo of theme creation

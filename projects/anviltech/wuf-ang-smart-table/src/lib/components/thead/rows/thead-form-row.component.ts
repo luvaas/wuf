@@ -10,10 +10,10 @@ import { Row } from '../../../lib/data-set/row';
 
 
 @Component({
-    selector: '[kg-st-thead-form-row]',
+    selector: '[wuf-st-thead-form-row]',
     template: `
         <td *ngIf="isMultiSelectVisible"></td>
-        <td *ngIf="showActionColumnLeft" class="kg-smart-actions">
+        <td *ngIf="showActionColumnLeft" class="wuf-smart-actions">
             <wuf-st-actions [grid]="grid" (create)="onCreate($event)"></wuf-st-actions>
         </td>
         <td *ngFor="let cell of grid.getNewRow().getCells()">
@@ -26,7 +26,7 @@ import { Row } from '../../../lib/data-set/row';
                                  (edited)="onCreate($event)">
             </wuf-smart-table-cell>
         </td>
-        <td *ngIf="showActionColumnRight" class="kg-smart-actions">
+        <td *ngIf="showActionColumnRight" class="wuf-smart-actions">
             <wuf-st-actions [grid]="grid" (create)="onCreate($event)"></wuf-st-actions>
         </td>
     `,

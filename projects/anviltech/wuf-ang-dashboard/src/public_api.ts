@@ -4,7 +4,7 @@
  */
 
 /*
- * Public API Surface of kg-ang-dashboard
+ * Public API Surface of wuf-ang-dashboard
  */
 
 export * from './lib/dashboard.module';

@@ -14,7 +14,7 @@ import { Column } from '../../lib/data-set/column';
     selector: 'wuf-smart-table-filter',
     styleUrls: ['./filter.component.scss'],
     template: `
-        <div class="kg-smart-filter" *ngIf="column.isFilterable" [ngSwitch]="column.getFilterType()">
+        <div class="wuf-smart-filter" *ngIf="column.isFilterable" [ngSwitch]="column.getFilterType()">
             <select-filter *ngSwitchCase="'list'"
                            [query]="query"
                            [ngClass]="inputClass"

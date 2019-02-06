@@ -5,22 +5,22 @@
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KgSplitPanelComponent } from './kg-split-panel.component';
+import { WufSplitPanelComponent } from './wuf-split-panel.component';
 
 
 describe('KgSplitPanelComponent', () => {
-    let component: KgSplitPanelComponent;
-    let fixture: ComponentFixture<KgSplitPanelComponent>;
+    let component: WufSplitPanelComponent;
+    let fixture: ComponentFixture<WufSplitPanelComponent>;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [KgSplitPanelComponent]
+            declarations: [WufSplitPanelComponent]
         })
         .compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgSplitPanelComponent);
+        fixture = TestBed.createComponent(WufSplitPanelComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });
