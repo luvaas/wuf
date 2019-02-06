@@ -5,7 +5,7 @@
 
 import { Component, OnInit, Input, ViewEncapsulation, ViewChild, AfterViewInit } from '@angular/core';
 
-import { KgSidebarService } from '@anviltech/wuf-ang-layout';
+import { WufSidebarService } from '@anviltech/wuf-ang-layout';
 
 
 @Component({
@@ -14,7 +14,7 @@ import { KgSidebarService } from '@anviltech/wuf-ang-layout';
     templateUrl: 'navigation-link.component.html',
     encapsulation: ViewEncapsulation.Emulated
 })
-export class KgNavigationLinkComponent implements OnInit, AfterViewInit {
+export class WufNavigationLinkComponent implements OnInit, AfterViewInit {
     @Input() link: string;
     @Input() label: string;
     @Input() icon: string;
@@ -28,7 +28,7 @@ export class KgNavigationLinkComponent implements OnInit, AfterViewInit {
 
     isExpanded: boolean;
 
-    constructor(public kgSidebarService: KgSidebarService) {
+    constructor(public kgSidebarService: WufSidebarService) {
     }
 
     ngOnInit() {

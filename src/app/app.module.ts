@@ -16,15 +16,15 @@ import { AppComponent } from './app.component';
 import { RoutesModule } from './app-routes';
 
 /***** Import WUF *****/
-import { KgConfigurationModule, KgConfigurationService } from '@anviltech/wuf-ang-configuration';
-import { KgLayoutModule, KgLayoutService } from '@anviltech/wuf-ang-layout';
-import { KgUtilsModule } from '@anviltech/wuf-ang-utils';
-import { KgDrawerModule } from '@anviltech/wuf-ang-drawer';
-import { KgDashboardModule } from '@anviltech/wuf-ang-dashboard';
-import { KgLoginModule } from '@anviltech/wuf-ang-login-animated';
-import { KgNavigationModule } from '@anviltech/wuf-ang-navigation';
-import { KgGridsterModule } from '@anviltech/wuf-ang-gridster';
-import { KgSmartTableModule } from '@anviltech/wuf-ang-smart-table';
+import { WufConfigurationModule, WufConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { WufLayoutModule, WufLayoutService } from '@anviltech/wuf-ang-layout';
+import { WufUtilsModule } from '@anviltech/wuf-ang-utils';
+import { WufDrawerModule } from '@anviltech/wuf-ang-drawer';
+import { WufDashboardModule } from '@anviltech/wuf-ang-dashboard';
+import { WufLoginModule } from '@anviltech/wuf-ang-login-animated';
+import { WufNavigationModule } from '@anviltech/wuf-ang-navigation';
+import { WufGridsterModule } from '@anviltech/wuf-ang-gridster';
+import { WufSmartTableModule } from '@anviltech/wuf-ang-smart-table';
 import '@anviltech/wuf-web-code-sample';
 import '@anviltech/wuf-web-message';
 
@@ -96,15 +96,15 @@ import { GettingStartedComponent } from './pages/getting-started/getting-started
         LayoutsModule.forRoot(),
 
         // WUF
-        KgUtilsModule,
-        KgConfigurationModule.forRoot(),
-        KgLayoutModule.forRoot(),
-        KgDrawerModule.forRoot(),
-        KgDashboardModule.forRoot(),
-        KgLoginModule.forRoot(),
-        KgNavigationModule.forRoot(),
-        KgGridsterModule.forRoot(),
-        KgSmartTableModule.forRoot(),
+        WufUtilsModule,
+        WufConfigurationModule.forRoot(),
+        WufLayoutModule.forRoot(),
+        WufDrawerModule.forRoot(),
+        WufDashboardModule.forRoot(),
+        WufLoginModule.forRoot(),
+        WufNavigationModule.forRoot(),
+        WufGridsterModule.forRoot(),
+        WufSmartTableModule.forRoot(),
 
         // 3rd Party Imports
         NgxMdModule.forRoot(), // Markdown
@@ -127,8 +127,8 @@ import { GettingStartedComponent } from './pages/getting-started/getting-started
         I18nComponent
     ],
     providers: [
-        KgConfigurationService,
-        KgLayoutService,
+        WufConfigurationService,
+        WufLayoutService,
         ThemeListService,
         UserService,
         NavigationService,

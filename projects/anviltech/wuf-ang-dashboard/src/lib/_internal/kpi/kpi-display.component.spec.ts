@@ -7,10 +7,10 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { KpiDisplayComponent } from './kpi-display.component';
 import { KpiValueComponent } from '../kpi-value/kpi-value.component';
-import { KgDashboardService } from '../dashboard.service';
+import { WufDashboardService } from '../dashboard.service';
 
 
-describe('KgDashboardKpiComponent', () => {
+describe('WufDashboardKpiComponent', () => {
     let component: KpiDisplayComponent;
     let fixture: ComponentFixture<KpiDisplayComponent>;
 
@@ -21,7 +21,7 @@ describe('KgDashboardKpiComponent', () => {
                 KpiValueComponent
             ],
             providers: [
-                KgDashboardService
+                WufDashboardService
             ]
         })
         .compileComponents();

@@ -8,6 +8,6 @@ import { FormGroup } from '@angular/forms';
 
 
 @Injectable()
-export abstract class KgSmartTableValidatorService {
+export abstract class WufSmartTableValidatorService {
     abstract getFormGroup(): FormGroup;
 }

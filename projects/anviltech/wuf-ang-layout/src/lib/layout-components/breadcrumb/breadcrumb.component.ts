@@ -5,7 +5,7 @@
 
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
-export interface KgBreadcrumbItem {
+export interface WufBreadcrumbItem {
     link: string;
     queryParams?: any;
     active: boolean;
@@ -18,9 +18,9 @@ export interface KgBreadcrumbItem {
     styleUrls: ['./breadcrumb.component.scss'],
     encapsulation: ViewEncapsulation.None
 })
-export class KgBreadcrumbComponent implements OnInit {
+export class WufBreadcrumbComponent implements OnInit {
 
-    @Input() items?: KgBreadcrumbItem[] = [];
+    @Input() items?: WufBreadcrumbItem[] = [];
 
     constructor() {
     }

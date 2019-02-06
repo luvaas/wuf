@@ -5,7 +5,7 @@
 
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
-import { KgLoginService } from '@anviltech/wuf-ang-login-animated';
+import { WufLoginService } from '@anviltech/wuf-ang-login-animated';
 
 
 @Component({
@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
     loginSubscription: any;
     loginData: string;
 
-    constructor(private loginService: KgLoginService) {
+    constructor(private loginService: WufLoginService) {
     }
 
     ngOnInit() {

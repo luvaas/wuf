@@ -6,12 +6,12 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { KgSentenceCasePipe } from './capitalize.pipe';
+import { WufSentenceCasePipe } from './capitalize.pipe';
 
 
-describe('KgSentenceCasePipe', () => {
+describe('WufSentenceCasePipe', () => {
     // This pipe is a pure, stateless function so no need for BeforeEach
-    let pipe = new KgSentenceCasePipe();
+    let pipe = new WufSentenceCasePipe();
 
     it('create an instance', () => {
         expect(pipe).toBeTruthy();

@@ -20,14 +20,14 @@ yarn add @anviltech/wuf-ang-dashboard
 Import this package into your application's `app.module.ts` file:
 
 ```typescript
-import { KgDashboardModule } from '@anviltech/wuf-ang-dashboard';
+import { WufDashboardModule } from '@anviltech/wuf-ang-dashboard';
 ```
 
 Add to the `imports` section of `app.module.ts`:
 
 ```typescript
 imports: [
-    KgDashboardModule.forRoot()
+    WufDashboardModule.forRoot()
 ]
 ```
 
@@ -35,6 +35,6 @@ When this package is used in any application submodule (not the main `app.module
 
 ```typescript
 imports: [
-    KgDashboardModule
+    WufDashboardModule
 ]
 ```

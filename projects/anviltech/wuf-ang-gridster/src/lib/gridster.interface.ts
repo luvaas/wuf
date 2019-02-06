@@ -5,6 +5,6 @@
 
 import { GridsterItem } from 'angular-gridster2';
 
-export interface KgGridsterItem extends GridsterItem {
+export interface WufGridsterItem extends GridsterItem {
     title?: string;
 }

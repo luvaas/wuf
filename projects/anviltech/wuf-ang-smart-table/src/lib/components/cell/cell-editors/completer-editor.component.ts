@@ -6,7 +6,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 // import { CompleterService } from 'ng2-completer';
 
-import { KgSmartTableDefaultEditor } from './default-editor';
+import { WufSmartTableDefaultEditor } from './default-editor';
 
 
 @Component({
@@ -23,7 +23,7 @@ import { KgSmartTableDefaultEditor } from './default-editor';
     `,
     encapsulation: ViewEncapsulation.None
 })
-export class CompleterEditorComponent extends KgSmartTableDefaultEditor implements OnInit {
+export class CompleterEditorComponent extends WufSmartTableDefaultEditor implements OnInit {
 
     completerStr: string = '';
 

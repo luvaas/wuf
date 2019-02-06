@@ -8,14 +8,14 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { KgViewBasicComponent } from './basic.component';
+import { WufViewBasicComponent } from './basic.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { KgLayoutService } from '../layout.service';
+import { WufLayoutService } from '../layout.service';
 
 
-describe('KgViewBasicComponent', () => {
-    let component: KgViewBasicComponent;
-    let fixture: ComponentFixture<KgViewBasicComponent>;
+describe('WufViewBasicComponent', () => {
+    let component: WufViewBasicComponent;
+    let fixture: ComponentFixture<WufViewBasicComponent>;
 
     let de: DebugElement;
     let el: HTMLElement;
@@ -25,16 +25,16 @@ describe('KgViewBasicComponent', () => {
             schemas: [
                 CUSTOM_ELEMENTS_SCHEMA
             ],
-            declarations: [KgViewBasicComponent],
+            declarations: [WufViewBasicComponent],
             providers: [
-                KgLayoutService
+                WufLayoutService
             ]
         })
         .compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgViewBasicComponent);
+        fixture = TestBed.createComponent(WufViewBasicComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

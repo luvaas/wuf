@@ -10,14 +10,14 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { MatMenuModule, MatTooltipModule } from '@angular/material';
-import { KgSidebarService } from '@anviltech/wuf-ang-layout';
+import { WufSidebarService } from '@anviltech/wuf-ang-layout';
 
-import { KgNavigationLinkComponent } from './navigation-link.component';
+import { WufNavigationLinkComponent } from './navigation-link.component';
 
 
-describe('KgNavigationLinkComponent', () => {
-    let component: KgNavigationLinkComponent;
-    let fixture: ComponentFixture<KgNavigationLinkComponent>;
+describe('WufNavigationLinkComponent', () => {
+    let component: WufNavigationLinkComponent;
+    let fixture: ComponentFixture<WufNavigationLinkComponent>;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
@@ -29,16 +29,16 @@ describe('KgNavigationLinkComponent', () => {
                 MatMenuModule
             ],
             declarations: [
-                KgNavigationLinkComponent
+                WufNavigationLinkComponent
             ],
             providers: [
-                KgSidebarService
+                WufSidebarService
             ]
         });
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgNavigationLinkComponent);
+        fixture = TestBed.createComponent(WufNavigationLinkComponent);
         component = fixture.componentInstance;
         component.link = '/navlink';
         component.label = '"nav link text"';

@@ -15,11 +15,11 @@ import { FilterModule } from './components/filter/filter.module';
 import { PagerModule } from './components/pager/pager.module';
 import { TBodyModule } from './components/tbody/tbody.module';
 import { THeadModule } from './components/thead/thead.module';
-import { KgSmartTableComponent } from './smart-table.component';
-import { KgSmartTableValidatorService } from './lib/validator.service';
-import { DefaultKgSmartTableValidatorService } from './lib/default-validator.service';
+import { WufSmartTableComponent } from './smart-table.component';
+import { WufSmartTableValidatorService } from './lib/validator.service';
+import { DefaultWufSmartTableValidatorService } from './lib/default-validator.service';
 
-export { KgSmartTableComponent } from './smart-table.component';
+export { WufSmartTableComponent } from './smart-table.component';
 
 @NgModule({
     imports: [
@@ -35,19 +35,19 @@ export { KgSmartTableComponent } from './smart-table.component';
         MatTooltipModule
     ],
     declarations: [
-        KgSmartTableComponent
+        WufSmartTableComponent
     ],
     exports: [
-        KgSmartTableComponent
+        WufSmartTableComponent
     ],
     providers: [
-        {provide: KgSmartTableValidatorService, useClass: DefaultKgSmartTableValidatorService}
+        {provide: WufSmartTableValidatorService, useClass: DefaultWufSmartTableValidatorService}
     ]
 })
-export class KgSmartTableModule {
+export class WufSmartTableModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: KgSmartTableModule,
+            ngModule: WufSmartTableModule,
             providers: [
                 // Add any services used by this module to the providers collection
             ]

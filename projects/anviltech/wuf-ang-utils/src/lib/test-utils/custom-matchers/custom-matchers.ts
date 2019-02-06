@@ -63,7 +63,7 @@ export interface NgMatchers extends jasmine.Matchers<any> {
  *       in the Karma/Jasmine testing for the Layout Directives
  *       in `src/lib/flex/api`
  */
-export const KgCustomMatchers: any = {
+export const WufCustomMatchers: any = {
 
     toEqual: function (util) {
         return {

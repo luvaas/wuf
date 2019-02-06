@@ -3,7 +3,7 @@
  * Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
  */
 
-export declare class KgCodeSample extends HTMLElement {
+export declare class WufCodeSample extends HTMLElement {
     private defaultCopyLabel;
     private defaultCopyLabelError;
     private defaultCopyLabelDone;

@@ -13,13 +13,13 @@ import { CommonModule } from '@angular/common';
  * Imports
  * Import components and services used by the module here
  */
-import { KgConfigurationService } from './configuration.service';
+import { WufConfigurationService } from './configuration.service';
 
 /**
  * Export
  * Export components and services used by the module here
  */
-export { KgConfigurationService } from './configuration.service';
+export { WufConfigurationService } from './configuration.service';
 
 
 @NgModule({
@@ -33,13 +33,13 @@ export { KgConfigurationService } from './configuration.service';
         // Export components used in this module
     ]
 })
-export class KgConfigurationModule {
+export class WufConfigurationModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: KgConfigurationModule,
+            ngModule: WufConfigurationModule,
             providers: [
                 // Add any services used by this module to the providers collection
-                KgConfigurationService
+                WufConfigurationService
             ]
         };
     }

@@ -3,7 +3,7 @@
  * Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
  */
 
-export declare class KgWebMessage extends HTMLElement {
+export declare class WufWebMessage extends HTMLElement {
     constructor();
 
     static readonly observedAttributes: string[];

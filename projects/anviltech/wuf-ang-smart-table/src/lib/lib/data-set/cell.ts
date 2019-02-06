@@ -8,7 +8,7 @@ import { DataSet } from './data-set';
 import { Row } from './row';
 
 
-export class KgSmartTableCell {
+export class WufSmartTableCell {
 
     newValue: any = '';
 
@@ -35,7 +35,7 @@ export class KgSmartTableCell {
 
     getValue(): any {
         const valid = this.column.getValuePrepareFunction() instanceof Function;
-        const prepare = valid ? this.column.getValuePrepareFunction() : KgSmartTableCell.prepareFunc;
+        const prepare = valid ? this.column.getValuePrepareFunction() : WufSmartTableCell.prepareFunc;
         return prepare.call(null, this.value, this.row.getData());
     }
 

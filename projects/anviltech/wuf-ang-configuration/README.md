@@ -20,14 +20,14 @@ yarn add @anviltech/wuf-ang-configuration
 Import this package into your application's `app.module.ts` file:
 
 ```typescript
-import { KgDashboardModule } from '@anviltech/wuf-ang-configuration';
+import { WufDashboardModule } from '@anviltech/wuf-ang-configuration';
 ```
 
 Add to the `imports` section of `app.module.ts`:
 
 ```typescript
 imports: [
-    KgConfigurationModule.forRoot()
+    WufConfigurationModule.forRoot()
 ]
 ```
 
@@ -35,7 +35,7 @@ Add to the `providers` section of `app.module.ts`:
 
 ```typescript
 providers: [
-    KgConfigurationService
+    WufConfigurationService
 ]
 ```
 
@@ -43,7 +43,7 @@ When this package is used in any application submodule (not the main `app.module
 
 ```typescript
 imports: [
-    KgConfigurationModule
+    WufConfigurationModule
 ]
 ```
 

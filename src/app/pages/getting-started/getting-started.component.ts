@@ -5,7 +5,7 @@
 
 import { Component, OnInit, ViewEncapsulation, OnDestroy } from '@angular/core';
 
-import { KgContentFooterService } from '@anviltech/wuf-ang-layout';
+import { WufContentFooterService } from '@anviltech/wuf-ang-layout';
 
 
 @Component({
@@ -15,7 +15,7 @@ import { KgContentFooterService } from '@anviltech/wuf-ang-layout';
     encapsulation: ViewEncapsulation.Emulated
 })
 export class GettingStartedComponent implements OnInit, OnDestroy {
-    constructor(private kgContentFooterService: KgContentFooterService) {
+    constructor(private kgContentFooterService: WufContentFooterService) {
     }
 
     ngOnInit() {

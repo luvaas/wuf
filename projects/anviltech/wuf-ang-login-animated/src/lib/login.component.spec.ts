@@ -7,19 +7,19 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { KgLoginComponent } from './login.component';
+import { WufLoginComponent } from './login.component';
 import { MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule } from '@angular/material';
-import { KgLoginService } from './login.service';
-import { KgLayoutService } from '@anviltech/wuf-ang-layout';
+import { WufLoginService } from './login.service';
+import { WufLayoutService } from '@anviltech/wuf-ang-layout';
 
 
-describe('KgLoginComponent', () => {
-    let component: KgLoginComponent;
-    let fixture: ComponentFixture<KgLoginComponent>;
+describe('WufLoginComponent', () => {
+    let component: WufLoginComponent;
+    let fixture: ComponentFixture<WufLoginComponent>;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [KgLoginComponent],
+            declarations: [WufLoginComponent],
             imports: [
                 FormsModule,
                 BrowserAnimationsModule,
@@ -29,15 +29,15 @@ describe('KgLoginComponent', () => {
                 MatButtonModule
             ],
             providers: [
-                KgLoginService,
-                KgLayoutService
+                WufLoginService,
+                WufLayoutService
             ]
         })
         .compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgLoginComponent);
+        fixture = TestBed.createComponent(WufLoginComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

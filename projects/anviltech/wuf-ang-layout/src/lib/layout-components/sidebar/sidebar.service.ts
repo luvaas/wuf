@@ -23,7 +23,7 @@ export interface FooterResponseData {
 }
 
 @Injectable()
-export class KgSidebarService {
+export class WufSidebarService {
 
     sidebarIsExpanded: boolean;  // Keep this undefined so the sidebar can expand/collapse automatically based on initial screen size
     sidebarIsResizing: boolean = false;

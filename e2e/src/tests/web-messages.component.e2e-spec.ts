@@ -4,7 +4,7 @@
  */
 
 import { browser, by } from 'protractor';
-import { KgWebMessagesComponentView } from '../pages/web-messages.component.view.po';
+import { WufWebMessagesComponentView } from '../pages/web-messages.component.view.po';
 import { WebElement } from 'selenium-webdriver';
 import { NavigationComponentView } from '../pages/navigation.component.view.po';
 
@@ -25,7 +25,7 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
         WARNING: `warning`
     };
 
-    const view: KgWebMessagesComponentView = new KgWebMessagesComponentView();
+    const view: WufWebMessagesComponentView = new WufWebMessagesComponentView();
 
     const pageRoute: string = '/components/kgWebMessages';
 
@@ -50,11 +50,11 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
         });
 
         it('has the wuf-web-message element on the page', () => {
-            expect(view.get_viewKgWebMessageElement()).toBeTruthy();
+            expect(view.get_viewWufWebMessageElement()).toBeTruthy();
         });
 
         it(`has the wuf-web-message element on the page and have a tag of 'wuf-web-message'`, () => {
-            expect(view.get_viewKgWebMessageElement().getTagName()).toEqual('wuf-web-message');
+            expect(view.get_viewWufWebMessageElement().getTagName()).toEqual('wuf-web-message');
         });
 
         it('its wuf-web-message element has one shadow-root child', () => {
@@ -136,7 +136,7 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
 
         describe(' after the wuf-web-message dismiss button is clicked', () => {
             it('the wuf-web-message element is on the page)', () => {
-                expect(view.get_viewKgWebMessageElement()).toBeTruthy();
+                expect(view.get_viewWufWebMessageElement()).toBeTruthy();
             });
             it('the wuf-web-message element has no shadow-root children', () => {
                 view.get_kgWebMessageShadowDivs().then(
@@ -213,7 +213,7 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
 
         describe(' after the wuf-web-message dismiss button is clicked', () => {
             it('the wuf-web-message element is on the page)', () => {
-                expect(view.get_viewKgWebMessageElement()).toBeTruthy();
+                expect(view.get_viewWufWebMessageElement()).toBeTruthy();
             });
             it('the wuf-web-message element has no shadow-root children', () => {
                 view.get_kgWebMessageShadowDivs().then(
@@ -290,7 +290,7 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
 
         describe(' after the wuf-web-message dismiss button is clicked', () => {
             it('the wuf-web-message element is on the page)', () => {
-                expect(view.get_viewKgWebMessageElement()).toBeTruthy();
+                expect(view.get_viewWufWebMessageElement()).toBeTruthy();
             });
             it('the wuf-web-message element has no shadow-root children', () => {
                 view.get_kgWebMessageShadowDivs().then(
@@ -368,7 +368,7 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
 
         describe(' after the wuf-web-message dismiss button is clicked', () => {
             it('the wuf-web-message element is on the page)', () => {
-                expect(view.get_viewKgWebMessageElement()).toBeTruthy();
+                expect(view.get_viewWufWebMessageElement()).toBeTruthy();
             });
             it('the wuf-web-message element has no shadow-root children', () => {
                 view.get_kgWebMessageShadowDivs().then(

@@ -3,7 +3,7 @@
  * Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
  */
 
-import { KgSmartTableCell } from './cell';
+import { WufSmartTableCell } from './cell';
 import { Column } from './column';
 import { DataSet } from './data-set';
 
@@ -12,13 +12,13 @@ export class Row {
 
     isSelected: boolean = false;
     isInEditing: boolean = false;
-    cells: Array<KgSmartTableCell> = [];
+    cells: Array<WufSmartTableCell> = [];
 
     constructor(public index: number, protected data: any, protected _dataSet: DataSet) {
         this.process();
     }
 
-    getCell(column: Column): KgSmartTableCell | undefined {
+    getCell(column: Column): WufSmartTableCell | undefined {
         return this.cells.find(el => el.getColumn() === column);
     }
 
@@ -53,9 +53,9 @@ export class Row {
         });
     }
 
-    createCell(column: Column): KgSmartTableCell {
+    createCell(column: Column): WufSmartTableCell {
         const defValue = (column as any).settings.defaultValue ? (column as any).settings.defaultValue : '';
         const value = typeof this.data[column.id] === 'undefined' ? defValue : this.data[column.id];
-        return new KgSmartTableCell(value, this, column, this._dataSet);
+        return new WufSmartTableCell(value, this, column, this._dataSet);
     }
 }

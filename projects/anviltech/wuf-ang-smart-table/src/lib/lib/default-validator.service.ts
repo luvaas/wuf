@@ -5,10 +5,10 @@
 
 import { Injectable } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { KgSmartTableValidatorService } from './validator.service';
+import { WufSmartTableValidatorService } from './validator.service';
 
 @Injectable()
-export class DefaultKgSmartTableValidatorService implements KgSmartTableValidatorService {
+export class DefaultWufSmartTableValidatorService implements WufSmartTableValidatorService {
     getFormGroup(): FormGroup {
         return new FormGroup({});
 

@@ -4,16 +4,16 @@
  */
 
 import { Injectable } from '@angular/core';
-import { KgGridsterItem } from './gridster.interface';
+import { WufGridsterItem } from './gridster.interface';
 import { Observable, Subject } from 'rxjs/index';
 
 
 @Injectable({
     providedIn: 'root'
 })
-export class KgGridsterService {
+export class WufGridsterService {
 
-    items: Array<KgGridsterItem>;
+    items: Array<WufGridsterItem>;
     private updateSubject = new Subject<any>();
 
     constructor() {

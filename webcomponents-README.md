@@ -35,7 +35,7 @@ Therefore, if my component is called "Hello World", it's library name will be:
 We will use the token [name-of-library] to represent this library component name in the following instructions.
 
 ### Scaffold the Component
-In the following example, we're going to create a 'hello world' web component that shows some simple text as part of example branch DLABS-1234.  We'll call this component `@anviltech/wuf-web-hello-world` and its class name will be `KgWebHelloWorld`.
+In the following example, we're going to create a 'hello world' web component that shows some simple text as part of example branch DLABS-1234.  We'll call this component `@anviltech/wuf-web-hello-world` and its class name will be `WufWebHelloWorld`.
 
 1. CD to root WUF folder in your terminal (i.e., `~web-ui-framework/`).
 2. Create the component scaffold: *$* `npm init @nutmeg wuf-web-hello-world name:string`.  Note that we do NOT include "@anviltech/" in the package name here, which would create a superfluous @anviltech folder. A `wuf-web-hello-world` folder is created at WUF root at `~web-ui-framework/wuf-web-hello-world` folder.  This new folder includes a number of files and children folders.  

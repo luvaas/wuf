@@ -4,7 +4,7 @@
  */
 
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
-import { KgSidebarService } from '../sidebar.service';
+import { WufSidebarService } from '../sidebar.service';
 
 
 @Component({
@@ -14,7 +14,7 @@ import { KgSidebarService } from '../sidebar.service';
     encapsulation: ViewEncapsulation.None // NOTE: There is no shadow DOM used for this component so that the
     // following styles can be applied to content passed via content projection.
 })
-export class KgSidebarFooterComponent implements OnInit {
+export class WufSidebarFooterComponent implements OnInit {
     @Input() data?: any = [];
     @Input() dataUrl?: string;
     @Input() copyrightName ? = '';
@@ -23,7 +23,7 @@ export class KgSidebarFooterComponent implements OnInit {
     footerData: any = [];
     year: any = new Date().getFullYear();
 
-    constructor(public kgSidebarService: KgSidebarService) {
+    constructor(public kgSidebarService: WufSidebarService) {
     }
 
     ngOnInit() {

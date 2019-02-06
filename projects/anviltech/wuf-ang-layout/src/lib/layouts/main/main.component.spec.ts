@@ -8,18 +8,18 @@ import { By } from '@angular/platform-browser';
 import { DebugElement, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { KgViewMainComponent } from './main.component';
+import { WufViewMainComponent } from './main.component';
 
-import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { WufConfigurationService } from '@anviltech/wuf-ang-configuration';
 
-import { KgSidebarService } from '../../layout-components/sidebar/sidebar.service';
-import { KgSidebarMainComponent } from '../../layout-components/sidebar/sidebar-main/sidebar-main.component';
-import { KgLayoutService } from '../layout.service';
+import { WufSidebarService } from '../../layout-components/sidebar/sidebar.service';
+import { WufSidebarMainComponent } from '../../layout-components/sidebar/sidebar-main/sidebar-main.component';
+import { WufLayoutService } from '../layout.service';
 
 
-describe('KgViewMainComponent', () => {
-    let component: KgViewMainComponent;
-    let fixture: ComponentFixture<KgViewMainComponent>;
+describe('WufViewMainComponent', () => {
+    let component: WufViewMainComponent;
+    let fixture: ComponentFixture<WufViewMainComponent>;
 
     let sidebarService: any;
     let de: DebugElement;
@@ -36,23 +36,23 @@ describe('KgViewMainComponent', () => {
                 CUSTOM_ELEMENTS_SCHEMA
             ],
             declarations: [
-                KgViewMainComponent,
-                KgSidebarMainComponent
+                WufViewMainComponent,
+                WufSidebarMainComponent
             ],
             providers: [
-                KgSidebarService,
-                KgConfigurationService,
-                KgLayoutService
+                WufSidebarService,
+                WufConfigurationService,
+                WufLayoutService
             ]
         })
         .compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgViewMainComponent);
+        fixture = TestBed.createComponent(WufViewMainComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
-        sidebarService = KgSidebarService;
+        sidebarService = WufSidebarService;
     });
 
     describe('Sanity check', () => {

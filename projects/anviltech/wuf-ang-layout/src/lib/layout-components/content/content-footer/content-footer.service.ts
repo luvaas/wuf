@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 
 
 @Injectable()
-export class KgContentFooterService {
+export class WufContentFooterService {
 
     public isVisible = false;
 

@@ -8,7 +8,7 @@
 // import { expect } from 'chai';
 // import 'karma-fixture';
 import '@webcomponents/webcomponentsjs/webcomponents-lite';
-import {KgWebMessage} from '../src/wuf-web-message'; // Do not delete, it is required!!
+import {WufWebMessage} from '../src/wuf-web-message'; // Do not delete, it is required!!
 
 describe('<wuf-web-message>', () => {
     let component;

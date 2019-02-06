@@ -9,7 +9,7 @@
 // import 'karma-fixture';
 import '@webcomponents/webcomponentsjs/webcomponents-lite';
 
-import {KgCodeSample} from '../src/wuf-code-sample';
+import {WufCodeSample} from '../src/wuf-code-sample';
 
 describe('<wuf-code-sample>', () => {
     let component;

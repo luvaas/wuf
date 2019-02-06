@@ -15,54 +15,54 @@ import { RouterModule } from '@angular/router';
  * 3rd Party Imports
  * Import 3rd party modules and components here
  */
-import { KgConfigurationModule, KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { WufConfigurationModule, WufConfigurationService } from '@anviltech/wuf-ang-configuration';
 import { MatTooltipModule } from '@angular/material';
 
 /**
  * Imports
  * Import local components and services used by the module here
  */
-import { KgViewBasicComponent } from './layouts/basic/basic.component';
-import { KgViewMainComponent } from './layouts/main/main.component';
-import { KgContentMainComponent } from './layout-components/content/content-main/content-main.component';
-import { KgContentHeaderComponent } from './layout-components/content/content-header/content-header.component';
-import { KgContentFooterComponent } from './layout-components/content/content-footer/content-footer.component';
-import { KgContentFooterService } from './layout-components/content/content-footer/content-footer.service';
-import { KgSidebarMainComponent } from './layout-components/sidebar/sidebar-main/sidebar-main.component';
-import { KgSidebarFooterComponent } from './layout-components/sidebar/sidebar-footer/sidebar-footer.component';
-import { KgSidebarService } from './layout-components/sidebar/sidebar.service';
-import { KgToolbarComponent } from './layout-components/toolbar/toolbar.component';
-import { KgBreadcrumbComponent } from './layout-components/breadcrumb/breadcrumb.component';
-import { KgLayoutService } from './layouts/layout.service';
+import { WufViewBasicComponent } from './layouts/basic/basic.component';
+import { WufViewMainComponent } from './layouts/main/main.component';
+import { WufContentMainComponent } from './layout-components/content/content-main/content-main.component';
+import { WufContentHeaderComponent } from './layout-components/content/content-header/content-header.component';
+import { WufContentFooterComponent } from './layout-components/content/content-footer/content-footer.component';
+import { WufContentFooterService } from './layout-components/content/content-footer/content-footer.service';
+import { WufSidebarMainComponent } from './layout-components/sidebar/sidebar-main/sidebar-main.component';
+import { WufSidebarFooterComponent } from './layout-components/sidebar/sidebar-footer/sidebar-footer.component';
+import { WufSidebarService } from './layout-components/sidebar/sidebar.service';
+import { WufToolbarComponent } from './layout-components/toolbar/toolbar.component';
+import { WufBreadcrumbComponent } from './layout-components/breadcrumb/breadcrumb.component';
+import { WufLayoutService } from './layouts/layout.service';
 
 /**
  * Export
  * Export components and services used by the module here
  */
-export { KgViewBasicComponent } from './layouts/basic/basic.component';
-export { KgViewMainComponent } from './layouts/main/main.component';
-export { KgContentMainComponent } from './layout-components/content/content-main/content-main.component';
-export { KgContentHeaderComponent } from './layout-components/content/content-header/content-header.component';
-export { KgContentFooterComponent } from './layout-components/content/content-footer/content-footer.component';
-export { KgContentFooterService } from './layout-components/content/content-footer/content-footer.service';
-export { KgSidebarMainComponent } from './layout-components/sidebar/sidebar-main/sidebar-main.component';
-export { KgSidebarFooterComponent } from './layout-components/sidebar/sidebar-footer/sidebar-footer.component';
-export { KgSidebarService } from './layout-components/sidebar/sidebar.service';
-export { KgToolbarComponent } from './layout-components/toolbar/toolbar.component';
-export { KgBreadcrumbComponent, KgBreadcrumbItem } from './layout-components/breadcrumb/breadcrumb.component';
-export { KgLayoutService } from './layouts/layout.service';
+export { WufViewBasicComponent } from './layouts/basic/basic.component';
+export { WufViewMainComponent } from './layouts/main/main.component';
+export { WufContentMainComponent } from './layout-components/content/content-main/content-main.component';
+export { WufContentHeaderComponent } from './layout-components/content/content-header/content-header.component';
+export { WufContentFooterComponent } from './layout-components/content/content-footer/content-footer.component';
+export { WufContentFooterService } from './layout-components/content/content-footer/content-footer.service';
+export { WufSidebarMainComponent } from './layout-components/sidebar/sidebar-main/sidebar-main.component';
+export { WufSidebarFooterComponent } from './layout-components/sidebar/sidebar-footer/sidebar-footer.component';
+export { WufSidebarService } from './layout-components/sidebar/sidebar.service';
+export { WufToolbarComponent } from './layout-components/toolbar/toolbar.component';
+export { WufBreadcrumbComponent, WufBreadcrumbItem } from './layout-components/breadcrumb/breadcrumb.component';
+export { WufLayoutService } from './layouts/layout.service';
 
 const components = [
     // List all components and modules used in this module
-    KgViewBasicComponent,
-    KgViewMainComponent,
-    KgContentMainComponent,
-    KgContentHeaderComponent,
-    KgContentFooterComponent,
-    KgToolbarComponent,
-    KgBreadcrumbComponent,
-    KgSidebarMainComponent,
-    KgSidebarFooterComponent
+    WufViewBasicComponent,
+    WufViewMainComponent,
+    WufContentMainComponent,
+    WufContentHeaderComponent,
+    WufContentFooterComponent,
+    WufToolbarComponent,
+    WufBreadcrumbComponent,
+    WufSidebarMainComponent,
+    WufSidebarFooterComponent
 ];
 
 @NgModule({
@@ -70,21 +70,21 @@ const components = [
         CommonModule,
         RouterModule,
         MatTooltipModule,
-        KgConfigurationModule
+        WufConfigurationModule
     ],
     declarations: components,
     exports: components
 })
-export class KgLayoutModule {
+export class WufLayoutModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: KgLayoutModule,
+            ngModule: WufLayoutModule,
             providers: [
                 // Add any services used by this module to the providers collection
-                KgContentFooterService,
-                KgSidebarService,
-                KgConfigurationService,
-                KgLayoutService
+                WufContentFooterService,
+                WufSidebarService,
+                WufConfigurationService,
+                WufLayoutService
             ]
         };
     }

@@ -10,7 +10,7 @@ import { DataSource } from '../data-source';
 import { deepExtend } from '../../helpers';
 
 
-export class KgSmartTableLocalDataSource extends DataSource {
+export class WufSmartTableLocalDataSource extends DataSource {
 
     protected data: Array<any> = [];
     protected filteredAndSorted: Array<any> = [];
@@ -128,7 +128,7 @@ export class KgSmartTableLocalDataSource extends DataSource {
      * @param doEmit
      *
      */
-    setSort(conf: Array<any>, doEmit = true): KgSmartTableLocalDataSource {
+    setSort(conf: Array<any>, doEmit = true): WufSmartTableLocalDataSource {
         if (conf !== null) {
 
             conf.forEach((fieldConf) => {
@@ -154,7 +154,7 @@ export class KgSmartTableLocalDataSource extends DataSource {
      * @param doEmit
      *
      */
-    setFilter(conf: Array<any>, andOperator = true, doEmit = true): KgSmartTableLocalDataSource {
+    setFilter(conf: Array<any>, andOperator = true, doEmit = true): WufSmartTableLocalDataSource {
         if (conf && conf.length > 0) {
             conf.forEach((fieldConf) => {
                 this.addFilter(fieldConf, andOperator, false);
@@ -172,7 +172,7 @@ export class KgSmartTableLocalDataSource extends DataSource {
         return this;
     }
 
-    addFilter(fieldConf: any, andOperator = true, doEmit: boolean = true): KgSmartTableLocalDataSource {
+    addFilter(fieldConf: any, andOperator = true, doEmit: boolean = true): WufSmartTableLocalDataSource {
         if (!fieldConf['field'] || typeof fieldConf['search'] === 'undefined') {
             throw new Error('Filter configuration object is not valid');
         }
@@ -192,7 +192,7 @@ export class KgSmartTableLocalDataSource extends DataSource {
         return this;
     }
 
-    setPaging(page: number, perPage: number, doEmit: boolean = true): KgSmartTableLocalDataSource {
+    setPaging(page: number, perPage: number, doEmit: boolean = true): WufSmartTableLocalDataSource {
         this.pagingConf['page'] = page;
         this.pagingConf['perPage'] = perPage;
 
@@ -200,7 +200,7 @@ export class KgSmartTableLocalDataSource extends DataSource {
         return this;
     }
 
-    setPage(page: number, doEmit: boolean = true): KgSmartTableLocalDataSource {
+    setPage(page: number, doEmit: boolean = true): WufSmartTableLocalDataSource {
         this.pagingConf['page'] = page;
         super.setPage(page, doEmit);
         return this;

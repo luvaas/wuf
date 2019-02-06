@@ -5,7 +5,7 @@
 
 import { Component, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 
-import { KgSmartTableCell } from '../../../lib/data-set/cell';
+import { WufSmartTableCell } from '../../../lib/data-set/cell';
 
 
 @Component({
@@ -28,7 +28,7 @@ import { KgSmartTableCell } from '../../../lib/data-set/cell';
 })
 export class EditCellComponent {
 
-    @Input() cell: KgSmartTableCell;
+    @Input() cell: WufSmartTableCell;
     @Input() inputClass: string = '';
 
     @Output() edited = new EventEmitter<any>();

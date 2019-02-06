@@ -11,13 +11,13 @@ import { RequestOptionsArgs } from '@angular/http/src/interfaces';
 import { URLSearchParams } from '@angular/http';
 import { Observable } from 'rxjs';
 
-import { KgSmartTableLocalDataSource } from '../local/local.data-source';
+import { WufSmartTableLocalDataSource } from '../local/local.data-source';
 import { ServerSourceConf } from './server-source.conf';
 import { getDeepFromObject } from '../../helpers';
 import { map } from 'rxjs/operators';
 
 
-export class KgSmartTableServerDataSource extends KgSmartTableLocalDataSource {
+export class WufSmartTableServerDataSource extends WufSmartTableLocalDataSource {
 
     protected conf: ServerSourceConf;
 

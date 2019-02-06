@@ -5,7 +5,7 @@
 
 import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 
-import { KgSmartTableCell, KgSmartTableDefaultEditor, KgSmartTableEditor } from '@anviltech/wuf-ang-smart-table';
+import { WufSmartTableCell, WufSmartTableDefaultEditor, WufSmartTableEditor } from '@anviltech/wuf-ang-smart-table';
 
 // import { NgbPopover } from '@ng-bootstrap/ng-bootstrap';
 
@@ -46,7 +46,7 @@ import { KgSmartTableCell, KgSmartTableDefaultEditor, KgSmartTableEditor } from 
         </mat-form-field>
     `
 })
-export class CustomEditorForIDValidationSmartTable extends KgSmartTableDefaultEditor implements AfterViewInit {
+export class CustomEditorForIDValidationSmartTable extends WufSmartTableDefaultEditor implements AfterViewInit {
     // editor definition
 
     ngAfterViewInit() {

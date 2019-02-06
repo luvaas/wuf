@@ -5,11 +5,11 @@
 
 import { Output, EventEmitter, Input } from '@angular/core';
 
-import { KgSmartTableCell } from '../../../lib/data-set/cell';
+import { WufSmartTableCell } from '../../../lib/data-set/cell';
 
 
-export class KgSmartTableDefaultEditor implements KgSmartTableEditor {
-    @Input() cell: KgSmartTableCell;
+export class WufSmartTableDefaultEditor implements WufSmartTableEditor {
+    @Input() cell: WufSmartTableCell;
     @Input() inputClass: string;
 
     @Output() onStopEditing = new EventEmitter<any>();
@@ -17,8 +17,8 @@ export class KgSmartTableDefaultEditor implements KgSmartTableEditor {
     @Output() onClick = new EventEmitter<any>();
 }
 
-export interface KgSmartTableEditor {
-    cell: KgSmartTableCell;
+export interface WufSmartTableEditor {
+    cell: WufSmartTableCell;
     inputClass: string;
     onStopEditing: EventEmitter<any>;
     onEdited: EventEmitter<any>;

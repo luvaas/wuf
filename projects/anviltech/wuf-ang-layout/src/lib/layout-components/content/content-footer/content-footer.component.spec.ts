@@ -8,35 +8,35 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { KgContentFooterComponent } from './content-footer.component';
-import { KgContentFooterService } from './content-footer.service';
+import { WufContentFooterComponent } from './content-footer.component';
+import { WufContentFooterService } from './content-footer.service';
 
-import { KgCustomMatchers } from '@anviltech/wuf-ang-utils';
+import { WufCustomMatchers } from '@anviltech/wuf-ang-utils';
 
 
-describe('KgContentFooterComponent', () => {
-    let component: KgContentFooterComponent;
-    let fixture: ComponentFixture<KgContentFooterComponent>;
+describe('WufContentFooterComponent', () => {
+    let component: WufContentFooterComponent;
+    let fixture: ComponentFixture<WufContentFooterComponent>;
 
     let de: DebugElement;
     let el: HTMLElement;
 
     beforeEach(async(() => {
-        jasmine.addMatchers(KgCustomMatchers);
+        jasmine.addMatchers(WufCustomMatchers);
 
         TestBed.configureTestingModule({
             declarations: [
-                KgContentFooterComponent
+                WufContentFooterComponent
             ],
             providers: [
-                KgContentFooterService
+                WufContentFooterService
             ]
         })
         .compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgContentFooterComponent);
+        fixture = TestBed.createComponent(WufContentFooterComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

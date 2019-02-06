@@ -5,21 +5,21 @@
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KgDrawerComponent } from './drawer.component';
+import { WufDrawerComponent } from './drawer.component';
 
-describe('KgDrawerComponent', () => {
-  let component: KgDrawerComponent;
-  let fixture: ComponentFixture<KgDrawerComponent>;
+describe('WufDrawerComponent', () => {
+  let component: WufDrawerComponent;
+  let fixture: ComponentFixture<WufDrawerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ KgDrawerComponent ]
+      declarations: [ WufDrawerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(KgDrawerComponent);
+    fixture = TestBed.createComponent(WufDrawerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

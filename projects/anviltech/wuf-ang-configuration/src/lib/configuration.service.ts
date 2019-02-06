@@ -14,7 +14,7 @@ export interface NavigationConfig {
     alignment?: string;
 }
 
-export interface KgConfiguration {
+export interface WufConfiguration {
     id?: string;
     copyrightName?: string;
     navigation?: NavigationConfig;
@@ -29,10 +29,10 @@ export interface KgConfiguration {
 @Injectable({
     providedIn: 'root'
 })
-export class KgConfigurationService implements OnInit {
+export class WufConfigurationService implements OnInit {
 
     // Define default values for Configuration
-    private _config: KgConfiguration = {
+    private _config: WufConfiguration = {
         id: 'wuf-application',
         copyrightName: '',
         navigation: {
@@ -56,7 +56,7 @@ export class KgConfigurationService implements OnInit {
     ngOnInit() {
     }
 
-    get config(): KgConfiguration {
+    get config(): WufConfiguration {
         return this._config;
     }
 
@@ -65,7 +65,7 @@ export class KgConfigurationService implements OnInit {
      This is safer than simply replacing the config with whatever is passed in since this will ensure some important
      default values (like app id) are always present.  This also allows us to pass in incomplete config objects.
      */
-    set config(newConfig: KgConfiguration) {
+    set config(newConfig: WufConfiguration) {
         this._config = deepMerge(this._config, newConfig);
 
         const key = this.getStorageKey();
@@ -81,12 +81,12 @@ export class KgConfigurationService implements OnInit {
         return myAppId + '_' + myUserId;
     }
 
-    broadCastConfigChange(newConfig: KgConfiguration) {
+    broadCastConfigChange(newConfig: WufConfiguration) {
         // Broadcast that a config property has been updated with a new value
         this.configSubject.next(newConfig);
     }
 
-    onConfigChange(): Observable<KgConfiguration> {
+    onConfigChange(): Observable<WufConfiguration> {
         // Allow other components to subscribe to config change events
         return this.configSubject.asObservable();
     }
@@ -115,7 +115,7 @@ export class KgConfigurationService implements OnInit {
         }
     }
 
-    private _saveConfig(myConfig: KgConfiguration, storageKey?: string) {
+    private _saveConfig(myConfig: WufConfiguration, storageKey?: string) {
         const key = storageKey ? storageKey : this.getStorageKey();
 
         try {

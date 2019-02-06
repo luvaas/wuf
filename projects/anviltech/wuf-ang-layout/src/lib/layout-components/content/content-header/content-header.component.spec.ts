@@ -8,15 +8,15 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { KgContentHeaderComponent } from './content-header.component';
-import { KgSidebarService } from '../../sidebar/sidebar.service';
+import { WufContentHeaderComponent } from './content-header.component';
+import { WufSidebarService } from '../../sidebar/sidebar.service';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterTestingModule } from '@angular/router/testing';
 
 
-describe('KgContentHeaderComponent', () => {
-    let component: KgContentHeaderComponent;
-    let fixture: ComponentFixture<KgContentHeaderComponent>;
+describe('WufContentHeaderComponent', () => {
+    let component: WufContentHeaderComponent;
+    let fixture: ComponentFixture<WufContentHeaderComponent>;
 
     let de: DebugElement;
     let el: HTMLElement;
@@ -27,10 +27,10 @@ describe('KgContentHeaderComponent', () => {
                 CUSTOM_ELEMENTS_SCHEMA
             ],
             declarations: [
-                KgContentHeaderComponent
+                WufContentHeaderComponent
             ],
             providers: [
-                KgSidebarService
+                WufSidebarService
             ],
             imports: [
                 RouterTestingModule
@@ -40,7 +40,7 @@ describe('KgContentHeaderComponent', () => {
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgContentHeaderComponent);
+        fixture = TestBed.createComponent(WufContentHeaderComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

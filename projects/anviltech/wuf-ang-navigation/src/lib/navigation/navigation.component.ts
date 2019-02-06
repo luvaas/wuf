@@ -5,8 +5,8 @@
 
 import { Component, OnInit, Input, ViewEncapsulation, OnChanges } from '@angular/core';
 
-import { KgNavigationService } from '../navigation.service';
-import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { WufNavigationService } from '../navigation.service';
+import { WufConfigurationService } from '@anviltech/wuf-ang-configuration';
 
 
 @Component({
@@ -15,7 +15,7 @@ import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
     templateUrl: 'navigation.component.html',
     encapsulation: ViewEncapsulation.Emulated
 })
-export class KgNavigationComponent implements OnInit, OnChanges {
+export class WufNavigationComponent implements OnInit, OnChanges {
     @Input() dataUrl?: string;
     @Input() data?: any;
     @Input() position?: string = 'left';
@@ -24,7 +24,7 @@ export class KgNavigationComponent implements OnInit, OnChanges {
 
     navData: any;
 
-    constructor(private navService: KgNavigationService, public configService: KgConfigurationService) {
+    constructor(private navService: WufNavigationService, public configService: WufConfigurationService) {
     }
 
     /** Get nav data from service or from passed object.  Use it to construct the navigation elements.

@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
  * Imports
  * Import components and services used by the module here
  */
-import { KgSentenceCasePipe } from './capitalize.pipe/capitalize.pipe';
+import { WufSentenceCasePipe } from './capitalize.pipe/capitalize.pipe';
 
 /**
  * Export
@@ -29,7 +29,7 @@ export * from './capitalize.pipe/capitalize.pipe';
 // export * from './test-utils/style-transforms';
 // export * from './test-utils/triggers';
 export * from './utils/utils';
-export { KgSentenceCasePipe } from './capitalize.pipe/capitalize.pipe';
+export { WufSentenceCasePipe } from './capitalize.pipe/capitalize.pipe';
 
 
 @NgModule({
@@ -38,17 +38,17 @@ export { KgSentenceCasePipe } from './capitalize.pipe/capitalize.pipe';
     ],
     declarations: [
         // Declare components used in this module
-        KgSentenceCasePipe
+        WufSentenceCasePipe
     ],
     exports: [
         // Export components used in this module
-        KgSentenceCasePipe
+        WufSentenceCasePipe
     ]
 })
-export class KgUtilsModule {
+export class WufUtilsModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: KgUtilsModule,
+            ngModule: WufUtilsModule,
             providers: [
                 // Add any services used by this module to the providers collection
             ]

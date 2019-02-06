@@ -20,14 +20,14 @@ yarn add @anviltech/wuf-ang-login-animated
 Import this package into your application's `app.module.ts` file:
 
 ```typescript
-import { KgDashboardModule } from '@anviltech/wuf-ang-login-animated';
+import { WufDashboardModule } from '@anviltech/wuf-ang-login-animated';
 ```
 
 Add to the `imports` section of `app.module.ts`:
 
 ```typescript
 imports: [
-    KgLogindModule.forRoot()
+    WufLogindModule.forRoot()
 ]
 ```
 
@@ -35,7 +35,7 @@ When this package is used in any application submodule (not the main `app.module
 
 ```typescript
 imports: [
-    KgLogindModule
+    WufLogindModule
 ]
 ```
 

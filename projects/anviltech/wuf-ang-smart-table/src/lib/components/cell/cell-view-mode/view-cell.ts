@@ -3,7 +3,7 @@
  * Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
  */
 
-export interface KgSmartTableViewCell {
+export interface WufSmartTableViewCell {
     value: string | number;
     rowData: any;
 }

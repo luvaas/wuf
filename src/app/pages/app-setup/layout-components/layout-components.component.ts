@@ -4,7 +4,7 @@
  */
 
 import { Component, OnInit } from '@angular/core';
-import { KgContentFooterService } from '@anviltech/wuf-ang-layout';
+import { WufContentFooterService } from '@anviltech/wuf-ang-layout';
 
 
 @Component({
@@ -14,7 +14,7 @@ import { KgContentFooterService } from '@anviltech/wuf-ang-layout';
 })
 export class LayoutComponentsComponent implements OnInit {
 
-    constructor(private footerService: KgContentFooterService) {
+    constructor(private footerService: WufContentFooterService) {
     }
 
     ngOnInit() {
@@ -68,7 +68,7 @@ export class LayoutComponentsComponent implements OnInit {
 	`;
 
     footerToggleCode1 = `import { Component, OnInit } from '@angular/core';
-	import { KgContentFooterService } from '@anviltech/wuf-ang-layout';
+	import { WufContentFooterService } from '@anviltech/wuf-ang-layout';
 	
 	
 	@Component({
@@ -78,7 +78,7 @@ export class LayoutComponentsComponent implements OnInit {
 	})
 	export class LayoutComponentsComponent implements OnInit {
 	
-		constructor(private footerService: KgContentFooterService) {
+		constructor(private footerService: WufContentFooterService) {
 		}
 	
 		ngOnInit() {

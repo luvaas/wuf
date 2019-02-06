@@ -6,7 +6,7 @@
 import { Component, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 
 import { Grid } from '../../lib/grid';
-import { KgSmartTableCell } from '../../lib/data-set/cell';
+import { WufSmartTableCell } from '../../lib/data-set/cell';
 import { Row } from '../../lib/data-set/row';
 
 
@@ -28,7 +28,7 @@ export class CellComponent {
     @Input() editConfirm: EventEmitter<any>;
     @Input() createConfirm: EventEmitter<any>;
     @Input() isNew: boolean;
-    @Input() cell: KgSmartTableCell;
+    @Input() cell: WufSmartTableCell;
     @Input() inputClass: string = '';
     @Input() mode: string = 'inline';
     @Input() isInEditing: boolean = false;

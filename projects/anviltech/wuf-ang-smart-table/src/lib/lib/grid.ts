@@ -11,7 +11,7 @@ import {Column} from './data-set/column';
 import {Row} from './data-set/row';
 import {DataSet} from './data-set/data-set';
 import {DataSource} from './data-source/data-source';
-import {KgSmartTableValidatorService} from './validator.service';
+import {WufSmartTableValidatorService} from './validator.service';
 
 export class Grid {
 
@@ -26,7 +26,7 @@ export class Grid {
 
     onSelectRowSource = new Subject<any>();
 
-    constructor(source: DataSource, settings: any, validator: KgSmartTableValidatorService) {
+    constructor(source: DataSource, settings: any, validator: WufSmartTableValidatorService) {
         this.setSettings(settings, validator);
         this.setSource(source);
     }
@@ -51,7 +51,7 @@ export class Grid {
         return this.dataSet.newRow;
     }
 
-    setSettings(settings: Object, validator: KgSmartTableValidatorService) {
+    setSettings(settings: Object, validator: WufSmartTableValidatorService) {
         this.settings = settings;
         this.createFormShown = this.getSetting('add.createFormShownAlways') || this.getSetting('add.createFormShownInitial');
         this.dataSet = new DataSet([], this.getSetting('columns'), validator);

@@ -27,7 +27,7 @@ export interface NavResponseData {
 
 
 @Injectable()
-export class KgNavigationService {
+export class WufNavigationService {
     constructor(private http: HttpClient) {
     }
 

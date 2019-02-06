@@ -8,7 +8,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 /**
  * @ngdoc pipe
- * @name KgSentenceCasePipe
+ * @name WufSentenceCasePipe
  *
  * @description
  * Transform to Title Case: uppercase the first letter of the words in a string.
@@ -18,7 +18,7 @@ import { Pipe, PipeTransform } from '@angular/core';
  * @author Rodrigo Silveira
  */
 @Pipe({name: 'kgSentenceCase'})
-export class KgSentenceCasePipe implements PipeTransform {
+export class WufSentenceCasePipe implements PipeTransform {
     transform(value: string, args?: any): any {
         if (value) {
             return value.length === 0 ? '' :

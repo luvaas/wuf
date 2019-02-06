@@ -41,14 +41,14 @@ The software engineer declares _kg-web-message_ as a target view child, with the
 The host component's controller includes logic to access _kg-web-message_ setter methods; in _Angular_ this is done using the _ViewChild_ decorator; ; the code snippet below is found in the Living Style Guide _web-messages.component's_ _web-messages.component.ts_ controller:
 
 ```typescript
-export class KgWebMessagesComponent implements OnInit {
+export class WufWebMessagesComponent implements OnInit {
 	@ViewChild('kgm') kgm : ElementRef;
 ````
 
 The host component's controller also includes logic to trigger messages.
 
 ````typescript
-export class KgWebMessagesComponent implements OnInit {
+export class WufWebMessagesComponent implements OnInit {
 	
 	// Button click handler to trigger an error message
 	onShowErrorMessageClick() {

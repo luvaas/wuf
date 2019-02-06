@@ -22,14 +22,14 @@ yarn add @anviltech/wuf-ang-gridster material-design-icons @angular/material
 Import this package into your application's `app.module.ts` file:
 
 ```typescript
-import { KgGridsterModule } from '@anviltech/wuf-ang-gridster';
+import { WufGridsterModule } from '@anviltech/wuf-ang-gridster';
 ```
 
 Add to the `imports` section of `app.module.ts`:
 
 ```typescript
 imports: [
-    KgGridsterModule.forRoot()
+    WufGridsterModule.forRoot()
 ]
 ```
 
@@ -37,7 +37,7 @@ When this package is used in any application submodule (not the main `app.module
 
 ```typescript
 imports: [
-    KgGridsterModule
+    WufGridsterModule
 ]
 ```
 

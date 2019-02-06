@@ -4,7 +4,7 @@
  */
 
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { KgContentFooterService } from './content-footer.service';
+import { WufContentFooterService } from './content-footer.service';
 
 
 @Component({
@@ -13,9 +13,9 @@ import { KgContentFooterService } from './content-footer.service';
     templateUrl: 'content-footer.component.html',
     encapsulation: ViewEncapsulation.Emulated
 })
-export class KgContentFooterComponent implements OnInit {
+export class WufContentFooterComponent implements OnInit {
 
-    constructor(public KgContentFooterService: KgContentFooterService) {
+    constructor(public WufContentFooterService: WufContentFooterService) {
     }
 
     ngOnInit() {

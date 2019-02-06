@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonModule, MatIconModule, MatProgressBarModule, MatTooltipModule } from '@angular/material';
 
 import { CellModule } from '../cell/cell.module';
-import { KgSmartTableTbodyComponent } from './tbody.component';
+import { WufSmartTableTbodyComponent } from './tbody.component';
 import { TbodyCreateCancelComponent } from './cells/create-cancel.component';
 import { TbodyEditDeleteComponent } from './cells/edit-delete.component';
 
@@ -18,7 +18,7 @@ import { TbodyEditDeleteComponent } from './cells/edit-delete.component';
 const TBODY_COMPONENTS = [
     TbodyCreateCancelComponent,
     TbodyEditDeleteComponent,
-    KgSmartTableTbodyComponent
+    WufSmartTableTbodyComponent
 ];
 
 @NgModule({

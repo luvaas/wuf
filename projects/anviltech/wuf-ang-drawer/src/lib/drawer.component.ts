@@ -6,7 +6,7 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { KgDrawerService } from './drawer.service';
+import { WufDrawerService } from './drawer.service';
 
 
 @Component({
@@ -15,7 +15,7 @@ import { KgDrawerService } from './drawer.service';
     styleUrls: ['drawer.component.scss'],
     encapsulation: ViewEncapsulation.Emulated
 })
-export class KgDrawerComponent implements OnInit {
+export class WufDrawerComponent implements OnInit {
 
     @Input() header: string;
     @Input() id: string;
@@ -23,7 +23,7 @@ export class KgDrawerComponent implements OnInit {
     drawerHideSubscription: Subscription;
     active: boolean = false;
 
-    constructor(public drawerService: KgDrawerService) {
+    constructor(public drawerService: WufDrawerService) {
     }
 
     ngOnInit() {

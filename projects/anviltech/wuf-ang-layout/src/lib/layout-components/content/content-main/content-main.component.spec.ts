@@ -7,25 +7,25 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { KgContentMainComponent } from './content-main.component';
+import { WufContentMainComponent } from './content-main.component';
 
 
-describe('KgContentMainComponent', () => {
-    let component: KgContentMainComponent;
-    let fixture: ComponentFixture<KgContentMainComponent>;
+describe('WufContentMainComponent', () => {
+    let component: WufContentMainComponent;
+    let fixture: ComponentFixture<WufContentMainComponent>;
 
     let de: DebugElement;
     let el: HTMLElement;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [KgContentMainComponent]
+            declarations: [WufContentMainComponent]
         })
         .compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgContentMainComponent);
+        fixture = TestBed.createComponent(WufContentMainComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

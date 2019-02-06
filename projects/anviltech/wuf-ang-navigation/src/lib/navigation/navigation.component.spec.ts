@@ -10,16 +10,16 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { MatMenuModule, MatTooltipModule } from '@angular/material';
-import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { WufConfigurationService } from '@anviltech/wuf-ang-configuration';
 
-import { KgNavigationComponent } from './navigation.component';
-import { KgNavigationLinkComponent } from '../navigation-link/navigation-link.component';
-import { KgNavigationService } from '../navigation.service';
+import { WufNavigationComponent } from './navigation.component';
+import { WufNavigationLinkComponent } from '../navigation-link/navigation-link.component';
+import { WufNavigationService } from '../navigation.service';
 
 
-describe('KgNavigationComponent', () => {
-    let component: KgNavigationComponent;
-    let fixture: ComponentFixture<KgNavigationComponent>;
+describe('WufNavigationComponent', () => {
+    let component: WufNavigationComponent;
+    let fixture: ComponentFixture<WufNavigationComponent>;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
@@ -31,18 +31,18 @@ describe('KgNavigationComponent', () => {
                 MatMenuModule
             ],
             declarations: [
-                KgNavigationComponent,
-                KgNavigationLinkComponent
+                WufNavigationComponent,
+                WufNavigationLinkComponent
             ],
             providers: [
-                KgNavigationService,
-                KgConfigurationService
+                WufNavigationService,
+                WufConfigurationService
             ]
         });
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgNavigationComponent);
+        fixture = TestBed.createComponent(WufNavigationComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

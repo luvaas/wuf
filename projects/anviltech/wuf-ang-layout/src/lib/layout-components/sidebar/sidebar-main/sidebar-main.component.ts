@@ -6,9 +6,9 @@
 import { Component, OnInit, ViewEncapsulation, OnDestroy, ViewChild, ElementRef } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { WufConfigurationService } from '@anviltech/wuf-ang-configuration';
 
-import { KgSidebarService } from '../sidebar.service';
+import { WufSidebarService } from '../sidebar.service';
 
 
 @Component({
@@ -17,7 +17,7 @@ import { KgSidebarService } from '../sidebar.service';
     styleUrls: ['./sidebar-main.component.scss'],
     encapsulation: ViewEncapsulation.Emulated
 })
-export class KgSidebarMainComponent implements OnInit, OnDestroy {
+export class WufSidebarMainComponent implements OnInit, OnDestroy {
     sidebarToggleSubscription: Subscription;
     sidebarShowSubscription: Subscription;
     sidebarHideSubscription: Subscription;
@@ -38,7 +38,7 @@ export class KgSidebarMainComponent implements OnInit, OnDestroy {
     @ViewChild('sidebarWrap') sidebarWrap: ElementRef;
     @ViewChild('sidebar') sidebar: ElementRef;
 
-    constructor(public kgSidebarService: KgSidebarService, public configService: KgConfigurationService) {
+    constructor(public kgSidebarService: WufSidebarService, public configService: WufConfigurationService) {
     }
 
     ngOnInit() {
@@ -76,7 +76,7 @@ export class KgSidebarMainComponent implements OnInit, OnDestroy {
             this.toggleResizer(message.event);
         });
 
-        // Subscribe to KgConfigurationService updates
+        // Subscribe to WufConfigurationService updates
         this.configSubscription = this.configService.onConfigChange().subscribe(
             newConfig => {
                 this.onConfigChange(newConfig);

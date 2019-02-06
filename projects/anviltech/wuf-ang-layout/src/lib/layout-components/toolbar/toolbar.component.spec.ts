@@ -7,29 +7,29 @@ import { async, ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { KgToolbarComponent } from './toolbar.component';
+import { WufToolbarComponent } from './toolbar.component';
 
 
-describe('KgToolbarComponent', () => {
-    let component: KgToolbarComponent;
-    let fixture: ComponentFixture<KgToolbarComponent>;
+describe('WufToolbarComponent', () => {
+    let component: WufToolbarComponent;
+    let fixture: ComponentFixture<WufToolbarComponent>;
     let de: DebugElement;
     let el: HTMLElement;
 
-    // Stub KgSidebarService for test purposes
+    // Stub WufSidebarService for test purposes
     let spy_serviceMethod: any;
     let sidebarService: any;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [KgToolbarComponent],
+            declarations: [WufToolbarComponent],
             providers: []
         })
         .compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgToolbarComponent);
+        fixture = TestBed.createComponent(WufToolbarComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

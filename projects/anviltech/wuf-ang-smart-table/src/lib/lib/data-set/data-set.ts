@@ -7,7 +7,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 
 import { Row } from './row';
 import { Column } from './column';
-import { KgSmartTableValidatorService } from '../validator.service';
+import { WufSmartTableValidatorService } from '../validator.service';
 
 
 export class DataSet {
@@ -22,7 +22,7 @@ export class DataSet {
     protected selectedRow: Row;
     protected willSelect: string = 'first';
 
-    constructor(data: Array<any> = [], protected columnSettings: Object, private validator: KgSmartTableValidatorService) {
+    constructor(data: Array<any> = [], protected columnSettings: Object, private validator: WufSmartTableValidatorService) {
         this.createColumns(columnSettings);
         this.setData(data);
         this.createNewRowValidator();

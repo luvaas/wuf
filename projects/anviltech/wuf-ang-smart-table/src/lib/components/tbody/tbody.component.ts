@@ -15,7 +15,7 @@ import { DataSource } from '../../lib/data-source/data-source';
     templateUrl: './tbody.component.html',
     encapsulation: ViewEncapsulation.None
 })
-export class KgSmartTableTbodyComponent {
+export class WufSmartTableTbodyComponent {
 
     @Input() grid: Grid;
     @Input() source: DataSource;

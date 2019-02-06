@@ -9,18 +9,18 @@ import { DebugElement } from '@angular/core';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { KgSidebarMainComponent } from './sidebar-main.component';
-import { KgSidebarService } from '../sidebar.service';
-import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { WufSidebarMainComponent } from './sidebar-main.component';
+import { WufSidebarService } from '../sidebar.service';
+import { WufConfigurationService } from '@anviltech/wuf-ang-configuration';
 
 
-describe('KgSidebarMainComponent', () => {
-    let component: KgSidebarMainComponent;
-    let fixture: ComponentFixture<KgSidebarMainComponent>;
+describe('WufSidebarMainComponent', () => {
+    let component: WufSidebarMainComponent;
+    let fixture: ComponentFixture<WufSidebarMainComponent>;
     let de: DebugElement;
     let el: HTMLElement;
 
-    // Stub KgSidebarService for test purposes
+    // Stub WufSidebarService for test purposes
     let spy_serviceMethod: any;
     let sidebarService: any;
 
@@ -31,21 +31,21 @@ describe('KgSidebarMainComponent', () => {
                 RouterTestingModule,
                 HttpClientTestingModule
             ],
-            declarations: [KgSidebarMainComponent],
+            declarations: [WufSidebarMainComponent],
             providers: [
-                KgSidebarService,
-                KgConfigurationService
+                WufSidebarService,
+                WufConfigurationService
             ]
         })
         .compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgSidebarMainComponent);
+        fixture = TestBed.createComponent(WufSidebarMainComponent);
         component = fixture.componentInstance;
 
-        // Get KgSidebarService from the root injector
-        sidebarService = fixture.debugElement.injector.get(KgSidebarService);
+        // Get WufSidebarService from the root injector
+        sidebarService = fixture.debugElement.injector.get(WufSidebarService);
 
         fixture.detectChanges();
     });

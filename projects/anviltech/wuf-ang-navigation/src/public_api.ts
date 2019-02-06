@@ -8,6 +8,6 @@
  */
 
 export * from './lib/navigation.module';
-export { KgNavigationComponent } from './lib/navigation/navigation.component';
-export { KgNavigationLinkComponent } from './lib/navigation-link/navigation-link.component';
-export { KgNavigationService } from './lib/navigation.service';
+export { WufNavigationComponent } from './lib/navigation/navigation.component';
+export { WufNavigationLinkComponent } from './lib/navigation-link/navigation-link.component';
+export { WufNavigationService } from './lib/navigation.service';

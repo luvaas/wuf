@@ -4,7 +4,7 @@
  */
 
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { KgLoginService } from './login.service';
+import { WufLoginService } from './login.service';
 
 
 @Component({
@@ -13,9 +13,9 @@ import { KgLoginService } from './login.service';
     styleUrls: ['./login.component.scss'],
     encapsulation: ViewEncapsulation.Emulated
 })
-export class KgLoginComponent implements OnInit {
+export class WufLoginComponent implements OnInit {
 
-    constructor(public loginService: KgLoginService) {
+    constructor(public loginService: WufLoginService) {
     }
 
     ngOnInit() {

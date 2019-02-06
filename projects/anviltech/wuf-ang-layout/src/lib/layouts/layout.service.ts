@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 
 
 @Injectable()
-export class KgLayoutService {
+export class WufLayoutService {
 
     headerVisible: boolean = true;
 

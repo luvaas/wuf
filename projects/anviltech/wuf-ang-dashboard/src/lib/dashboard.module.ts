@@ -20,18 +20,18 @@ import { RouterModule } from '@angular/router';
  * Imports
  * Import local components and services used by the module here
  */
-import { KgDashboardComponent } from './dashboard/dashboard.component';
+import { WufDashboardComponent } from './dashboard/dashboard.component';
 import { KpiDisplayComponent } from './_internal/kpi/kpi-display.component';
 import { KpiValueComponent } from './_internal/kpi-value/kpi-value.component';
-import { KgDashboardService } from './_internal/dashboard.service';
-import { KgKpiComponent } from './kpi/kpi.component';
+import { WufDashboardService } from './_internal/dashboard.service';
+import { WufKpiComponent } from './kpi/kpi.component';
 
 /**
  * Export
  * Export components and services used by the module here
  */
-export { KgDashboardComponent } from './dashboard/dashboard.component';
-export { KgKpiComponent } from './kpi/kpi.component';
+export { WufDashboardComponent } from './dashboard/dashboard.component';
+export { WufKpiComponent } from './kpi/kpi.component';
 
 
 @NgModule({
@@ -41,24 +41,24 @@ export { KgKpiComponent } from './kpi/kpi.component';
     ],
     declarations: [
         // List all components and modules used in this module
-        KgDashboardComponent,
+        WufDashboardComponent,
         KpiDisplayComponent,
         KpiValueComponent,
-        KgKpiComponent
+        WufKpiComponent
     ],
     exports: [
         // List all components and modules to be exported here
-        KgDashboardComponent,
-        KgKpiComponent
+        WufDashboardComponent,
+        WufKpiComponent
     ]
 })
-export class KgDashboardModule {
+export class WufDashboardModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: KgDashboardModule,
+            ngModule: WufDashboardModule,
             providers: [
                 // Add any services used by this module to the providers collection
-                KgDashboardService
+                WufDashboardService
             ]
         };
     }

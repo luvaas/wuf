@@ -20,14 +20,14 @@ yarn add @anviltech/wuf-ang-smart-table
 Import this package into your application's `app.module.ts` file:
 
 ```typescript
-import { KgTableModule } from '@anviltech/wuf-ang-smart-table';
+import { WufTableModule } from '@anviltech/wuf-ang-smart-table';
 ```
 
 Add to the `imports` section of `app.module.ts`:
 
 ```typescript
 imports: [
-    KgTableModule.forRoot()
+    WufTableModule.forRoot()
 ]
 ```
 
@@ -35,7 +35,7 @@ When this package is used in any application submodule (not the main `app.module
 
 ```typescript
 imports: [
-    KgTableModule
+    WufTableModule
 ]
 ```
 

@@ -7,11 +7,11 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Subject } from 'rxjs';
 
-import { KgLayoutService } from '@anviltech/wuf-ang-layout';
+import { WufLayoutService } from '@anviltech/wuf-ang-layout';
 
 
 @Injectable()
-export class KgLoginService {
+export class WufLoginService {
 
     showOverlay: boolean = false;
     showPanel: boolean = false;
@@ -22,7 +22,7 @@ export class KgLoginService {
     private loginSubject = new Subject<any>();
     private logoutSubject = new Subject<any>();
 
-    constructor(private layoutService: KgLayoutService) {
+    constructor(private layoutService: WufLayoutService) {
     }
 
     // Allow other components to receive notifications of login events

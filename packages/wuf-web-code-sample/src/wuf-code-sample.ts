@@ -13,7 +13,7 @@ import { unsafeHTML } from 'lit-html/lib/unsafe-html';
 const css = require('./wuf-code-sample.scss');
 const hljs = require('highlight.js');
 
-export class KgCodeSample extends HTMLElement {
+export class WufCodeSample extends HTMLElement {
 
     private defaultCopyLabel = 'Copy';
     private defaultCopyLabelError = 'Error';
@@ -275,4 +275,4 @@ export class KgCodeSample extends HTMLElement {
     }
 }
 
-window.customElements.define('wuf-code-sample', KgCodeSample);
+window.customElements.define('wuf-code-sample', WufCodeSample);

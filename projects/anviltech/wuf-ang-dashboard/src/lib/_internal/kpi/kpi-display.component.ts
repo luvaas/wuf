@@ -4,7 +4,7 @@
  */
 
 import { Component, OnInit, Input, ViewEncapsulation, ViewChild, ElementRef } from '@angular/core';
-import { KgDashboardService } from '../dashboard.service';
+import { WufDashboardService } from '../dashboard.service';
 
 
 @Component({
@@ -22,7 +22,7 @@ export class KpiDisplayComponent implements OnInit {
     @Input() disabled?: boolean;
     @ViewChild('kpi') el: ElementRef;
 
-    constructor(public dashboardService: KgDashboardService) {
+    constructor(public dashboardService: WufDashboardService) {
     }
 
     ngOnInit() {

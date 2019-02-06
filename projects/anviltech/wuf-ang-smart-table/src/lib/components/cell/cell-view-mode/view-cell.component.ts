@@ -5,7 +5,7 @@
 
 import { Component, Input, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 
-import { KgSmartTableCell } from '../../../lib/data-set/cell';
+import { WufSmartTableCell } from '../../../lib/data-set/cell';
 
 
 @Component({
@@ -22,5 +22,5 @@ import { KgSmartTableCell } from '../../../lib/data-set/cell';
 })
 export class ViewCellComponent {
 
-    @Input() cell: KgSmartTableCell;
+    @Input() cell: WufSmartTableCell;
 }

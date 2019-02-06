@@ -5,14 +5,14 @@
 
 import { TestBed } from '@angular/core/testing';
 
-import { KgGridsterService } from './gridster.service';
+import { WufGridsterService } from './gridster.service';
 
 
-describe('KgGridsterService', () => {
+describe('WufGridsterService', () => {
     beforeEach(() => TestBed.configureTestingModule({}));
 
     it('should be created', () => {
-        const service: KgGridsterService = TestBed.get(KgGridsterService);
+        const service: WufGridsterService = TestBed.get(WufGridsterService);
         expect(service).toBeTruthy();
     });
 });

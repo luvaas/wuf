@@ -8,7 +8,7 @@ import { WebElement } from 'selenium-webdriver';
 import { UtilsComponentView } from './utilities.component.view.po';
 
 
-export class KgWebMessagesComponentView {
+export class WufWebMessagesComponentView {
     util = new UtilsComponentView();
 
     get_viewTitle() {
@@ -16,7 +16,7 @@ export class KgWebMessagesComponentView {
     }
 
 
-    get_viewKgWebMessageElement() {
+    get_viewWufWebMessageElement() {
         return element(by.css('wuf-web-message'));
     }
 
@@ -43,7 +43,7 @@ export class KgWebMessagesComponentView {
     get_kgWebMessageShadowChildren() {
         // browser.pause();
         const deferred = protractor.promise.defer();
-        this.util.get_Element_ShadowRoot(this.get_viewKgWebMessageElement()).then(
+        this.util.get_Element_ShadowRoot(this.get_viewWufWebMessageElement()).then(
             function (kgWebMessageElementShadowRoot) {
                 deferred.fulfill(kgWebMessageElementShadowRoot.childNodes);
             }
@@ -58,7 +58,7 @@ export class KgWebMessagesComponentView {
     get_kgWebMessageShadowStyles() {
         // browser.pause();
         const deferred = protractor.promise.defer();
-        this.util.get_Element_ShadowRoot(this.get_viewKgWebMessageElement()).then(
+        this.util.get_Element_ShadowRoot(this.get_viewWufWebMessageElement()).then(
             function (kgWebMessageElements_shadowRoot) {
                 deferred.fulfill(kgWebMessageElements_shadowRoot.findElements(by.css('style')));
             }
@@ -73,7 +73,7 @@ export class KgWebMessagesComponentView {
     get_kgWebMessageShadowDivs() {
         // browser.pause();
         const deferred = protractor.promise.defer();
-        this.util.get_Element_ShadowRoot(this.get_viewKgWebMessageElement()).then(
+        this.util.get_Element_ShadowRoot(this.get_viewWufWebMessageElement()).then(
             function (kgWebMessageElements_shadowRoot) {
                 deferred.fulfill(kgWebMessageElements_shadowRoot.findElements(by.css('div.message')));
             }

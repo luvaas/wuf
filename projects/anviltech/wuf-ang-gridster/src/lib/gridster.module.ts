@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
 import { GridsterModule } from 'angular-gridster2';
 import { MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
 
-import { KgGridsterComponent } from './gridster.component';
+import { WufGridsterComponent } from './gridster.component';
 
 
 @NgModule({
@@ -19,13 +19,13 @@ import { KgGridsterComponent } from './gridster.component';
         MatMenuModule,
         MatButtonModule
     ],
-    declarations: [KgGridsterComponent],
-    exports: [KgGridsterComponent]
+    declarations: [WufGridsterComponent],
+    exports: [WufGridsterComponent]
 })
-export class KgGridsterModule {
+export class WufGridsterModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: KgGridsterModule,
+            ngModule: WufGridsterModule,
             providers: [
                 // Add any services used by this module to the providers collection
             ]

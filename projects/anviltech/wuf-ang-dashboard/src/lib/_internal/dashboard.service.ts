@@ -17,7 +17,7 @@ export interface kpi {
 }
 
 @Injectable()
-export class KgDashboardService {
+export class WufDashboardService {
 
     kpiData: any = [];
 

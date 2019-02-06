@@ -8,7 +8,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { WufSplitPanelComponent } from './wuf-split-panel.component';
 
 
-describe('KgSplitPanelComponent', () => {
+describe('WufSplitPanelComponent', () => {
     let component: WufSplitPanelComponent;
     let fixture: ComponentFixture<WufSplitPanelComponent>;
 

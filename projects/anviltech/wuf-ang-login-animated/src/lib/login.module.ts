@@ -17,21 +17,21 @@ import { FormsModule } from '@angular/forms';
  * Import 3rd party modules and components here
  */
 import { MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule } from '@angular/material';
-import { KgLayoutService } from '@anviltech/wuf-ang-layout';
+import { WufLayoutService } from '@anviltech/wuf-ang-layout';
 
 /**
  * Imports
  * Import local components and services used by the module here
  */
-import { KgLoginComponent } from './login.component';
-import { KgLoginService } from './login.service';
+import { WufLoginComponent } from './login.component';
+import { WufLoginService } from './login.service';
 
 /**
  * Export
  * Export components and services used by the module here
  */
-export { KgLoginService } from './login.service';
-export { KgLoginComponent } from './login.component';
+export { WufLoginService } from './login.service';
+export { WufLoginComponent } from './login.component';
 
 
 @NgModule({
@@ -46,21 +46,21 @@ export { KgLoginComponent } from './login.component';
     ],
     declarations: [
         // List all components and modules used in this module
-        KgLoginComponent
+        WufLoginComponent
     ],
     exports: [
         // List all components and modules to be exported here
-        KgLoginComponent
+        WufLoginComponent
     ]
 })
-export class KgLoginModule {
+export class WufLoginModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: KgLoginModule,
+            ngModule: WufLoginModule,
             providers: [
                 // Add any services used by this module to the providers collection
-                KgLayoutService,
-                KgLoginService
+                WufLayoutService,
+                WufLoginService
             ]
         };
     }

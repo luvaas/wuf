@@ -4,7 +4,7 @@
  */
 
 import { Component, OnInit, Input, ViewEncapsulation, OnDestroy } from '@angular/core';
-import { KgDashboardService } from '../_internal/dashboard.service';
+import { WufDashboardService } from '../_internal/dashboard.service';
 
 
 @Component({
@@ -13,7 +13,7 @@ import { KgDashboardService } from '../_internal/dashboard.service';
     styleUrls: ['./kpi.component.scss'],
     encapsulation: ViewEncapsulation.Emulated
 })
-export class KgKpiComponent implements OnInit, OnDestroy {
+export class WufKpiComponent implements OnInit, OnDestroy {
 
     @Input() value?: any;
     @Input() label: string;
@@ -23,7 +23,7 @@ export class KgKpiComponent implements OnInit, OnDestroy {
 
     id: string;
 
-    constructor(public dashboardService: KgDashboardService) {
+    constructor(public dashboardService: WufDashboardService) {
     }
 
     ngOnInit() {

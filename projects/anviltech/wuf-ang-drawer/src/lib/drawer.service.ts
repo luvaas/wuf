@@ -10,7 +10,7 @@ import { Observable, Subject } from 'rxjs';
 @Injectable({
     providedIn: 'root'
 })
-export class KgDrawerService {
+export class WufDrawerService {
 
     private showSubject = new Subject<any>();
     private hideSubject = new Subject<any>();

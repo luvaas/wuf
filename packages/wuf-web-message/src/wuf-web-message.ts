@@ -10,7 +10,7 @@ import { unsafeHTML } from 'lit-html/lib/unsafe-html';
 // NOTE: 'require' in the following is made possible by @types/node
 let css = require('./wuf-web-message.scss');
 
-export class KgWebMessage extends HTMLElement {
+export class WufWebMessage extends HTMLElement {
 
     constructor() {
         super();
@@ -42,7 +42,7 @@ export class KgWebMessage extends HTMLElement {
     }
 
     set errorMessage(value: string) {
-        // console.log('KgWebMessages::errorMessage');
+        // console.log('WufWebMessages::errorMessage');
         if (value) {
             this.setAttribute('errorMessage', value);
             // naturally the attribute should be set to error. Since it is used
@@ -59,7 +59,7 @@ export class KgWebMessage extends HTMLElement {
     }
 
     set infoMessage(value: string) {
-        // console.log('KgWebMessages::infoMessage');
+        // console.log('WufWebMessages::infoMessage');
         if (value) {
             this.setAttribute('infoMessage', value);
             this.render('info', value);
@@ -74,7 +74,7 @@ export class KgWebMessage extends HTMLElement {
     }
 
     set successMessage(value: string) {
-        // console.log('KgWebMessages::successMessage');
+        // console.log('WufWebMessages::successMessage');
         if (value) {
             this.setAttribute('successMessage', value);
             this.render('success', value);
@@ -89,7 +89,7 @@ export class KgWebMessage extends HTMLElement {
     }
 
     set warningMessage(value: string) {
-        // console.log('KgWebMessages::warningMessage');
+        // console.log('WufWebMessages::warningMessage');
         if (value) {
             this.setAttribute('warningMessage', value);
             this.render('warning', value);
@@ -150,7 +150,7 @@ export class KgWebMessage extends HTMLElement {
     }
 
     render(type: string, text: string) {
-        // console.log('KgWebMessages::render');
+        // console.log('WufWebMessages::render');
         if (type === null) return;
         this.type = type;
         this.text = text;
@@ -167,4 +167,4 @@ export class KgWebMessage extends HTMLElement {
     }
 }
 
-window.customElements.define('wuf-web-message', KgWebMessage);
+window.customElements.define('wuf-web-message', WufWebMessage);

@@ -6,7 +6,7 @@
 import { Component, OnDestroy, OnInit, Input, ViewEncapsulation, AfterViewInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { KgDashboardService } from '../_internal/dashboard.service';
+import { WufDashboardService } from '../_internal/dashboard.service';
 
 
 @Component({
@@ -15,7 +15,7 @@ import { KgDashboardService } from '../_internal/dashboard.service';
     styleUrls: ['./dashboard.component.scss'],
     encapsulation: ViewEncapsulation.Emulated
 })
-export class KgDashboardComponent implements OnInit, OnDestroy, AfterViewInit {
+export class WufDashboardComponent implements OnInit, OnDestroy, AfterViewInit {
 
     @Input() data?: any;
     @Input() color?: any;
@@ -25,7 +25,7 @@ export class KgDashboardComponent implements OnInit, OnDestroy, AfterViewInit {
     kpiList: any = [];
     kpiFillerList: any = [];
 
-    constructor(public dashboardService: KgDashboardService) {
+    constructor(public dashboardService: WufDashboardService) {
     }
 
     ngOnInit() {

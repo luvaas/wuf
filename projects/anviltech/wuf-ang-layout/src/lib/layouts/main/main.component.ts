@@ -17,10 +17,10 @@ import {
 import { Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
-import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { WufConfigurationService } from '@anviltech/wuf-ang-configuration';
 
-import { KgSidebarService } from '../../layout-components/sidebar/sidebar.service';
-import { KgLayoutService } from '../layout.service';
+import { WufSidebarService } from '../../layout-components/sidebar/sidebar.service';
+import { WufLayoutService } from '../layout.service';
 
 
 @Component({
@@ -29,12 +29,12 @@ import { KgLayoutService } from '../layout.service';
     templateUrl: 'main.component.html',
     encapsulation: ViewEncapsulation.Emulated
 })
-export class KgViewMainComponent implements OnInit, AfterViewInit, OnDestroy {
+export class WufViewMainComponent implements OnInit, AfterViewInit, OnDestroy {
 
     constructor(
-        public sidebarService: KgSidebarService,
-        public configService: KgConfigurationService,
-        public layoutService: KgLayoutService,
+        public sidebarService: WufSidebarService,
+        public configService: WufConfigurationService,
+        public layoutService: WufLayoutService,
         @Inject(DOCUMENT) private document: any
     ) {
     }

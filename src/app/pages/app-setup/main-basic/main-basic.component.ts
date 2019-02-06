@@ -46,15 +46,15 @@ export class LayoutMainBasicComponent implements OnInit {
 
     mainCodeComponent = `
     import { Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
-    import { KgNavigationService } from '@anviltech/wuf-ang-navigation';
-    import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
-    import { KgDrawerService } from '@anviltech/wuf-ang-drawer';
+    import { WufNavigationService } from '@anviltech/wuf-ang-navigation';
+    import { WufConfigurationService } from '@anviltech/wuf-ang-configuration';
+    import { WufDrawerService } from '@anviltech/wuf-ang-drawer';
     
     @Component({
         selector: 'app-layout-main',
         templateUrl: './main.component.html',
         styleUrls: ['./main.component.scss'],
-        providers: [KgThemeService, ThemeListService],
+        providers: [WufThemeService, ThemeListService],
         encapsulation: ViewEncapsulation.Emulated
     })
     export class LayoutMainComponent implements OnInit {
@@ -64,7 +64,7 @@ export class LayoutMainBasicComponent implements OnInit {
         navData: any;
         logoRoute: string = '/'; // Route path to take users when clicking on header logo
     
-        constructor(private navService: KgNavigationService) {
+        constructor(private navService: WufNavigationService) {
         }
     
         ngOnInit() {
@@ -119,10 +119,10 @@ export class LayoutMainBasicComponent implements OnInit {
     import { RouterModule } from '@angular/router';
     
     /***** Import WUF *****/
-    import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
-    import { KgLayoutModule } from '@anviltech/wuf-ang-layout';
-    import { KgDrawerModule } from '@anviltech/wuf-ang-drawer';
-    import { KgNavigationModule } from '@anviltech/wuf-ang-navigation';
+    import { WufConfigurationService } from '@anviltech/wuf-ang-configuration';
+    import { WufLayoutModule } from '@anviltech/wuf-ang-layout';
+    import { WufDrawerModule } from '@anviltech/wuf-ang-drawer';
+    import { WufNavigationModule } from '@anviltech/wuf-ang-navigation';
     
     /***** 3rd Party *****/
     import { MatTooltipModule } from '@angular/material';
@@ -146,9 +146,9 @@ export class LayoutMainBasicComponent implements OnInit {
             CustomMaterialModule,
     
             // WUF
-            KgLayoutModule,
-            KgDrawerModule,
-            KgNavigationModule
+            WufLayoutModule,
+            WufDrawerModule,
+            WufNavigationModule
         ],
         declarations: [
             LayoutMainComponent,

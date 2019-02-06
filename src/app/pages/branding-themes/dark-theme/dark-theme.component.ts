@@ -4,7 +4,7 @@
  */
 
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { WufConfigurationService } from '@anviltech/wuf-ang-configuration';
 
 
 @Component({
@@ -14,7 +14,7 @@ import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
 })
 export class DarkThemeComponent implements OnInit {
 
-    constructor(public configService: KgConfigurationService) {
+    constructor(public configService: WufConfigurationService) {
     }
 
     ngOnInit() {
@@ -24,7 +24,7 @@ export class DarkThemeComponent implements OnInit {
 
     appComponentCode = `
 	ngOnInit() {
-		// Subscribe to configuration updates from KgConfigurationService
+		// Subscribe to configuration updates from WufConfigurationService
 		this.configSubscription = this.configService.onConfigChange().subscribe(
 			newConfig => {
 				this.onConfigChange(newConfig);
@@ -58,7 +58,7 @@ export class DarkThemeComponent implements OnInit {
 
     configurationCode = `
 		setDarkTheme(applyDark: boolean) {
-		// Convert to config properties and send them to the KgConfigurationService
+		// Convert to config properties and send them to the WufConfigurationService
 		this.configService.config = {
 			themeDark: applyDark
 		}
@@ -66,7 +66,7 @@ export class DarkThemeComponent implements OnInit {
 `;
 
     setDarkTheme(applyDark: boolean) {
-        // Convert to config properties and send them to the KgConfigurationService
+        // Convert to config properties and send them to the WufConfigurationService
         this.configService.config = {
             themeDark: applyDark
         };

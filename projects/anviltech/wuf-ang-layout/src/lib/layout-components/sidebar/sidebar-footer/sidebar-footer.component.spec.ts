@@ -9,19 +9,19 @@ import { DebugElement } from '@angular/core';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
-import { KgSidebarFooterComponent } from './sidebar-footer.component';
-import { KgSidebarService } from '../sidebar.service';
+import { WufSidebarFooterComponent } from './sidebar-footer.component';
+import { WufSidebarService } from '../sidebar.service';
 import { MatTooltipModule } from '@angular/material';
 
 
-describe('KgSidebarFooterComponent', () => {
-    let component: KgSidebarFooterComponent;
-    let fixture: ComponentFixture<KgSidebarFooterComponent>;
+describe('WufSidebarFooterComponent', () => {
+    let component: WufSidebarFooterComponent;
+    let fixture: ComponentFixture<WufSidebarFooterComponent>;
     let de: DebugElement;
     let el: HTMLElement;
 
     // Store the service and the httpmock in variables
-    let service: KgSidebarService;
+    let service: WufSidebarService;
     let httpMock: HttpTestingController;
     let testDataUrl: string = '/api/footer'; // This can be any URL since we will be intercepting it below;
 
@@ -35,12 +35,12 @@ describe('KgSidebarFooterComponent', () => {
                 // Import HttpClient testing modules to mock requests
                 HttpClientTestingModule
             ],
-            declarations: [KgSidebarFooterComponent],
-            providers: [KgSidebarService]
+            declarations: [WufSidebarFooterComponent],
+            providers: [WufSidebarService]
         });
         // .compileComponents();
 
-        service = TestBed.get(KgSidebarService);
+        service = TestBed.get(WufSidebarService);
         httpMock = TestBed.get(HttpTestingController);
     }));
 
@@ -50,7 +50,7 @@ describe('KgSidebarFooterComponent', () => {
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgSidebarFooterComponent);
+        fixture = TestBed.createComponent(WufSidebarFooterComponent);
         component = fixture.componentInstance;
 
         fixture.detectChanges();

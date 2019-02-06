@@ -4,27 +4,27 @@
  */
 
 import { NgModule, ModuleWithProviders } from '@angular/core';
-import { KgDrawerComponent } from './drawer.component';
-import { KgDrawerService } from './drawer.service';
+import { WufDrawerComponent } from './drawer.component';
+import { WufDrawerService } from './drawer.service';
 
 
 @NgModule({
     imports: [],
     declarations: [
-        KgDrawerComponent
+        WufDrawerComponent
     ],
     exports: [
-        KgDrawerComponent
+        WufDrawerComponent
     ]
 })
 
-export class KgDrawerModule {
+export class WufDrawerModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: KgDrawerModule,
+            ngModule: WufDrawerModule,
             providers: [
                 // Add any services used by this module to the providers collection
-                KgDrawerService
+                WufDrawerService
             ]
         };
     }

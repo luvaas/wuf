@@ -5,14 +5,14 @@
 
 import { TestBed } from '@angular/core/testing';
 
-import { KgConfigurationService } from './configuration.service';
+import { WufConfigurationService } from './configuration.service';
 
 
-describe('KgConfigurationService', () => {
+describe('WufConfigurationService', () => {
     beforeEach(() => TestBed.configureTestingModule({}));
 
     it('should create', () => {
-        const service: KgConfigurationService = TestBed.get(KgConfigurationService);
+        const service: WufConfigurationService = TestBed.get(WufConfigurationService);
         expect(service).toBeTruthy();
     });
 });

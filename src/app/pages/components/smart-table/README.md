@@ -22,8 +22,8 @@ You can find two simple examples in custom-editor.smart-table.for-foods.componen
 
 ***NOTE:*** When implementing a custom editor or renderer remember to add it to the entryComponents and to the declarations part of your module
 
-***NOTE:*** For the custom cell editor, to inherit the methods needed to interact with the table you can either extend the component with the KgSmartTableDefaultEditor class or implement the Editor interface and reproduce the same methods on your component.
+***NOTE:*** For the custom cell editor, to inherit the methods needed to interact with the table you can either extend the component with the WufSmartTableDefaultEditor class or implement the Editor interface and reproduce the same methods on your component.
 
-***NOTE:*** For the custom cell renderer, in this example the custom component is applying for a progressbar to Grade column. You can implement the KgSmartTableViewCell interface to make sure you are setting up your component correctly.
+***NOTE:*** For the custom cell renderer, in this example the custom component is applying for a progressbar to Grade column. You can implement the WufSmartTableViewCell interface to make sure you are setting up your component correctly.
 
 ***NOTE:*** For the cell validation, you can look at custom-editor.smart-table.for-name-validation.component.ts and custom-editor.smart-table.for-id-validation.component.ts as two easy examples. and We also need to generate a validation service mapping the FormGroup and FormControl to the "Name" column and "ID" column and add validators in it. The mapped validation service is smart-table-validator.service.ts.

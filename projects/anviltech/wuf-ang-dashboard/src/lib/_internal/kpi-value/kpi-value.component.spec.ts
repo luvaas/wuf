@@ -8,7 +8,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { KpiValueComponent } from './kpi-value.component';
 
 
-describe('KgKpiValueComponent', () => {
+describe('WufKpiValueComponent', () => {
     let component: KpiValueComponent;
     let fixture: ComponentFixture<KpiValueComponent>;
 

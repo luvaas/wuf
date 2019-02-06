@@ -16,16 +16,16 @@ import { HttpClientModule } from '@angular/common/http';
  * Import 3rd party modules and components here
  */
 import { MatMenuModule, MatTooltipModule } from '@angular/material';
-import { KgConfigurationModule } from '@anviltech/wuf-ang-configuration';
-import { KgLayoutModule } from '@anviltech/wuf-ang-layout';
+import { WufConfigurationModule } from '@anviltech/wuf-ang-configuration';
+import { WufLayoutModule } from '@anviltech/wuf-ang-layout';
 
 /**
  * Imports
  * Import components and services used by the module here
  */
-import { KgNavigationComponent } from './navigation/navigation.component';
-import { KgNavigationLinkComponent } from './navigation-link/navigation-link.component';
-import { KgNavigationService } from './navigation.service';
+import { WufNavigationComponent } from './navigation/navigation.component';
+import { WufNavigationLinkComponent } from './navigation-link/navigation-link.component';
+import { WufNavigationService } from './navigation.service';
 
 
 @NgModule({
@@ -35,27 +35,27 @@ import { KgNavigationService } from './navigation.service';
         HttpClientModule,
         MatTooltipModule,
         MatMenuModule,
-        KgConfigurationModule,
-        KgLayoutModule
+        WufConfigurationModule,
+        WufLayoutModule
     ],
     declarations: [
         // Declare components used in this module
-        KgNavigationComponent,
-        KgNavigationLinkComponent
+        WufNavigationComponent,
+        WufNavigationLinkComponent
     ],
     exports: [
         // Export components used in this module
-        KgNavigationComponent,
-        KgNavigationLinkComponent
+        WufNavigationComponent,
+        WufNavigationLinkComponent
     ]
 })
-export class KgNavigationModule {
+export class WufNavigationModule {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: KgNavigationModule,
+            ngModule: WufNavigationModule,
             providers: [
                 // Add any services used by this module to the providers collection
-                KgNavigationService
+                WufNavigationService
             ]
         };
     }

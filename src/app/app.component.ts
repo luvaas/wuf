@@ -5,7 +5,7 @@
 
 import { Component, ViewEncapsulation, OnInit, Renderer2, OnDestroy } from '@angular/core';
 
-import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { WufConfigurationService } from '@anviltech/wuf-ang-configuration';
 import { deepMerge } from '@anviltech/wuf-ang-utils';
 
 import { UserService } from './internal/services/user.service';
@@ -15,14 +15,14 @@ import { configuration } from './internal/configuration/configuration';
 
 // The following imports are only used for demo purposes
 import { FakeUser } from './internal/fake-backend/data/user';
-import { KgLoginService } from '@anviltech/wuf-ang-login-animated';
+import { WufLoginService } from '@anviltech/wuf-ang-login-animated';
 
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    providers: [KgConfigurationService, UserService],
+    providers: [WufConfigurationService, UserService],
     encapsulation: ViewEncapsulation.Emulated
 })
 export class AppComponent implements OnInit, OnDestroy {
@@ -32,10 +32,10 @@ export class AppComponent implements OnInit, OnDestroy {
     loginSubscription: any;
     currentThemeId: string;
 
-    constructor(private configService: KgConfigurationService,
+    constructor(private configService: WufConfigurationService,
                 private renderer: Renderer2,
                 private userService: UserService,
-                private loginService: KgLoginService) {
+                private loginService: WufLoginService) {
     }
 
     ngOnInit() {

@@ -12,8 +12,8 @@ https://docs.npmjs.com/orgs/managing-teams/index.html
 [x] convert file names from kg- --> wuf-
 [x] change darren.luvaas@dematic.com --> delete
 [x] replace https://gitlab.dematic.com/cloud_visualization_services/common-components with https://github.com/anvil-open-software/wuf
-[ ] change selectors to replace kg-
-[ ] change all package names from Kg___ to Wuf_______
+[x] change selectors to replace kg-
+[ ] change all package names from Wuf___ to Wuf_______
 [ ] change registry entries for all package.json
 [ ] change repository entries for all package.json
 [ ] package.json delete publishConfig entry

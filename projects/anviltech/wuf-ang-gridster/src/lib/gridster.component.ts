@@ -6,8 +6,8 @@
 import { Component, OnInit, ChangeDetectionStrategy, ViewEncapsulation, Input } from '@angular/core';
 
 import { GridsterConfig, GridType, CompactType, DisplayGrid } from 'angular-gridster2';
-import { KgGridsterItem } from './gridster.interface';
-import { KgGridsterService } from './gridster.service';
+import { WufGridsterItem } from './gridster.interface';
+import { WufGridsterService } from './gridster.service';
 
 
 @Component({
@@ -16,18 +16,18 @@ import { KgGridsterService } from './gridster.service';
     styleUrls: ['gridster.component.scss'],
     encapsulation: ViewEncapsulation.Emulated
 })
-export class KgGridsterComponent implements OnInit {
+export class WufGridsterComponent implements OnInit {
 
     options: GridsterConfig;
 
-    @Input() items: Array<KgGridsterItem>;
+    @Input() items: Array<WufGridsterItem>;
 
     // Default values
     @Input() outerMargin: boolean = true;
     @Input() draggable: boolean = true;
     @Input() resizable: boolean = true;
 
-    constructor(public gridsterService: KgGridsterService) {
+    constructor(public gridsterService: WufGridsterService) {
     }
 
     ngOnInit() {

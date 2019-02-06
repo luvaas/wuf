@@ -10,9 +10,9 @@ import { By } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
-import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
-import { KgLayoutModule } from '@anviltech/wuf-ang-layout';
-import { KgNavigationModule, KgNavigationService } from '@anviltech/wuf-ang-navigation';
+import { WufConfigurationService } from '@anviltech/wuf-ang-configuration';
+import { WufLayoutModule } from '@anviltech/wuf-ang-layout';
+import { WufNavigationModule, WufNavigationService } from '@anviltech/wuf-ang-navigation';
 
 import { LayoutMainComponent } from './main.component';
 import { CustomMaterialModule } from '../../material.module';
@@ -33,12 +33,12 @@ describe('LayoutMainComponent', () => {
                 CustomMaterialModule,
                 HttpClientModule,
                 BrowserAnimationsModule,
-                KgLayoutModule,
-                KgNavigationModule
+                WufLayoutModule,
+                WufNavigationModule
             ],
             providers: [
-                KgConfigurationService,
-                KgNavigationService,
+                WufConfigurationService,
+                WufNavigationService,
                 ThemeListService
             ]
         })

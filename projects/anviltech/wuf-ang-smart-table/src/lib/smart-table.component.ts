@@ -17,8 +17,8 @@ import { Grid } from './lib/grid';
 import { DataSource } from './lib/data-source/data-source';
 import { Row } from './lib/data-set/row';
 import { deepExtend } from './lib/helpers';
-import { KgSmartTableLocalDataSource } from './lib/data-source/local/local.data-source';
-import { KgSmartTableValidatorService } from './lib/validator.service';
+import { WufSmartTableLocalDataSource } from './lib/data-source/local/local.data-source';
+import { WufSmartTableValidatorService } from './lib/validator.service';
 
 
 @Component({
@@ -27,7 +27,7 @@ import { KgSmartTableValidatorService } from './lib/validator.service';
     templateUrl: './smart-table.component.html',
     encapsulation: ViewEncapsulation.Emulated
 })
-export class KgSmartTableComponent implements OnChanges {
+export class WufSmartTableComponent implements OnChanges {
 
     @Input() source: any;
     @Input() settings: Object = {};
@@ -55,7 +55,7 @@ export class KgSmartTableComponent implements OnChanges {
     hover: boolean;
     alternatingRowColors: boolean;
 
-    constructor(private validator: KgSmartTableValidatorService) {
+    constructor(private validator: WufSmartTableValidatorService) {
     }
 
     grid: Grid;
@@ -201,10 +201,10 @@ export class KgSmartTableComponent implements OnChanges {
         if (this.source instanceof DataSource) {
             return this.source;
         } else if (this.source instanceof Array) {
-            return new KgSmartTableLocalDataSource(this.source);
+            return new WufSmartTableLocalDataSource(this.source);
         }
 
-        return new KgSmartTableLocalDataSource();
+        return new WufSmartTableLocalDataSource();
     }
 
     prepareSettings(): Object {

@@ -12,7 +12,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
     templateUrl: 'basic.component.html',
     encapsulation: ViewEncapsulation.Emulated
 })
-export class KgViewBasicComponent implements OnInit {
+export class WufViewBasicComponent implements OnInit {
 
     constructor() {
     }

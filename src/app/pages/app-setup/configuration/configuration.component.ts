@@ -56,7 +56,7 @@ export class SetupConfigurationComponent implements OnInit {
     appComponentExample = `
         import { Component, ViewEncapsulation, OnInit, Renderer2, OnDestroy } from '@angular/core';
 
-        import { KgConfigurationService } from '@anviltech/wuf-ang-configuration'
+        import { WufConfigurationService } from '@anviltech/wuf-ang-configuration'
         import { deepMerge } from '@anviltech/wuf-ang-utils';
         import { UserService } from './internal/services/user.service';
         
@@ -69,7 +69,7 @@ export class SetupConfigurationComponent implements OnInit {
             selector: 'app-root',
             templateUrl: './app.component.html',
             styleUrls: ['./app.component.scss'],
-            providers: [ KgConfigurationService, UserService ],
+            providers: [ WufConfigurationService, UserService ],
             encapsulation: ViewEncapsulation.Emulated
         })
         export class AppComponent implements OnInit, OnDestroy {
@@ -78,7 +78,7 @@ export class SetupConfigurationComponent implements OnInit {
             configSubscription: any;
             currentThemeId: string;
         
-            constructor(private configService: KgConfigurationService, private renderer: Renderer2, private userService: UserService) {
+            constructor(private configService: WufConfigurationService, private renderer: Renderer2, private userService: UserService) {
             }
         
             ngOnInit() {
@@ -201,10 +201,10 @@ export class SetupConfigurationComponent implements OnInit {
         }
     `;
 
-    setupCode1 = `import { KgConfigurationModule, KgConfigurationService } from '@anviltech/wuf-ang-configuration';`;
+    setupCode1 = `import { WufConfigurationModule, WufConfigurationService } from '@anviltech/wuf-ang-configuration';`;
     setupCode2 = `
     providers: [
-        KgConfigurationService
+        WufConfigurationService
     ],
     `;
 

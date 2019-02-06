@@ -14,8 +14,8 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 
-import { KgSmartTableCell } from '../../../lib/data-set/cell';
-import { KgSmartTableViewCell } from './view-cell';
+import { WufSmartTableCell } from '../../../lib/data-set/cell';
+import { WufSmartTableViewCell } from './view-cell';
 
 
 @Component({
@@ -28,7 +28,7 @@ import { KgSmartTableViewCell } from './view-cell';
 export class CustomViewComponent implements OnInit, OnDestroy {
 
     customComponent: any;
-    @Input() cell: KgSmartTableCell;
+    @Input() cell: WufSmartTableCell;
     @ViewChild('dynamicTarget', {read: ViewContainerRef}) dynamicTarget: any;
 
     constructor(private resolver: ComponentFactoryResolver) {
@@ -62,7 +62,7 @@ export class CustomViewComponent implements OnInit, OnDestroy {
         Object.assign(this.customComponent.instance, this.getPatch());
     }
 
-    protected getPatch(): KgSmartTableViewCell {
+    protected getPatch(): WufSmartTableViewCell {
         return {
             value: this.cell.getValue(),
             rowData: this.cell.getRow().getData()

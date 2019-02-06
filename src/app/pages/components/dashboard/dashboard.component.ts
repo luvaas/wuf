@@ -65,11 +65,11 @@ export class DashboardComponent implements OnInit {
         }
     ];
 
-    setupCode1 = `import { KgDashboardModule } from '@anviltech/wuf-ang-dashboard';`;
+    setupCode1 = `import { WufDashboardModule } from '@anviltech/wuf-ang-dashboard';`;
 
     setupCode2 = `
 	imports: [
-		KgDashboardModule.forRoot(),
+		WufDashboardModule.forRoot(),
 	]`;
 
     usageCode1 = `

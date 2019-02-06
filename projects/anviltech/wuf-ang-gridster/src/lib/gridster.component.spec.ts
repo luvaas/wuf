@@ -5,22 +5,22 @@
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KgGridsterComponent } from './gridster.component';
+import { WufGridsterComponent } from './gridster.component';
 
 
-describe('KgGridsterComponent', () => {
-    let component: KgGridsterComponent;
-    let fixture: ComponentFixture<KgGridsterComponent>;
+describe('WufGridsterComponent', () => {
+    let component: WufGridsterComponent;
+    let fixture: ComponentFixture<WufGridsterComponent>;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [KgGridsterComponent]
+            declarations: [WufGridsterComponent]
         })
         .compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgGridsterComponent);
+        fixture = TestBed.createComponent(WufGridsterComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

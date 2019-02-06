@@ -12,7 +12,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
     styleUrls: ['./toolbar.component.scss'],
     encapsulation: ViewEncapsulation.Emulated
 })
-export class KgToolbarComponent implements OnInit {
+export class WufToolbarComponent implements OnInit {
     constructor() {
     }
 

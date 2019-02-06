@@ -5,32 +5,32 @@
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KgDashboardComponent } from './dashboard.component';
+import { WufDashboardComponent } from './dashboard.component';
 import { KpiDisplayComponent } from '../_internal/kpi/kpi-display.component';
-import { KgDashboardService } from '../_internal/dashboard.service';
+import { WufDashboardService } from '../_internal/dashboard.service';
 import { KpiValueComponent } from '../_internal/kpi-value/kpi-value.component';
 
 
-describe('KgDashboardComponent', () => {
-    let component: KgDashboardComponent;
-    let fixture: ComponentFixture<KgDashboardComponent>;
+describe('WufDashboardComponent', () => {
+    let component: WufDashboardComponent;
+    let fixture: ComponentFixture<WufDashboardComponent>;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [
-                KgDashboardComponent,
+                WufDashboardComponent,
                 KpiDisplayComponent,
                 KpiValueComponent
             ],
             providers: [
-                KgDashboardService
+                WufDashboardService
             ]
         })
         .compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgDashboardComponent);
+        fixture = TestBed.createComponent(WufDashboardComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

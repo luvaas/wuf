@@ -8,26 +8,26 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { KgBreadcrumbComponent } from './breadcrumb.component';
+import { WufBreadcrumbComponent } from './breadcrumb.component';
 
 
-describe('KgBreadcrumbComponent', () => {
-    let component: KgBreadcrumbComponent;
-    let fixture: ComponentFixture<KgBreadcrumbComponent>;
+describe('WufBreadcrumbComponent', () => {
+    let component: WufBreadcrumbComponent;
+    let fixture: ComponentFixture<WufBreadcrumbComponent>;
     let de: DebugElement;
     let el: HTMLElement;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             imports: [RouterTestingModule],
-            declarations: [KgBreadcrumbComponent],
+            declarations: [WufBreadcrumbComponent],
             providers: []
         })
         .compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(KgBreadcrumbComponent);
+        fixture = TestBed.createComponent(WufBreadcrumbComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

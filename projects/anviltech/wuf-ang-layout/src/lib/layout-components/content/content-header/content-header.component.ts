@@ -12,7 +12,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     templateUrl: 'content-header.component.html',
     encapsulation: ViewEncapsulation.Emulated
 })
-export class KgContentHeaderComponent {
+export class WufContentHeaderComponent {
 
     constructor() {
     }

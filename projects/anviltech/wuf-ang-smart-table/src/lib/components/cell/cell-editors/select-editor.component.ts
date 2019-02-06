@@ -5,7 +5,7 @@
 
 import { Component, ViewEncapsulation } from '@angular/core';
 
-import { KgSmartTableDefaultEditor } from './default-editor';
+import { WufSmartTableDefaultEditor } from './default-editor';
 
 
 @Component({
@@ -28,7 +28,7 @@ import { KgSmartTableDefaultEditor } from './default-editor';
     `,
     encapsulation: ViewEncapsulation.None
 })
-export class SelectEditorComponent extends KgSmartTableDefaultEditor {
+export class SelectEditorComponent extends WufSmartTableDefaultEditor {
 
     constructor() {
         super();

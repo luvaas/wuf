@@ -4,7 +4,7 @@
  */
 
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { KgDrawerService } from '@anviltech/wuf-ang-drawer';
+import { WufDrawerService } from '@anviltech/wuf-ang-drawer';
 
 
 @Component({
@@ -15,7 +15,7 @@ import { KgDrawerService } from '@anviltech/wuf-ang-drawer';
 })
 export class DrawerComponent implements OnInit {
 
-    constructor(private drawerService: KgDrawerService) {
+    constructor(private drawerService: WufDrawerService) {
     }
 
     ngOnInit() {

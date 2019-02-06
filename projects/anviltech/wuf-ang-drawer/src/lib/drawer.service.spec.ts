@@ -5,14 +5,14 @@
 
 import { TestBed } from '@angular/core/testing';
 
-import { KgDrawerService } from './drawer.service';
+import { WufDrawerService } from './drawer.service';
 
 
-describe('KgDrawerService', () => {
+describe('WufDrawerService', () => {
     beforeEach(() => TestBed.configureTestingModule({}));
 
     it('should be created', () => {
-        const service: KgDrawerService = TestBed.get(KgDrawerService);
+        const service: WufDrawerService = TestBed.get(WufDrawerService);
         expect(service).toBeTruthy();
     });
 });
