@@ -8,6 +8,9 @@
         "packagr": "npm run build",
         "pub": "npm run packagr && npm publish dist"
     },
+    "publishConfig": {
+        "access": "public"
+    },
     "main": "dist/bundles/anviltech-wuf-ang-drawer.umd.js",
     "typings": "dist/anviltech-wuf-ang-drawer.d.ts",
     "peerDependencies": {

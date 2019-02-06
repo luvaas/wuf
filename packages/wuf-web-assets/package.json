@@ -6,6 +6,9 @@
     "scripts": {
         "pub": "npm publish"
     },
+    "publishConfig": {
+        "access": "public"
+    },
     "peerDependencies": {
         "@angular/material": "6.4.7",
         "material-components-web": "0.39.3"

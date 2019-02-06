@@ -13,24 +13,25 @@ https://docs.npmjs.com/orgs/managing-teams/index.html
 [x] change darren.luvaas@dematic.com --> delete
 [x] replace https://gitlab.dematic.com/cloud_visualization_services/common-components with https://github.com/anvil-open-software/wuf
 [x] change selectors to replace kg-
-[ ] change all package names from Wuf___ to Wuf_______
-[ ] change registry entries for all package.json
-[ ] change repository entries for all package.json
-[ ] package.json delete publishConfig entry
-[ ] Set package.json from private to public.  If you set "private": true in your package.json, then npm will refuse to publish it.
+[x] change all package names from Kg___ to Wuf_______
+[x] update all changelog files to show initial versions
+[x] standardize all file names (e.g. gridster)
+[x] update all package version numbers to v1
+[x] make sure Dematic copyright is preserved
+[x] delete wuf-ang-library package
+[x] fullTemplateTypeCheck in projects/anviltech/wuf-ang-navigation/tsconfig.lib.json should be set to true (https://github.com/angular/angular/issues/20523)
+[x] change repository entries for all package.json
+[x] package.json add publishConfig entry
+[x] Set package.json from private to public.  If you set "private": true in your package.json, then npm will refuse to publish it.
 [ ] search for gitlab.dematic.com
 [ ] search for artifactory.dematic.com
-[ ] standardize all file names (e.g. gridster)
-[ ] update all package version numbers to v1
+[ ] search for Dematic
+[ ] change skin/config names
 [ ] update all readme files
-[ ] update all changelog files to show initial versions
 [ ] merge in latest code from HD
-[ ] make sure Dematic copyright is preserved
 [ ] init NPM (include this in documentation?): https://docs.npmjs.com/creating-and-publishing-scoped-public-packages
 [ ] publish all v1 packages using  `npm publish --access public`
 [ ] provide documentation to Denis about the repo(s) to build, the order in which they ought to be build, etc.  Could be the Jenkins file.
-[x] delete wuf-ang-library package
-[x] fullTemplateTypeCheck in projects/anviltech/wuf-ang-navigation/tsconfig.lib.json should be set to true (https://github.com/angular/angular/issues/20523)
 [ ] remove polymer and nutmeg
 
 FUTURE:

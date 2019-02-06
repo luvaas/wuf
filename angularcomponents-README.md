@@ -13,16 +13,11 @@ Clone the @anviltech/wuf repo to your local machine.  Be sure to follow the setu
 
 ### Name the Library Component
 Our component naming convention follows this format:
-
-@anviltech/wuf-[type]-[component-name]
-
-We use the "@anviltech/" scope for all components.
-
-We use "wuf-" as our prefix for all services, components, modules, etc.
-
-The "type" in this case is "Angular", or "-ang".
-
-The "component-name" uses Angular's dash-spaced naming convention.
+* @anviltech/wuf-[type]-[component-name]
+* We use the "@anviltech/" scope for all components.
+* We use "wuf-" as our prefix for all services, components, modules, etc.
+* The "type" in this case is "Angular", or "-ang".
+* The "component-name" uses Angular's dash-spaced naming convention.
 
 Therefore, if my component is called "My Component", it's library name will be:
 
@@ -42,7 +37,7 @@ This will create a new folder for `@anviltech/[name-of-library]` at `./projects/
 ### Revise Generated Files
 We now need to make some modifications to the scaffolded files so that your new component will fit within the WUF component ecosystem.
 
-Revise the root `angular.json` file at `./angular.json` to include a "production" configuration for your new library component.  This will allow us to build your library component in Angular's AOT mode will is much more strict than Angular's JIT mode and will help us catch errors during development before they become a bigger problem in a production environment.  Always build in AOT mode!
+Revise the root `angular.json` file at `./angular.json` to include a "production" configuration for your new library component.  This will allow us to build your library component in Angular's AOT mode which is much more strict than Angular's JIT mode and will help us catch errors during development before they become a bigger problem in a production environment.  Always build in AOT mode!
 
 ```json
         "[name-of-library]": {
@@ -78,15 +73,18 @@ Revise the root `tsconfig.ts` file at `./tsconfig.ts` so that your new project's
       ]
     }
 
-Revise the project's `./projects/anviltech/[name-of-library]/ng-package.json` file to also point to the project's local `dist` folder:
+Revise the project's `./projects/anviltech/[name-of-library]/ng-package.json` file to also point to the project's local `dist` folder and to whitelist any local dependencies:
 
 ```json
 {
-  "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "./dist",
-  "lib": {
-    "entryFile": "src/public_api.ts"
-  }
+    "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
+    "dest": "./dist",
+    "whitelistedNonPeerDependencies": [
+        "."
+    ],
+    "lib": {
+      "entryFile": "src/public_api.ts"
+    }
 }
 ```
 
@@ -99,6 +97,9 @@ Add the following properties to the project's `./projects/anviltech/[name-of-lib
         "build": "ng build --prod @anviltech/[name-of-library-without-scope]",
         "packagr": "npm run build",
         "pub": "npm run packagr && npm publish dist"
+    },
+    "publishConfig": {
+        "access": "public"
     },
     "main": "dist/bundles/kion-[name-of-library-without-scope].umd.js",
     "typings": "dist/anviltech-[name-of-library-without-scope].d.ts",

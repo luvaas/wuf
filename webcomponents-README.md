@@ -17,16 +17,11 @@ Create a Component Stub
 
 ### Determine Library Component Name
 Our component naming convention follows this format:
-
-@anviltech/wuf-[type]-[component-name]
-
-We use the "@anviltech/" scope for all components.
-
-We use "wuf-" as our prefix for all services, components, modules, etc.
-
-The "type" in this case is "Web Component", for which we use the abbreviation "-web".
-
-The "component-name" uses Angular's dash-spaced naming convention.
+* @anviltech/wuf-[type]-[component-name]
+* We use the "@anviltech/" scope for all components.
+* We use "wuf-" as our prefix for all services, components, modules, etc.
+* The "type" in this case is "Web Component", for which we use the abbreviation "-web".
+* The "component-name" uses Angular's dash-spaced naming convention.
 
 Therefore, if my component is called "Hello World", it's library name will be:
 
@@ -66,6 +61,12 @@ In the following example, we're going to create a 'hello world' web component th
         "publish": "npm publish"
       }
     ```
+  * Add a publish section to ensure the package can be published to the public registry (packages with scopes are otherwise private by default):
+  ```typescript
+      "publishConfig": {
+          "access": "public"
+    }
+  ```
   * Run a sanity test: *$* `npm run test`
 
 Develop the Component

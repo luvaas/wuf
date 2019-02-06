@@ -2,6 +2,10 @@
     "name": "@anviltech/wuf-web-ui-framework",
     "version": "2.0.0",
     "author": "Darren Luvaas",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/anvil-open-software/wuf"
+    },
     "scripts": {
         "ng": "ng",
         "start": "ng serve --aot",
