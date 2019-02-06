@@ -8,7 +8,7 @@ import { KgLoginService } from './login.service';
 
 
 @Component({
-    selector: 'kg-login',
+    selector: 'wuf-login',
     templateUrl: './login.component.html',
     styleUrls: ['./login.component.scss'],
     encapsulation: ViewEncapsulation.Emulated

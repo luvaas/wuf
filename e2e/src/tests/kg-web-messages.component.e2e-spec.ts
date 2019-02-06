@@ -49,15 +49,15 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
             expect(view.get_viewTitle()).toContain('WEB Component: KG-WEB-MESSAGE');
         });
 
-        it('has the kg-web-message element on the page', () => {
+        it('has the wuf-web-message element on the page', () => {
             expect(view.get_viewKgWebMessageElement()).toBeTruthy();
         });
 
-        it(`has the kg-web-message element on the page and have a tag of 'kg-web-message'`, () => {
-            expect(view.get_viewKgWebMessageElement().getTagName()).toEqual('kg-web-message');
+        it(`has the wuf-web-message element on the page and have a tag of 'wuf-web-message'`, () => {
+            expect(view.get_viewKgWebMessageElement().getTagName()).toEqual('wuf-web-message');
         });
 
-        it('its kg-web-message element has one shadow-root child', () => {
+        it('its wuf-web-message element has one shadow-root child', () => {
             view.get_kgWebMessageShadowStyles().then(
                 function (WebElements: WebElement[]) {
                     // browser.pause();
@@ -67,7 +67,7 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
             );
         });
 
-        it('its kg-web-message element has one shadow-root style child', () => {
+        it('its wuf-web-message element has one shadow-root style child', () => {
             view.get_kgWebMessageShadowStyles().then(
                 function (WebElements: WebElement[]) {
                     expect(WebElements[0].getTagName()).toEqual('style');
@@ -100,7 +100,7 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
                     }
                 );
             });
-            describe('the kg-web-message custom element', () => {
+            describe('the wuf-web-message custom element', () => {
                 it('has a color = rgba(255, 255, 255, 1)', () => {
                     view.get_kgWebMessageShadowDivs().then(
                         function (WebElements: WebElement[]) {
@@ -134,7 +134,7 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
             });
         });
 
-        describe(' after the kg-web-message dismiss button is clicked', () => {
+        describe(' after the wuf-web-message dismiss button is clicked', () => {
             it('the kg-web-messages element is on the page)', () => {
                 expect(view.get_viewKgWebMessageElement()).toBeTruthy();
             });
@@ -177,7 +177,7 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
                     }
                 );
             });
-            describe('the kg-web-message custom element', () => {
+            describe('the wuf-web-message custom element', () => {
                 it('has a color = rgba(255, 255, 255, 1)', () => {
                     view.get_kgWebMessageShadowDivs().then(
                         function (WebElements: WebElement[]) {
@@ -211,7 +211,7 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
             });
         });
 
-        describe(' after the kg-web-message dismiss button is clicked', () => {
+        describe(' after the wuf-web-message dismiss button is clicked', () => {
             it('the kg-web-messages element is on the page)', () => {
                 expect(view.get_viewKgWebMessageElement()).toBeTruthy();
             });
@@ -254,7 +254,7 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
                     }
                 );
             });
-            describe('the kg-web-message custom element', () => {
+            describe('the wuf-web-message custom element', () => {
                 it('has a color = rgba(255, 255, 255, 1)', () => {
                     view.get_kgWebMessageShadowDivs().then(
                         function (WebElements: WebElement[]) {
@@ -288,7 +288,7 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
             });
         });
 
-        describe(' after the kg-web-message dismiss button is clicked', () => {
+        describe(' after the wuf-web-message dismiss button is clicked', () => {
             it('the kg-web-messages element is on the page)', () => {
                 expect(view.get_viewKgWebMessageElement()).toBeTruthy();
             });
@@ -332,7 +332,7 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
                     }
                 );
             });
-            describe('the kg-web-message custom element', () => {
+            describe('the wuf-web-message custom element', () => {
                 it('has a color = rgba(33, 37, 41, 1', () => {
                     view.get_kgWebMessageShadowDivs().then(
                         function (WebElements: WebElement[]) {
@@ -366,7 +366,7 @@ describe('WEB Component: KG-WEB-MESSAGES Page View', function () {
             });
         });
 
-        describe(' after the kg-web-message dismiss button is clicked', () => {
+        describe(' after the wuf-web-message dismiss button is clicked', () => {
             it('the kg-web-messages element is on the page)', () => {
                 expect(view.get_viewKgWebMessageElement()).toBeTruthy();
             });

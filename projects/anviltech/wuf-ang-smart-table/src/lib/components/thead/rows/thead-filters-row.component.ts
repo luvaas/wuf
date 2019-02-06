@@ -18,12 +18,12 @@ import { DataSource } from '../../../lib/data-source/data-source';
             (create)="create.emit($event)">
         </th>
         <th *ngFor="let column of grid.getColumns()" class="kg-smart-th {{ column.id }}">
-            <kg-smart-table-filter [source]="source"
+            <wuf-smart-table-filter [source]="source"
                                    [filterPlaceholder]="filterPlaceholder"
                                    [column]="column"
                                    [inputClass]="filterInputClass"
                                    (filter)="filter.emit($event)">
-            </kg-smart-table-filter>
+            </wuf-smart-table-filter>
         </th>
         <th kg-st-add-button *ngIf="showActionColumnRight"
             [grid]="grid"

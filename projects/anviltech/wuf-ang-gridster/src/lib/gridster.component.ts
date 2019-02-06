@@ -11,7 +11,7 @@ import { KgGridsterService } from './gridster.service';
 
 
 @Component({
-    selector: 'kg-gridster',
+    selector: 'wuf-gridster',
     templateUrl: 'gridster.component.html',
     styleUrls: ['gridster.component.scss'],
     encapsulation: ViewEncapsulation.Emulated

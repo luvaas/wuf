@@ -3,19 +3,19 @@
   ~ Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
   -->
 
-<kg-content-header>
+<wuf-content-header>
     <!-- insert page header content here -->
     <ng-container toolbarLeft>
-        <kg-breadcrumb
-            [items]="[{ link: '/', label: 'Introduction' }, { link: '/framework', label: 'Quick Start (Complete)' }, { link: null, label: 'Router', active: true }]"></kg-breadcrumb>
+        <wuf-breadcrumb
+            [items]="[{ link: '/', label: 'Introduction' }, { link: '/framework', label: 'Quick Start (Complete)' }, { link: null, label: 'Router', active: true }]"></wuf-breadcrumb>
     </ng-container>
 
     <ng-container toolbarRight>
         <!--page-level utilities here-->
     </ng-container>
-</kg-content-header>
+</wuf-content-header>
 
-<kg-content-main>
+<wuf-content-main>
     <app-component-tabs [tabLabel_1]="'Readme'" [tabLabel_2]="'CHANGE LOG'">
         <!-- Component name -->
         <div class="component_tabs_name">Angular Application Router Module</div>
@@ -30,4 +30,4 @@
             <markdown path="assets/documentation/packages/wuf-ang-app-router/CHANGELOG.md"></markdown>
         </div>
     </app-component-tabs>
-</kg-content-main>
+</wuf-content-main>

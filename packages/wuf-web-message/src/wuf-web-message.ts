@@ -167,4 +167,4 @@ export class KgWebMessage extends HTMLElement {
     }
 }
 
-window.customElements.define('kg-web-message', KgWebMessage);
+window.customElements.define('wuf-web-message', KgWebMessage);

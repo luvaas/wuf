@@ -10,7 +10,7 @@ import { DataSource } from '../../lib/data-source/data-source';
 
 
 @Component({
-    selector: 'kg-smart-table-pager',
+    selector: 'wuf-smart-table-pager',
     styleUrls: ['./pager.component.scss'],
     template: `
         <nav *ngIf="shouldShow()" class="kg-smart-pagination-nav">

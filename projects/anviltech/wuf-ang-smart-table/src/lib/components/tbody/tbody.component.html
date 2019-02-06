@@ -21,8 +21,8 @@
     <td *ngIf="!row.isInEditing && showActionColumnLeft"
         class="kg-smart-actions"
         [style.vertical-align]="valign">
-        <!--<kg-st-tbody-custom [grid]="grid" (custom)="custom.emit($event)" [row]="row" [source]="source"></kg-st-tbody-custom>-->
-        <kg-st-tbody-edit-delete [grid]="grid"
+        <!--<wuf-st-tbody-custom [grid]="grid" (custom)="custom.emit($event)" [row]="row" [source]="source"></wuf-st-tbody-custom>-->
+        <wuf-st-tbody-edit-delete [grid]="grid"
                                  [deleteConfirm]="deleteConfirm"
                                  [editConfirm]="editConfirm"
                                  (edit)="edit.emit(row)"
@@ -30,18 +30,18 @@
                                  (editRowSelect)="editRowSelect.emit($event)"
                                  [row]="row"
                                  [source]="source">
-        </kg-st-tbody-edit-delete>
+        </wuf-st-tbody-edit-delete>
     </td>
 
     <td *ngIf="row.isInEditing && showActionColumnLeft"
         class="kg-smart-actions"
         [style.vertical-align]="valign">
-        <kg-st-tbody-create-cancel [grid]="grid" [row]="row" [editConfirm]="editConfirm"></kg-st-tbody-create-cancel>
+        <wuf-st-tbody-create-cancel [grid]="grid" [row]="row" [editConfirm]="editConfirm"></wuf-st-tbody-create-cancel>
     </td>
 
     <td *ngFor="let cell of row.cells"
         [style.vertical-align]="valign">
-        <kg-smart-table-cell [cell]="cell"
+        <wuf-smart-table-cell [cell]="cell"
                              [grid]="grid"
                              [row]="row"
                              [isNew]="false"
@@ -49,21 +49,21 @@
                              [editConfirm]="editConfirm"
                              [inputClass]="editInputClass"
                              [isInEditing]="row.isInEditing">
-        </kg-smart-table-cell>
+        </wuf-smart-table-cell>
     </td>
 
     <td *ngIf="row.isInEditing && showActionColumnRight"
         class="kg-smart-actions"
         [style.vertical-align]="valign">
-        <kg-st-tbody-create-cancel [grid]="grid" [row]="row" [editConfirm]="editConfirm"></kg-st-tbody-create-cancel>
+        <wuf-st-tbody-create-cancel [grid]="grid" [row]="row" [editConfirm]="editConfirm"></wuf-st-tbody-create-cancel>
     </td>
 
     <td *ngIf="!row.isInEditing && showActionColumnRight"
         class="kg-smart-actions"
         [style.vertical-align]="valign">
-        <!--<kg-st-tbody-custom [grid]="grid" (custom)="custom.emit($event)" [row]="row" [source]="source"></kg-st-tbody-custom>-->
+        <!--<wuf-st-tbody-custom [grid]="grid" (custom)="custom.emit($event)" [row]="row" [source]="source"></wuf-st-tbody-custom>-->
 
-        <kg-st-tbody-edit-delete [grid]="grid"
+        <wuf-st-tbody-edit-delete [grid]="grid"
                                  [deleteConfirm]="deleteConfirm"
                                  [editConfirm]="editConfirm"
                                  [row]="row"
@@ -71,7 +71,7 @@
                                  (edit)="edit.emit(row)"
                                  (delete)="delete.emit(row)"
                                  (editRowSelect)="editRowSelect.emit($event)">
-        </kg-st-tbody-edit-delete>
+        </wuf-st-tbody-edit-delete>
     </td>
 </tr>
 

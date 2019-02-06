@@ -10,7 +10,7 @@ import { KgDrawerService } from './drawer.service';
 
 
 @Component({
-    selector: 'kg-drawer',
+    selector: 'wuf-drawer',
     templateUrl: 'drawer.component.html',
     styleUrls: ['drawer.component.scss'],
     encapsulation: ViewEncapsulation.Emulated

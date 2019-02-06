@@ -4,7 +4,7 @@
  */
 
 /*
- * Public API Surface of kg-ang-drawer
+ * Public API Surface of wuf-ang-drawer
  */
 
 export * from './lib/drawer.service';

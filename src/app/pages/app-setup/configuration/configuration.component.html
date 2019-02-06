@@ -3,19 +3,19 @@
   ~ Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
   -->
 
-<kg-content-header>
+<wuf-content-header>
     <!-- insert page header content here -->
     <ng-container toolbarLeft>
-        <kg-breadcrumb
-            [items]="[{ link: '/', label: 'Introduction' }, { link: '/setup', label: 'Application Setup' }, { link: null, label: 'Configuration', active: true }]"></kg-breadcrumb>
+        <wuf-breadcrumb
+            [items]="[{ link: '/', label: 'Introduction' }, { link: '/setup', label: 'Application Setup' }, { link: null, label: 'Configuration', active: true }]"></wuf-breadcrumb>
     </ng-container>
 
     <ng-container toolbarRight>
         <!--page-level utilities here-->
     </ng-container>
-</kg-content-header>
+</wuf-content-header>
 
-<kg-content-main>
+<wuf-content-main>
     <!-- insert page content here -->
 
     <app-component-tabs [tabLabel_1]="'Intro'" [tabLabel_2]="'API'">
@@ -74,7 +74,7 @@
             <p>The <strong>KgConfigurationService</strong> service itself includes the following default values (which
                 are stored in JSON format):</p>
 
-            <kg-code-sample [code]="serviceDefaultExample" type="javascript"></kg-code-sample>
+            <wuf-code-sample [code]="serviceDefaultExample" type="javascript"></wuf-code-sample>
 
             <h4>Application Defaults</h4>
 
@@ -82,7 +82,7 @@
                 in a file at <code>/src/app/internal/configuration/configuration.ts</code>. This file has the following
                 values:</p>
 
-            <kg-code-sample [code]="appDefaultExample" type="javascript"></kg-code-sample>
+            <wuf-code-sample [code]="appDefaultExample" type="javascript"></wuf-code-sample>
 
             <h4>Server Data</h4>
 
@@ -101,7 +101,7 @@
                 <li>Last Name</li>
             </ul>
 
-            <kg-code-sample [code]="serverDataExample" type="javascript"></kg-code-sample>
+            <wuf-code-sample [code]="serverDataExample" type="javascript"></wuf-code-sample>
 
             <p>Note that this JSON object only has one property: "user", which provides an object of its own. The user
                 ID from the user object is used to store application settings in local storage under a unique storage
@@ -157,7 +157,7 @@
             <p>The Living Style Guide (this application) provides an example of the above configuration retrieval,
                 merging, and local storage behavior in <code>app.component.ts</code>:</p>
 
-            <kg-code-sample [code]="appComponentExample" type="typescript"></kg-code-sample>
+            <wuf-code-sample [code]="appComponentExample" type="typescript"></wuf-code-sample>
             <caption>/src/app/app.component.ts</caption>
 
             <p>The <code>this.userService.authenticate(fakeLoginData).subscribe()</code> line is called from <code>ngOnInit()</code>.
@@ -218,11 +218,11 @@
             <p>Be sure this component is imported from your <code>app.module.ts</code>
             page:</p>
 
-            <kg-code-sample type="typescript" [code]="setupCode1"></kg-code-sample>
+            <wuf-code-sample type="typescript" [code]="setupCode1"></wuf-code-sample>
 
             <p>And then add it to the <code>providers</code> array of <code>app.module.ts</code>:</p>
 
-            <kg-code-sample type="typescript" [code]="setupCode2"></kg-code-sample>
+            <wuf-code-sample type="typescript" [code]="setupCode2"></wuf-code-sample>
 
             <p>Every submodule in your application must also import the service and add it to the corresponding <code>*.module.ts</code>
                 page for the submodule.</p>
@@ -356,8 +356,8 @@
         </div>
     </app-component-tabs>
 
-</kg-content-main>
+</wuf-content-main>
 
-<kg-content-footer>
+<wuf-content-footer>
     <!-- insert page footer content here -->
-</kg-content-footer>
+</wuf-content-footer>

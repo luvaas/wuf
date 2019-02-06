@@ -14,20 +14,20 @@ import { Row } from '../../../lib/data-set/row';
     template: `
         <td *ngIf="isMultiSelectVisible"></td>
         <td *ngIf="showActionColumnLeft" class="kg-smart-actions">
-            <kg-st-actions [grid]="grid" (create)="onCreate($event)"></kg-st-actions>
+            <wuf-st-actions [grid]="grid" (create)="onCreate($event)"></wuf-st-actions>
         </td>
         <td *ngFor="let cell of grid.getNewRow().getCells()">
-            <kg-smart-table-cell [cell]="cell"
+            <wuf-smart-table-cell [cell]="cell"
                                  [grid]="grid"
                                  [isNew]="true"
                                  [createConfirm]="createConfirm"
                                  [inputClass]="addInputClass"
                                  [isInEditing]="grid.getNewRow().isInEditing"
                                  (edited)="onCreate($event)">
-            </kg-smart-table-cell>
+            </wuf-smart-table-cell>
         </td>
         <td *ngIf="showActionColumnRight" class="kg-smart-actions">
-            <kg-st-actions [grid]="grid" (create)="onCreate($event)"></kg-st-actions>
+            <wuf-st-actions [grid]="grid" (create)="onCreate($event)"></wuf-st-actions>
         </td>
     `,
     encapsulation: ViewEncapsulation.None

@@ -13,12 +13,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SetupConfigurationComponent implements OnInit {
 
-    constructor() {
-    }
-
-    ngOnInit() {
-    }
-
     serviceDefaultExample = `
     {
         id:                     'kg-application',
@@ -213,5 +207,11 @@ export class SetupConfigurationComponent implements OnInit {
         KgConfigurationService
     ],
     `;
+
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
 
 }

@@ -109,7 +109,7 @@ Modify the `version` number in the project's `./projects/anviltech/[name-of-libr
 Simplify the selector name of the component in the `[name-of-library].component.ts` to remove the superfluous "kg-ang".  "kg-kg-ang-[name]" becomes simply "kg-[name]".  For example, the selector "kg-kg-ang-my-component" would become "kg-my-component".
 ```typescript
 @Component({
-    selector: 'kg-[name]',
+    selector: 'wuf-[name]',
     templateUrl: 'kg-ang-[name].component.html',
     styleUrls: ['kg-ang-[name].component.scss']
 })
@@ -121,7 +121,7 @@ Add view encapsulation in `[name-of-library].component.ts`.  This adds a shadow 
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-    selector: 'kg-[name]',
+    selector: 'wuf-[name]',
     templateUrl: 'kg-ang-[name].component.html',
     styleUrls: ['kg-ang-[name].component.scss'],
     encapsulation: ViewEncapsulation.Emulated

@@ -1,4 +1,4 @@
-&lt;kg-code-sample&gt;
+&lt;wuf-code-sample&gt;
 ====
 
 Install

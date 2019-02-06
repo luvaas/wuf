@@ -98,10 +98,10 @@ export class AppComponent implements OnInit, OnDestroy {
             }
         );
 
-        // Subscribe to login subject (this only applies when using <kg-login> component
+        // Subscribe to login subject (this only applies when using <wuf-login> component
         this.loginSubscription = this.loginService.onLogin().subscribe(
             loginData => {
-                // We have collected username/password information from the form in the <kg-login> component.
+                // We have collected username/password information from the form in the <wuf-login> component.
                 // Now we need to do something with it, like send it to the server for authentication.
             },
             err => {

@@ -16,15 +16,15 @@ import { KgSmartTableCell, KgSmartTableDefaultEditor, KgSmartTableEditor } from 
         <!--<div class="input-group">-->
 
             <!--<ng-template #popContent1>-->
-                <!--<kg-multi-popover [items]="multipleItems"-->
+                <!--<wuf-multi-popover [items]="multipleItems"-->
                                   <!--(onSubmitClose)="submitPopover($event)"-->
                                   <!--(onCancelClose)="cancelPopover($event)">-->
-                <!--</kg-multi-popover>-->
+                <!--</wuf-multi-popover>-->
             <!--</ng-template>-->
 
             <!--<ng-template #popHoverContent1>-->
-                <!--<kg-multi-popover-hover [items]="multipleItemsForPopover">-->
-                <!--</kg-multi-popover-hover>-->
+                <!--<wuf-multi-popover-hover [items]="multipleItemsForPopover">-->
+                <!--</wuf-multi-popover-hover>-->
             <!--</ng-template>-->
 
             <!--<div class="multiple-popover-wrap-div"-->

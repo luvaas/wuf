@@ -8,7 +8,7 @@ import { KgContentFooterService } from './content-footer.service';
 
 
 @Component({
-    selector: 'kg-content-footer',
+    selector: 'wuf-content-footer',
     styleUrls: ['content-footer.component.scss'],
     templateUrl: 'content-footer.component.html',
     encapsulation: ViewEncapsulation.Emulated

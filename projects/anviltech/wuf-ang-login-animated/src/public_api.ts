@@ -4,7 +4,7 @@
  */
 
 /*
- * Public API Surface of kg-ang-login-animated
+ * Public API Surface of wuf-ang-login-animated
  */
 
 export * from './lib/login.module';

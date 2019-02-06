@@ -3,18 +3,18 @@
   ~ Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
   -->
 
-<kg-content-header>
+<wuf-content-header>
     <!-- insert page header content here -->
     <ng-container toolbarLeft>
-        <kg-breadcrumb [items]="[{ link: '/', label: 'Introduction' }, { link: '/components', label: 'Components' }, { link: null, label: 'Navigation', active: true }]"></kg-breadcrumb>
+        <wuf-breadcrumb [items]="[{ link: '/', label: 'Introduction' }, { link: '/components', label: 'Components' }, { link: null, label: 'Navigation', active: true }]"></wuf-breadcrumb>
     </ng-container>
 
     <ng-container toolbarRight>
         <!--page-level utilities here-->
     </ng-container>
-</kg-content-header>
+</wuf-content-header>
 
-<kg-content-main>
+<wuf-content-main>
     <!-- insert page content here -->
     <app-component-tabs [tabLabel_1]="'Example'" [tabLabel_2]="'Where / When to Use'" [tabLabel_3]="'API'" [tabLabel_4]="'Change Log'">
         <!-- Component name -->
@@ -26,7 +26,7 @@
                 width and color background in order to simulate the appearance of the component inside a sidebar.</p>
 
             <div style="width: 230px; background-color:var(--wuf-color-secondary); color: var(--wuf-color-secondary-lighter-50); margin-bottom: 20px;">
-                <kg-navigation [dataUrl]="dataUrl"></kg-navigation>
+                <wuf-navigation [dataUrl]="dataUrl"></wuf-navigation>
             </div>
 
             <p>By default <strong>&lt;kg-navigation&gt;</strong> assumes it is positioned on the left side of the
@@ -35,13 +35,13 @@
                 instruct the <strong>&lt;kg-navigation&gt;</strong> to orient itself <em>horizontally</em> for
                 positioning at the top of the layout.</p>
             <div style="width: 100%; background-color:var(--wuf-color-secondary); color: var(--wuf-color-secondary-lighter-50); margin-bottom: 20px; overflow-x: auto">
-                <kg-navigation [dataUrl]="dataUrl" position="top"></kg-navigation>
+                <wuf-navigation [dataUrl]="dataUrl" position="top"></wuf-navigation>
             </div>
 
             <p>By default navigation items place their icons to the left of the text label. To place the icons on top,
                 change the "iconPosition" attribute to "top".</p>
             <div style="width: 100%; background-color:var(--wuf-color-secondary); color: var(--wuf-color-secondary-lighter-50); margin-bottom: 20px; overflow-x: auto">
-                <kg-navigation [dataUrl]="dataUrl" position="top" iconPosition="top" alignment="center"></kg-navigation>
+                <wuf-navigation [dataUrl]="dataUrl" position="top" iconPosition="top" alignment="center"></wuf-navigation>
             </div>
         </div>
         <!--end EXAMPLE Content -->
@@ -73,13 +73,13 @@
             <ol>
                 <li>
                     Pass a URL in the [dataUrl] argument:
-                    <kg-code-sample type="html" [code]="exampleHtml1">
-                    </kg-code-sample>
+                    <wuf-code-sample type="html" [code]="exampleHtml1">
+                    </wuf-code-sample>
                 </li>
                 <li>
                     Pass a JSON object in the [data] argument:
-                    <kg-code-sample type="html" [code]="exampleHtml2">
-                    </kg-code-sample>
+                    <wuf-code-sample type="html" [code]="exampleHtml2">
+                    </wuf-code-sample>
                 </li>
             </ol>
 
@@ -95,8 +95,8 @@
 
             <p>The json object used for constructing the navigation should have the following structure:</p>
 
-            <kg-code-sample type="javascript" [code]="exampleJson">
-            </kg-code-sample>
+            <wuf-code-sample type="javascript" [code]="exampleJson">
+            </wuf-code-sample>
 
             <p>Every element in the routes array requires a <strong>link</strong>, <strong>label</strong> property
                 while
@@ -114,8 +114,8 @@
                 <strong>&lt;kg-navigation-link&gt;</strong>s as the content of the
                 <strong>&lt;kg-navigation&gt;</strong> tag:</p>
 
-            <kg-code-sample type="html" [code]="exampleHtml3">
-            </kg-code-sample>
+            <wuf-code-sample type="html" [code]="exampleHtml3">
+            </wuf-code-sample>
 
             <hr>
 
@@ -132,8 +132,8 @@
             <p>The position attribute from <strong>&lt;kg-navigation&gt;</strong> will propagate down to the children
                 <strong>&lt;kg-navigation-link&gt;</strong> elements.</p>
 
-            <kg-code-sample type="html" [code]="exampleHtml4">
-            </kg-code-sample>
+            <wuf-code-sample type="html" [code]="exampleHtml4">
+            </wuf-code-sample>
 
             <hr>
 
@@ -145,8 +145,8 @@
             <p>The iconPosition attribute from <strong>&lt;kg-navigation&gt;</strong> will propagate down to the
                 children <strong>&lt;kg-navigation-link&gt;</strong> elements.</p>
 
-            <kg-code-sample type="html" [code]="exampleHtml5">
-            </kg-code-sample>
+            <wuf-code-sample type="html" [code]="exampleHtml5">
+            </wuf-code-sample>
 
             <hr>
 
@@ -356,8 +356,8 @@
         </div>
         <!--end CHANGELOG Content -->
     </app-component-tabs>
-</kg-content-main>
+</wuf-content-main>
 
-<kg-content-footer>
+<wuf-content-footer>
     <!-- insert footer content here -->
-</kg-content-footer>
+</wuf-content-footer>

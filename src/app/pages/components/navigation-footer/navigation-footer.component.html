@@ -3,19 +3,19 @@
   ~ Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
   -->
 
-<kg-content-header>
+<wuf-content-header>
     <!-- insert page header content here -->
     <ng-container toolbarLeft>
-        <kg-breadcrumb
-            [items]="[{ link: '/', label: 'Introduction' }, { link: '/components', label: 'Components' }, { link: null, label: 'Navigation Footer', active: true }]"></kg-breadcrumb>
+        <wuf-breadcrumb
+            [items]="[{ link: '/', label: 'Introduction' }, { link: '/components', label: 'Components' }, { link: null, label: 'Navigation Footer', active: true }]"></wuf-breadcrumb>
     </ng-container>
 
     <ng-container toolbarRight>
         <!--page-level utilities here-->
     </ng-container>
-</kg-content-header>
+</wuf-content-header>
 
-<kg-content-main>
+<wuf-content-main>
     <!-- insert page content here -->
     <app-component-tabs [tabLabel_1]="'Example'" [tabLabel_2]="'Where / When to Use'" [tabLabel_3]="'API'"
                         [tabLabel_4]="'Change Log'">
@@ -30,7 +30,7 @@
             <h4>Default</h4>
             <div
                 style="width: 230px; background-color: var(--wuf-sidebar-bg-color); color: var(--wuf-sidebar-color); margin-bottom: 20px;">
-                <kg-sidebar-footer></kg-sidebar-footer>
+                <wuf-sidebar-footer></wuf-sidebar-footer>
             </div>
             <br>
 
@@ -39,7 +39,7 @@
                 service</a>.</p>
             <div
                 style="width: 230px; background-color: var(--wuf-sidebar-bg-color); color: var(--wuf-sidebar-color); margin-bottom: 20px;">
-                <kg-sidebar-footer [copyrightName]="'KION, Inc.'"></kg-sidebar-footer>
+                <wuf-sidebar-footer [copyrightName]="'KION, Inc.'"></wuf-sidebar-footer>
             </div>
 
             <br>
@@ -47,7 +47,7 @@
             <h4>Custom Content</h4>
             <div
                 style="width: 230px; background-color: var(--wuf-sidebar-bg-color); color: var(--wuf-sidebar-color); margin-bottom: 20px;">
-                <kg-sidebar-footer>I'm custom content!</kg-sidebar-footer>
+                <wuf-sidebar-footer>I'm custom content!</wuf-sidebar-footer>
             </div>
             <br>
 
@@ -55,7 +55,7 @@
 
             <div
                 style="width: 230px; background-color: var(--wuf-sidebar-bg-color); color: var(--wuf-sidebar-color); margin-bottom: 20px;">
-                <kg-sidebar-footer [dataUrl]="footerDataUrl"></kg-sidebar-footer>
+                <wuf-sidebar-footer [dataUrl]="footerDataUrl"></wuf-sidebar-footer>
             </div>
         </div>
 
@@ -85,7 +85,7 @@
             <p>By simply adding content, to the <code>&lt;kg-sidebar-footer&gt;</code> tag, you can replace the default
                 copyright information with content of your choice:</p>
 
-            <kg-code-sample [code]="exampleHtml1" type="html"></kg-code-sample>
+            <wuf-code-sample [code]="exampleHtml1" type="html"></wuf-code-sample>
 
             <p>Note that the sidebar is resizable. We probably can't display long strings here when the sidebar is
                 minimized, for example. You can use the <code>"hideOnMinimized"</code> classname to help here. In the
@@ -97,18 +97,18 @@
             <p>You can pass an array of links via the <code>data</code> attribute. Use the following code in the
                 component.html file:</p>
 
-            <kg-code-sample [code]="exampleHtml2" type="html"></kg-code-sample>
+            <wuf-code-sample [code]="exampleHtml2" type="html"></wuf-code-sample>
 
             <p>The JSON object in the component.ts file should look like this:</p>
 
-            <kg-code-sample [code]="exampleCode1" type="typescript"></kg-code-sample>
+            <wuf-code-sample [code]="exampleCode1" type="typescript"></wuf-code-sample>
 
             <h4>DataUrl</h4>
 
             <p>You can also pass a URL in the <code>dataUrl</code> attribute. The URL should return a JSON object
                 structured like the example above.</p>
 
-            <kg-code-sample [code]="exampleHtml3" type="html"></kg-code-sample>
+            <wuf-code-sample [code]="exampleHtml3" type="html"></wuf-code-sample>
 
             <hr>
 
@@ -120,7 +120,7 @@
             <p>Note: It's recommended to pass copyrightName via <a routerLink="/setup/configuration">configuration
                 service</a> and <em>not</em> hard code the value as a string as in the following example.</p>
 
-            <kg-code-sample [code]="exampleHtml4" type="html"></kg-code-sample>
+            <wuf-code-sample [code]="exampleHtml4" type="html"></wuf-code-sample>
 
             <hr>
 
@@ -189,9 +189,9 @@
         </div>
         <!--end CHANGELOG Content -->
     </app-component-tabs>
-</kg-content-main>
+</wuf-content-main>
 
-<kg-content-footer>
+<wuf-content-footer>
     <!-- insert footer content here -->
-</kg-content-footer>
+</wuf-content-footer>
 

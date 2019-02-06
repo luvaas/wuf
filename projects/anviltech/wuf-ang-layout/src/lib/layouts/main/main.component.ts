@@ -24,7 +24,7 @@ import { KgLayoutService } from '../layout.service';
 
 
 @Component({
-    selector: 'kg-view-main',
+    selector: 'wuf-view-main',
     styleUrls: ['main.component.scss'],
     templateUrl: 'main.component.html',
     encapsulation: ViewEncapsulation.Emulated

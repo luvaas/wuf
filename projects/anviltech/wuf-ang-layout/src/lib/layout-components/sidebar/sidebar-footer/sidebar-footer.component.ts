@@ -8,7 +8,7 @@ import { KgSidebarService } from '../sidebar.service';
 
 
 @Component({
-    selector: 'kg-sidebar-footer',
+    selector: 'wuf-sidebar-footer',
     templateUrl: './sidebar-footer.component.html',
     styleUrls: ['./sidebar-footer.component.scss'],
     encapsulation: ViewEncapsulation.None // NOTE: There is no shadow DOM used for this component so that the

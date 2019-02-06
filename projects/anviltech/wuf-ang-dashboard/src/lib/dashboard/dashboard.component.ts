@@ -10,7 +10,7 @@ import { KgDashboardService } from '../_internal/dashboard.service';
 
 
 @Component({
-    selector: 'kg-dashboard',
+    selector: 'wuf-dashboard',
     templateUrl: './dashboard.component.html',
     styleUrls: ['./dashboard.component.scss'],
     encapsulation: ViewEncapsulation.Emulated

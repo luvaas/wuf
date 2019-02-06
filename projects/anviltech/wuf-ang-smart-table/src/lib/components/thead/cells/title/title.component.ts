@@ -11,7 +11,7 @@ import { Column } from '../../../../lib/data-set/column';
 
 
 @Component({
-    selector: 'kg-smart-table-title',
+    selector: 'wuf-smart-table-title',
     styleUrls: ['./title.component.scss'],
     template: `
         <a href="#" *ngIf="column.isSortable"

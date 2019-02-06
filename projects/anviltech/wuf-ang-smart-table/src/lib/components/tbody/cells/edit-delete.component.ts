@@ -11,7 +11,7 @@ import { DataSource } from '../../../lib/data-source/data-source';
 
 
 @Component({
-    selector: 'kg-st-tbody-edit-delete',
+    selector: 'wuf-st-tbody-edit-delete',
     changeDetection: ChangeDetectionStrategy.OnPush,
     template: `
         <button mat-raised-button

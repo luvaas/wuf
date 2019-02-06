@@ -11,7 +11,7 @@ import '@webcomponents/webcomponentsjs/webcomponents-lite';
 
 import {KgCodeSample} from '../src/wuf-code-sample';
 
-describe('<kg-code-sample>', () => {
+describe('<wuf-code-sample>', () => {
     let component;
     let fixturePath = 'wuf-code-sample.fixture.html';
     const FIXTURES = {
@@ -66,7 +66,7 @@ describe('<kg-code-sample>', () => {
     //
     // 	describe('with outside value', () => {
     // 		beforeEach(() => {
-    // 			component = fixture.load(fixturePath)[FIXTURES.STYLE].querySelector('kg-code-sample');
+    // 			component = fixture.load(fixturePath)[FIXTURES.STYLE].querySelector('wuf-code-sample');
     // 		});
     //
     // 		it('is set blue', () => {

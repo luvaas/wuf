@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     ngOnInit() {
         this.loginSubscription = this.loginService.onLogin().subscribe(
             loginData => {
-                // We have collected username/password information from the form in the <kg-login> component.  Now we need to do something with it, like send it to the server for authentication.
+                // We have collected username/password information from the form in the <wuf-login> component.  Now we need to do something with it, like send it to the server for authentication.
                 this.loginData = JSON.stringify(loginData);
             },
             err => {

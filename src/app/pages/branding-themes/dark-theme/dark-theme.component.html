@@ -3,19 +3,19 @@
   ~ Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
   -->
 
-<kg-content-header>
+<wuf-content-header>
     <!-- insert page header content here -->
     <ng-container toolbarLeft>
-        <kg-breadcrumb
-            [items]="[{ link: '/', label: 'Introduction' }, { link: '/themes', label: 'Branding & Themes' }, { link: null, label: 'KION Theme System', active: true }]"></kg-breadcrumb>
+        <wuf-breadcrumb
+            [items]="[{ link: '/', label: 'Introduction' }, { link: '/themes', label: 'Branding & Themes' }, { link: null, label: 'KION Theme System', active: true }]"></wuf-breadcrumb>
     </ng-container>
 
     <ng-container toolbarRight>
         <!--page-level utilities here-->
     </ng-container>
-</kg-content-header>
+</wuf-content-header>
 
-<kg-content-main>
+<wuf-content-main>
     <!-- insert page content here -->
 
     <h1>KION Dark Theme Mechanism</h1>
@@ -33,20 +33,20 @@
     <p>Apply the "dark theme" mode to an application, the root element (i.e., the &lt;html&gt; tag) should include the
         attribute <code>kg-theme-dark="true"</code>:</p>
 
-    <kg-code-sample
+    <wuf-code-sample
         type="html"
         [code]="htmlCode">
-    </kg-code-sample>
+    </wuf-code-sample>
 
     <p>When this attribute is set on the &lt;html&gt; the dark theme is applied automatically to any application that
         includes the <a routerLink="/setup/basestyles">WUF base styles</a>. There are a number of different ways to
         apply the <code>kg-theme-dark</code> attribute to the &lt;html&gt; tag. In the Living Style Guide (this
         application), the attribute is set via the following code in <code>app.component.ts</code>:</p>
 
-    <kg-code-sample
+    <wuf-code-sample
         type="typescript"
         [code]="appComponentCode">
-    </kg-code-sample>
+    </wuf-code-sample>
 
     <p>&hellip; where "renderer" is a reference to <code>Renderer2</code>, imported from <code>'@angular/core'</code>.
     </p>
@@ -56,10 +56,10 @@
         recommended that you provide a control in the UI that, when triggered by user interaction, updates the
         "themeDark" property on the configuraiton object from KgConfigurationService:</p>
 
-    <kg-code-sample
+    <wuf-code-sample
         type="typescript"
         [code]="configurationCode">
-    </kg-code-sample>
+    </wuf-code-sample>
 
     <p>The following is an example of how to trigger a dark theme update in the UI:</p>
 
@@ -78,8 +78,8 @@
 
     <p>Every component must be "dark theme compatible".  While every component </p>
 
-</kg-content-main>
+</wuf-content-main>
 
-<kg-content-footer>
+<wuf-content-footer>
     <!-- insert footer content here -->
-</kg-content-footer>
+</wuf-content-footer>

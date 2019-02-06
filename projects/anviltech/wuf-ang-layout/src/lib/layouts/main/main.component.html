@@ -9,7 +9,7 @@
     <div class="page-row">
         <div class="main-header-placeholder"></div>
         <div class="main-header" [class.hidden]="!layoutService.headerVisible">
-            <kg-toolbar class="main-header-toolbar">
+            <wuf-toolbar class="main-header-toolbar">
                 <ng-container toolbarLeft>
                     <i class="sidebar-toggler material-icons" (click)="onSidebarTogglerClick($event)"
                        *ngIf="configService.config.navigation.position!=='top'">menu</i>
@@ -22,19 +22,19 @@
                     </div>
                     <ng-content select="[toolbarRight]"></ng-content>
                 </ng-container>
-            </kg-toolbar>
+            </wuf-toolbar>
         </div>
 
         <div class="main-wrap" [class.flex-row]="configService.config.navigation.position === 'left'"
              [class.flex-column]="configService.config.navigation.position === 'top'">
-            <kg-sidebar>
+            <wuf-sidebar>
                 <ng-container sidebarNavigation>
                     <ng-content select="[sidebarNavigation]"></ng-content>
                 </ng-container>
                 <ng-container sidebarFooter>
                     <ng-content select="[sidebarFooter]"></ng-content>
                 </ng-container>
-            </kg-sidebar>
+            </wuf-sidebar>
 
             <div class="main d-flex flex-row">
                 <div class="main-resizable-drag" #sidebarResizer

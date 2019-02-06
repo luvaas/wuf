@@ -8,7 +8,7 @@ import { KgDashboardService } from '../_internal/dashboard.service';
 
 
 @Component({
-    selector: 'kg-kpi',
+    selector: 'wuf-kpi',
     templateUrl: './kpi.component.html',
     styleUrls: ['./kpi.component.scss'],
     encapsulation: ViewEncapsulation.Emulated

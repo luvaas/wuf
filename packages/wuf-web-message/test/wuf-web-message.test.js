@@ -10,7 +10,7 @@
 import '@webcomponents/webcomponentsjs/webcomponents-lite';
 import {KgWebMessage} from '../src/wuf-web-message'; // Do not delete, it is required!!
 
-describe('<kg-web-message>', () => {
+describe('<wuf-web-message>', () => {
     let component;
     let fixturePath = 'wuf-web-message.fixture.html';
     const FIXTURES = {

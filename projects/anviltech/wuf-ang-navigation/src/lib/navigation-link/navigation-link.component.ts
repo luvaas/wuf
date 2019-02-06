@@ -9,7 +9,7 @@ import { KgSidebarService } from '@anviltech/wuf-ang-layout';
 
 
 @Component({
-    selector: 'kg-navigation-link',
+    selector: 'wuf-navigation-link',
     styleUrls: ['navigation-link.component.scss'],
     templateUrl: 'navigation-link.component.html',
     encapsulation: ViewEncapsulation.Emulated

@@ -11,7 +11,7 @@ import { Column } from '../../lib/data-set/column';
 
 
 @Component({
-    selector: 'kg-smart-table-filter',
+    selector: 'wuf-smart-table-filter',
     styleUrls: ['./filter.component.scss'],
     template: `
         <div class="kg-smart-filter" *ngIf="column.isFilterable" [ngSwitch]="column.getFilterType()">

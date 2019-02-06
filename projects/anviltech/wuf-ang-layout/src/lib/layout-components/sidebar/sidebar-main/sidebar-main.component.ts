@@ -12,7 +12,7 @@ import { KgSidebarService } from '../sidebar.service';
 
 
 @Component({
-    selector: 'kg-sidebar',
+    selector: 'wuf-sidebar',
     templateUrl: './sidebar-main.component.html',
     styleUrls: ['./sidebar-main.component.scss'],
     encapsulation: ViewEncapsulation.Emulated

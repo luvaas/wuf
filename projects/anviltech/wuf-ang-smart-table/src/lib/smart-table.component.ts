@@ -22,7 +22,7 @@ import { KgSmartTableValidatorService } from './lib/validator.service';
 
 
 @Component({
-    selector: 'kg-smart-table',
+    selector: 'wuf-smart-table',
     styleUrls: ['./smart-table.component.scss'],
     templateUrl: './smart-table.component.html',
     encapsulation: ViewEncapsulation.Emulated

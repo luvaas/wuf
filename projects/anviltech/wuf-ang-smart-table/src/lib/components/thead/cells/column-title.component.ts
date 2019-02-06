@@ -10,11 +10,11 @@ import { DataSource } from '../../../lib/data-source/data-source';
 
 
 @Component({
-    selector: 'kg-st-column-title',
+    selector: 'wuf-st-column-title',
     template: `
         <div class="kg-smart-title">
-            <kg-smart-table-title [source]="source" [column]="column"
-                                  (sort)="sort.emit($event)"></kg-smart-table-title>
+            <wuf-smart-table-title [source]="source" [column]="column"
+                                  (sort)="sort.emit($event)"></wuf-smart-table-title>
         </div>
     `,
     encapsulation: ViewEncapsulation.None

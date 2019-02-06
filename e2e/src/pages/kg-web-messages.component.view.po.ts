@@ -17,7 +17,7 @@ export class KgWebMessagesComponentView {
 
 
     get_viewKgWebMessageElement() {
-        return element(by.css('kg-web-message'));
+        return element(by.css('wuf-web-message'));
     }
 
     get_errorMessageLink() {

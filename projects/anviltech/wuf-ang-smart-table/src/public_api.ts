@@ -4,7 +4,7 @@
  */
 
 /*
- * Public API Surface of kg-ang-smart-table
+ * Public API Surface of wuf-ang-smart-table
  */
 
 export * from './lib/smart-table.component';

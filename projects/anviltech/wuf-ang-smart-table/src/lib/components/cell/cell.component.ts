@@ -11,7 +11,7 @@ import { Row } from '../../lib/data-set/row';
 
 
 @Component({
-    selector: 'kg-smart-table-cell',
+    selector: 'wuf-smart-table-cell',
     template: `
         <table-cell-view-mode *ngIf="!isInEditing" [cell]="cell"></table-cell-view-mode>
         <table-cell-edit-mode *ngIf="isInEditing" [cell]="cell"

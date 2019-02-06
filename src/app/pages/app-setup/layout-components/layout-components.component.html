@@ -3,18 +3,18 @@
   ~ Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
   -->
 
-<kg-content-header>
+<wuf-content-header>
     <!-- insert page header content here -->
     <ng-container toolbarLeft>
-        <kg-breadcrumb [items]="[{ link: '/', label: 'Introduction' }, { link: '/setup', label: 'Application Setup' }, { link: null, label: 'Layout Components', active: true }]"></kg-breadcrumb>
+        <wuf-breadcrumb [items]="[{ link: '/', label: 'Introduction' }, { link: '/setup', label: 'Application Setup' }, { link: null, label: 'Layout Components', active: true }]"></wuf-breadcrumb>
     </ng-container>
 
     <ng-container toolbarRight>
         <!--page-level utilities here-->
     </ng-container>
-</kg-content-header>
+</wuf-content-header>
 
-<kg-content-main>
+<wuf-content-main>
     <!-- insert page content here -->
     <h1>Layout Components</h1>
 
@@ -34,7 +34,7 @@
         which your page content can be added. The components will handle the generation and styling of your page's
         layout HTML/CSS while you, as a developer, focus on the page content placed inside each.</p>
 
-    <kg-code-sample type="html" [code]="layoutCodeBasic"></kg-code-sample>
+    <wuf-code-sample type="html" [code]="layoutCodeBasic"></wuf-code-sample>
 
     <hr>
 
@@ -44,7 +44,7 @@
         <a routerLink="/components/breadcrumbs">breadcrumb trail</a>, and page-level utility links to an application
         page. Or other content that is not scrollable and need to stay on top.</p>
 
-    <kg-code-sample type="html" [code]="headerCode"></kg-code-sample>
+    <wuf-code-sample type="html" [code]="headerCode"></wuf-code-sample>
 
     <hr>
 
@@ -53,7 +53,7 @@
     <p>The <code>&lt;kg-content-main&gt;</code> slot is used to host the main page content. It generates the HTML/CSS
         necessary to control content padding, content scrolling, etc.</p>
 
-    <kg-code-sample type="html" [code]="contentCode"></kg-code-sample>
+    <wuf-code-sample type="html" [code]="contentCode"></wuf-code-sample>
 
     <hr>
 
@@ -64,24 +64,24 @@
         footer is fixed in position and always appears at the bottom of the content area overlaid on TOP of page
         content.</p>
 
-    <kg-code-sample type="html" [code]="footerCode"></kg-code-sample>
+    <wuf-code-sample type="html" [code]="footerCode"></wuf-code-sample>
 
     <p>The page footer is not intended to be displayed at all times and is recommended to show only when additional
         details need to be shown as the result of an action taken elsewhere on the page. Use the following code to
         toggle the content footer on/off:</p>
 
-    <kg-code-sample type="typescript" [code]="footerToggleCode1"></kg-code-sample>
+    <wuf-code-sample type="typescript" [code]="footerToggleCode1"></wuf-code-sample>
 
     <p>The add the following example HTML to your page:</p>
 
-    <kg-code-sample type="html" [code]="footerToggleCode2"></kg-code-sample>
+    <wuf-code-sample type="html" [code]="footerToggleCode2"></wuf-code-sample>
 
     <p>Click here for an example of toggling a page footer:
         <button mat-raised-button (click)="toggleFooter()">toggle footer</button>
     </p>
 
-</kg-content-main>
+</wuf-content-main>
 
-<kg-content-footer>
+<wuf-content-footer>
     Hi! I'm a content footer.
-</kg-content-footer>
+</wuf-content-footer>

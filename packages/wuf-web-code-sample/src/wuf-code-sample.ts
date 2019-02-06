@@ -235,7 +235,7 @@ export class KgCodeSample extends HTMLElement {
     }
 
     private getCode(): string {
-        let codeStr: string = (this.code) ? this.code : this.innerHTML;
+        const codeStr: string = (this.code) ? this.code : this.innerHTML;
 
         return codeStr;
     }
@@ -243,16 +243,16 @@ export class KgCodeSample extends HTMLElement {
     private highlight() {
 
         // Remove the copy to clipboard button if it isn't needed
-        let copyButton = this.shadowRoot.querySelector('button#code-copy-button');
+        const copyButton = this.shadowRoot.querySelector('button#code-copy-button');
 
         if (!this.showCopyButton && copyButton) {
             if (copyButton) copyButton.parentNode.removeChild(copyButton);
         }
 
         // User passed in code via attribute or as innerHTML.  If both, attribute wins.
-        let codeStr: string = this.getCode();
-        let cleanedCodeStr = this.entitize(this.cleanIndentation(codeStr));
-        let codeTag = this.shadowRoot.querySelector('pre code');
+        const codeStr: string = this.getCode();
+        const cleanedCodeStr = this.entitize(this.cleanIndentation(codeStr));
+        const codeTag = this.shadowRoot.querySelector('pre code');
 
         // Add a type classname for highlight.js
         if (this.type) {
@@ -275,4 +275,4 @@ export class KgCodeSample extends HTMLElement {
     }
 }
 
-window.customElements.define('kg-code-sample', KgCodeSample);
+window.customElements.define('wuf-code-sample', KgCodeSample);

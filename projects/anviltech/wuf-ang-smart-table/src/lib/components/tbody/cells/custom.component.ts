@@ -10,7 +10,7 @@ import { Grid } from '../../../lib/grid';
 
 
 @Component({
-    selector: 'kg-st-tbody-custom',
+    selector: 'wuf-st-tbody-custom',
     changeDetection: ChangeDetectionStrategy.OnPush,
     template: `
         <a *ngFor="let action of grid.getSetting('actions.custom')" href="#"

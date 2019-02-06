@@ -29,42 +29,42 @@ export class LayoutComponentsComponent implements OnInit {
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	`;
 
-    layoutCodeBasic = `<kg-content-header>
+    layoutCodeBasic = `<wuf-content-header>
 	<!-- insert page header content here -->
-	</kg-content-header>
+	</wuf-content-header>
 
-	<kg-content-main>
+	<wuf-content-main>
 	<!-- insert page content here -->
-	</kg-content-main>
+	</wuf-content-main>
 	
-	<kg-content-footer>
+	<wuf-content-footer>
 	<!-- insert page footer content here -->
-	</kg-content-footer>
+	</wuf-content-footer>
 	`;
 
     headerCode = `
-	<kg-content-header>
+	<wuf-content-header>
 		<!-- insert page header content here -->
 		<ng-container toolbarLeft>
-			<kg-breadcrumb [items]="[{ link: '/', label: 'Introduction' }, { link: '/setup', label: 'Application Setup' }, { link: null, label: 'Layout Components', active: true }]"></kg-breadcrumb>
+			<wuf-breadcrumb [items]="[{ link: '/', label: 'Introduction' }, { link: '/setup', label: 'Application Setup' }, { link: null, label: 'Layout Components', active: true }]"></wuf-breadcrumb>
 		</ng-container>
 	
 		<ng-container toolbarRight>
 			<!--page-level utilities here-->
 		</ng-container>
-	</kg-content-header>
+	</wuf-content-header>
 	`;
 
     contentCode = `
-	<kg-content-main>
+	<wuf-content-main>
 		Page content goes here
-	</kg-content-main>
+	</wuf-content-main>
 	`;
 
     footerCode = `
-	<kg-content-footer>
+	<wuf-content-footer>
 		footer content goes here
-	</kg-content-footer>
+	</wuf-content-footer>
 	`;
 
     footerToggleCode1 = `import { Component, OnInit } from '@angular/core';

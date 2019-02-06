@@ -4,7 +4,7 @@
  */
 
 /*
-The following CSS can NOT go inside the <kg-navigation> or <kg-navigation-link>
+The following CSS can NOT go inside the <wuf-navigation> or <wuf-navigation-link>
 components because Angular Material creates the menu panels used for subnavigation
 in the sidebar top position OUTSIDE of the shadow-DOM of these components.
 Therefore, the only way to style these navigation menus is with global CSS.

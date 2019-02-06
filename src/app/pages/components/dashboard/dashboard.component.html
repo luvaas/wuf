@@ -3,22 +3,22 @@
   ~ Licensed under the MIT Open Source: https://opensource.org/licenses/MIT
   -->
 
-<kg-content-header>
+<wuf-content-header>
     <!-- insert page header content here -->
     <ng-container toolbarLeft>
-        <kg-breadcrumb
-            [items]="[{ link: '/', label: 'Introduction' }, { link: '/components', label: 'Components' }, { link: null, label: 'Material Cards', active: true }]"></kg-breadcrumb>
+        <wuf-breadcrumb
+            [items]="[{ link: '/', label: 'Introduction' }, { link: '/components', label: 'Components' }, { link: null, label: 'Material Cards', active: true }]"></wuf-breadcrumb>
     </ng-container>
 
     <ng-container toolbarRight>
         <!--page-level utilities here-->
     </ng-container>
-</kg-content-header>
+</wuf-content-header>
 
-<kg-content-main>
+<wuf-content-main>
     <!-- insert page content here -->
-    <kg-dashboard minKpiCount="0">
-        <kg-kpi label="Example" value="10" padding="0px">
+    <wuf-dashboard minKpiCount="0">
+        <wuf-kpi label="Example" value="10" padding="0px">
             <div class="splitPanel-wrap">
                 <div class="splitPanel-top">
                     <h2>Dashboard Example</h2>
@@ -93,13 +93,13 @@
                     </vaadin-grid>
                 </div>
             </div>
-        </kg-kpi>
+        </wuf-kpi>
 
-        <kg-kpi label="Usage" value="84" color="success">
+        <wuf-kpi label="Usage" value="84" color="success">
             [Usage info]
-        </kg-kpi>
+        </wuf-kpi>
 
-        <kg-kpi label="API" value="1,234,567" color="warning">
+        <wuf-kpi label="API" value="1,234,567" color="warning">
 
             <markdown path="assets/documentation/packages/wuf-ang-dashboard/README.md"></markdown>
 
@@ -131,7 +131,7 @@
                 <strong>&lt;kg-content-main&gt;</strong> tag:
             </p>
 
-            <kg-code-sample type="html" [code]="usageCode1"></kg-code-sample>
+            <wuf-code-sample type="html" [code]="usageCode1"></wuf-code-sample>
 
             <p>This will add the overall dashboard layout with a section on left to hold your KPIs and a section on the
                 right to show the content for each KPI when that KPI is clicked.
@@ -150,7 +150,7 @@
                 file:
             </p>
 
-            <kg-code-sample type="css" [code]="usageCode2"></kg-code-sample>
+            <wuf-code-sample type="css" [code]="usageCode2"></wuf-code-sample>
 
             <p>The <code>:host</code> section removes the content padding, allowing the dashboard to fill the entire
                 page space without any spacing around it.
@@ -170,7 +170,7 @@
                 <strong>&lt;kg-kpi&gt;</strong> tags inside the <strong>&lt;kg-dashboard&gt;</strong> tag as you'd like:
             </p>
 
-            <kg-code-sample type="html" [code]="usageCode3"></kg-code-sample>
+            <wuf-code-sample type="html" [code]="usageCode3"></wuf-code-sample>
 
             <p>The only required attributes for the &lt;kg-kpi&gt; component are <strong>label</strong> and <strong>value</strong>.
                 When added, a new KPI will appear in the KPI section on the left displaying the label and value
@@ -317,16 +317,16 @@
                     <td class="value">var(--wuf-kpi-active-stripe-color, var(--wuf-color-primary-lighter-10))</td>
                 </tr>
             </table>
-        </kg-kpi>
+        </wuf-kpi>
 
-        <kg-kpi label="Change Log" value="1,234.5" color="danger">
+        <wuf-kpi label="Change Log" value="1,234.5" color="danger">
             <markdown path="assets/documentation/packages/wuf-ang-dashboard/CHANGELOG.md"></markdown>
-        </kg-kpi>
-    </kg-dashboard>
-</kg-content-main>
+        </wuf-kpi>
+    </wuf-dashboard>
+</wuf-content-main>
 
-<kg-content-footer>
+<wuf-content-footer>
     <!-- insert footer content here -->
     [page footer content here]
-</kg-content-footer>
+</wuf-content-footer>
 

@@ -13,7 +13,7 @@ export interface KgBreadcrumbItem {
 }
 
 @Component({
-    selector: 'kg-breadcrumb',
+    selector: 'wuf-breadcrumb',
     templateUrl: './breadcrumb.component.html',
     styleUrls: ['./breadcrumb.component.scss'],
     encapsulation: ViewEncapsulation.None

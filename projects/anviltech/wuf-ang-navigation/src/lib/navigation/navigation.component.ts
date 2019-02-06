@@ -10,7 +10,7 @@ import { KgConfigurationService } from '@anviltech/wuf-ang-configuration';
 
 
 @Component({
-    selector: 'kg-navigation',
+    selector: 'wuf-navigation',
     styleUrls: ['navigation.component.scss'],
     templateUrl: 'navigation.component.html',
     encapsulation: ViewEncapsulation.Emulated

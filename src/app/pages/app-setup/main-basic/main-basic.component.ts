@@ -20,13 +20,13 @@ export class LayoutMainBasicComponent implements OnInit {
     }
 
     mainCodeHtml = `
-    <kg-view-main [logoRoute]="logoRoute">
+    <wuf-view-main [logoRoute]="logoRoute">
         <ng-container sidebarNavigation>
-            <kg-navigation [data]="navData"></kg-navigation>
+            <wuf-navigation [data]="navData"></wuf-navigation>
         </ng-container>
     
         <ng-container sidebarFooter>
-            <kg-sidebar-footer></kg-sidebar-footer>
+            <wuf-sidebar-footer></wuf-sidebar-footer>
         </ng-container>
     
         <ng-container toolbarLeft>
@@ -41,7 +41,7 @@ export class LayoutMainBasicComponent implements OnInit {
         <ng-container main>
             <router-outlet></router-outlet>
         </ng-container>
-    </kg-view-main>
+    </wuf-view-main>
     `;
 
     mainCodeComponent = `
@@ -84,11 +84,11 @@ export class LayoutMainBasicComponent implements OnInit {
     `;
 
     basicCodeHtml = `
-    <kg-view-basic>
+    <wuf-view-basic>
         <ng-container main>
             <router-outlet></router-outlet>
         </ng-container>
-    </kg-view-basic>
+    </wuf-view-basic>
     `;
 
     basicCodeComponent = `

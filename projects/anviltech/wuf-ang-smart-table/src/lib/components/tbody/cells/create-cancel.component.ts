@@ -10,7 +10,7 @@ import { Row } from '../../../lib/data-set/row';
 
 
 @Component({
-    selector: 'kg-st-tbody-create-cancel',
+    selector: 'wuf-st-tbody-create-cancel',
     template: `
         <button mat-raised-button
                 class="kg-smart-action kg-smart-action-edit-save"

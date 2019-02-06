@@ -15,15 +15,15 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 export class BreadcrumbComponent implements OnInit {
 
 	breadcrumbHtmlCode1 = `
-	<kg-content-header>
+	<wuf-content-header>
 		<!-- insert page header content here -->
 		<ng-container toolbarLeft>
-			<kg-breadcrumb></kg-breadcrumb>
+			<wuf-breadcrumb></wuf-breadcrumb>
 		</ng-container>
 		<ng-container toolbarRight>
 			<!--page-level utilities here-->
 		</ng-container>
-	</kg-content-header>`;
+	</wuf-content-header>`;
 
 	breadcrumbHtmlCode2 = `
 	<ol class="breadcrumb">
@@ -33,9 +33,9 @@ export class BreadcrumbComponent implements OnInit {
 		</li>
 	</ol>`;
 
-	breadcrumbHtmlCode3 = `<kg-breadcrumb [items]="[{ link: '/', label: 'Introduction' },
+	breadcrumbHtmlCode3 = `<wuf-breadcrumb [items]="[{ link: '/', label: 'Introduction' },
 			{ link: '/components', label: 'Components' }, { link: null, label: 'Breadcrumb', active: true }]">
-		</kg-breadcrumb>`;
+		</wuf-breadcrumb>`;
 
 	ngOnInit() {
 	}

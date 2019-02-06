@@ -1,4 +1,4 @@
-&lt;kg-web-message&gt;
+&lt;wuf-web-message&gt;
 ====
 
 Description
@@ -28,11 +28,11 @@ import '@anviltech/wuf-web-message';
 The software engineer declares _kg-web-message_ as a target view child, with the recommended place being at the top of the view; the code snippet below is found in the Living Style Guide _web-messages.component's_ _web-messages.component.html_ view:
 
 ```html
-<kg-content-main>
+<wuf-content-main>
     . . .
   <!-- begin Example tab contents -->
   <div class="tab-content" [ngClass]="{ 'active': activeTab === 0}">
-    <kg-web-message #kgm></kg-web-message>
+    <wuf-web-message #kgm></wuf-web-message>
     <!-- where #kgm is used to provide access to the web component's setter methods
     . . .
 ```
@@ -75,7 +75,7 @@ export class KgWebMessagesComponent implements OnInit {
 These calls trigger the insertion of _kg-web-message_ web components as _kg-web-messages_ children, in the order they are created. 
 
 ````html
-<kg-web-message>
+<wuf-web-message>
   #shadow-root (open)
     <div class="message message-dismissible message-danger">
         <button class="message-close close" type="button">×</button>
@@ -93,7 +93,7 @@ These calls trigger the insertion of _kg-web-message_ web components as _kg-web-
         <button class="message-close close" type="button">×</button>
         <div>The "check engine" light is on.</div>
     </div>
-</kg-web-message>
+</wuf-web-message>
 ````
 
 The _kg-web-message_ web component includes a _multiplication_ sign element at the top right which, when clicked causes its _kg-web-message's_  parent to be deleted from the DOM.

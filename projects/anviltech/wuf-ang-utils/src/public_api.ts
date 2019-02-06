@@ -4,7 +4,7 @@
  */
 
 /*
- * Public API Surface of kg-ang-utils
+ * Public API Surface of wuf-ang-utils
  */
 
 export * from './lib/utils.module';

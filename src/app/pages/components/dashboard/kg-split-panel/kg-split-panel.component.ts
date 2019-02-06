@@ -7,7 +7,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 
 @Component({
-    selector: 'kg-split-panel',
+    selector: 'wuf-split-panel',
     templateUrl: './kg-split-panel.component.html',
     styleUrls: ['./kg-split-panel.component.scss']
 })

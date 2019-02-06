@@ -21,7 +21,7 @@ import { DataSource } from '../../../lib/data-source/data-source';
         <th kg-st-actions-title *ngIf="showActionColumnLeft" [grid]="grid"></th>
         <th *ngFor="let column of grid.getColumns()" class="kg-smart-th {{ column.id }}" [ngClass]="column.class"
             [style.width]="column.width">
-            <kg-st-column-title [source]="source" [column]="column" (sort)="sort.emit($event)"></kg-st-column-title>
+            <wuf-st-column-title [source]="source" [column]="column" (sort)="sort.emit($event)"></wuf-st-column-title>
         </th>
         <th kg-st-actions-title *ngIf="showActionColumnRight" [grid]="grid"></th>
     `,

@@ -47,7 +47,7 @@ FUTURE:
 [ ] the example button section no longer updates styles when theme is changed via droplist
 [ ] sidebar transition CSS styling on sidebar-wrap does not account for position top
 [ ] no smooth close animation on sidebar toggle under some circumstances
-[ ] kg-code-sample not displaying copy button under some circumstances
+[ ] wuf-code-sample not displaying copy button under some circumstances
 [ ] document sidebar toggling methods
 [ ] document use of breakpoints in WUF
 [ ] update gridster style as per Sven's proposal

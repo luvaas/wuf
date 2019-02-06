@@ -9,7 +9,7 @@ import { Grid } from '../../../lib/grid';
 
 
 @Component({
-    selector: 'kg-st-actions',
+    selector: 'wuf-st-actions',
     template: `
         <button mat-button
                 *ngIf="createButtonContent"
